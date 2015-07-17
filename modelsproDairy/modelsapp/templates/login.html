@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+{% include 'header.html' %}
+<section>
+<div>
+<form action="/Contacts/adminindex/" method="post">{% csrf_token %}
+      <!--<center><div class="form-group">
+      <label for="email" >Username:</label>
+      <input type="text" name="username" id="username" placeholder="Enter username">
+      <label for="pwd" >Password:</label>
+      <input type="password"  name= "password" id="password" placeholder="Enter password">
+      </div>    <button type="submit" class="btn btn-default">Login</button></center>-->
+    <div class="form-group">
+      <label for="email" class="col-sm-2">Username:</label>
+      <input type="text" class="col-sm-2" name="username" id="username" placeholder="Enter username"></br>
+    </div>
+    <div class="form-group">
+      <label for="pwd" class="col-sm-2" >Password:</label>
+      <input type="password" class=" col-sm-2" name= "password" id="password" placeholder="Enter password"></br>
+    </div>
+<button type="submit" class="btn btn-default" style="width:50px;height:25px;margin-top:0px;">Login</button>
+</form>
+</div>
+</section>
+{% include 'footer.html' %}
+<!--<footer>
+Copyright © webcontacts
+</footer>
+
+</body>
+</html> -->

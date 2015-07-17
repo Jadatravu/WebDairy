@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8">
+<style>
+header {
+    background-color:#BAB0C5;
+    color:white;
+    text-align:center;
+    padding:5px;
+    border: 2px solid #a1a1a1;	 
+}
+nav {
+    border: 2px solid #BAB0C5;
+    line-height:30px;
+    background-color:#eeeeee;
+    font-size: 20px;
+    font-family: MotivaSans-Medium;
+    width:100%; 
+    float:left;
+    padding:5px;	      
+}
+section {
+    border: 2px solid #BAB0C5;
+    
+    background-color:#E3E3E3;    
+    padding:5px;
+        	 	 
+}
+section0 {
+    width:40%;
+    float:left;
+    padding:5px;
+    	 	 
+}
+section1 {
+    width:60%;
+    float:left;
+    padding:5px;    	 	 
+}
+footer {
+    border: 2px solid #a1a1a1;
+    background-color:#BAB0C5;
+    color:white;
+    clear:both;
+    text-align:center;
+    padding:5px;	 	 
+}
+.table tr th{
+     width:15%;
+}
+.table_border tr td{
+	border: 1px solid #003300;
+}
+</style>
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />    
+<script src="http://code.jquery.com/jquery-2.1.4.js"></script>    
+<script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script> 
+<link rel="stylesheet" href="style.css" />    
+<script> $(function() { $( "#datepicker" ).datepicker(); }); </script>
+<script> $(function() { $( "#datepicker1" ).datepicker(); }); </script> 
+</head>
+
+<body>
+
+<header>
+<h2>Web Dairy</h2>
+</header>
+
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+    </div>
+    <div>
+      <ul class="nav navbar-nav">
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Contacts <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  {% if user.is_superuser %}
+                  <li><a href="/Contacts/admin/contactform">Add Contact</a></li>
+                  <li><a href="/Contacts/admin/deletesearchform">Delete Contact</a></li>
+                  <li><a href="/Contacts/admin/editsearchform">Edit Contact</a></li>
+                  {% endif %}
+                  <li><a href="/Contacts/admin/esearchform">Search Contact</a></li>
+                </ul>
+              </li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Leave<span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="/Contacts/applyleave">Apply Leave</a></li>
+                  {% if user.is_superuser %}
+                  <li><a href="/Contacts/admin/approveleave">Approve Leave</a></li>
+                  {% endif %}
+                </ul>
+              </li>
+              {% if user.is_superuser %}
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Ops<span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="/Contacts/admin/skilltitleaddform">Skill Add</a></li>
+                  <li><a href="/Contacts/admin/releaseleaves">Release Leaves</a></li>
+                  <li><a href="/Contacts/admin/addholidayform">Add Holiday</a></li>
+                  <li><a href="/Contacts/admin/departmentform">Add Department</a></li>
+                  <li><a href="/Contacts/admin/addacademicyear">Add Academic Year</a></li>
+                  <li><a href="/Contacts/admin/jobtitleform">Add Title</a></li>
+                  <li><a href="/Contacts/admin/supervisorform">Add Supervisor</a></li>
+                  <li><a href="/Contacts/class/addsubject">Add Subject</a></li>
+                  <li><a href="/Contacts/class/editsubject">Edit Subject</a></li>
+                  <li><a href="/Contacts/class/searchsubject">Search Subject</a></li>
+                  <li><a href="/Contacts/class/subjecttodep">Add Subject to Department</a></li>
+                  <li><a href="/Contacts/class/addtest">Add Test</a></li>
+                  <li><a href="/Contacts/class/viewtest">View Test</a></li>
+                  <li><a href="#">Add User</a></li>
+                </ul>
+              </li>
+              {% endif %}
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Skills<span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  {% if user.is_superuser %}
+                  <li><a href="/Contacts/admin/skillsearchform">Skill Search</a></li>
+                  {% endif %}
+                  <li><a href="/Contacts/skillcontactaddform">Skill Contact Add</a></li>
+                </ul>
+              </li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Tests<span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Edit Test Results</a></li>
+                  <li><a href="#">View Test Results</a></li>
+                </ul>
+              </li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dairy<span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Class Dairy Request</a></li>
+                  <li><a href="#">Individual Dairy Request</a></li>
+                  <li><a href="#">Individual Dairy Response</a></li>
+                </ul>
+              </li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Analytics<span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">School</a></li>
+                  <li><a href="#">Class</a></li>
+                  <li><a href="/Contacts/class/reportcard">Individual</a></li>
+                </ul>
+              </li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Account<span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Change Password</a></li>
+                  <li><a href="/Contacts/logout">Logout</a></li>
+                </ul>
+              </li>
+
+      </ul>
+    </div>
+  </div>
+</nav>
+<!--
+<section>
+<div>
+<form action="/Contacts/adminindex/" method="post">{% csrf_token %}
+<div class="form-group">
+      <label for="email" class="col-sm-2">Username:</label>
+      <input type="text" class="col-sm-2" name="username" id="username" placeholder="Enter username"></br>
+    </div>
+    <div class="form-group">
+      <label for="pwd" class="col-sm-2" >Password:</label>
+      <input type="password" class=" col-sm-2" name= "password" id="password" placeholder="Enter password"></br>
+
+</div>
+<button type="submit" class="btn btn-default" style="width:50px;height:25px;margin-top:0px;">Login</button>
+
+</form>
+</div>
+</section>
+
+<footer>
+Copyright © webcontacts
+</footer>
+
+</body>
+</html> -->

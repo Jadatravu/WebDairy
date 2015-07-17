@@ -1,0 +1,442 @@
+status: 200
+content-length: 54752
+content-location: https://twiki.polycom.com/twiki/bin/view/Main/BuildUCS5dot4dot0RTS44
+x-foswikiaction: view
+x-foswikiuri: /twiki/bin/view/Main/BuildUCS5dot4dot0RTS44
+set-cookie: FOSWIKISID=e135392c24d91532e9ab679d0825c7d6; path=/; secure
+server: Apache/2.2.3 (CentOS)
+connection: close
+cache-control: max-age=0
+date: Wed, 24 Jun 2015 07:44:28 GMT
+content-type: text/html; charset=iso-8859-1
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en_US" lang="en_US">
+<head>
+<link rel="stylesheet" href="https://twiki.polycom.com/twiki/pub/System/HeadlinesPlugin/style.css" type="text/css" media="all" />
+<title> BuildUCS5dot4dot0RTS44 &lt; Main &lt; Foswiki</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<link rel="icon" href="/twiki/pub/System/ProjectLogos/favicon.ico" type="image/x-icon" />
+<link rel="shortcut icon" href="/twiki/pub/System/ProjectLogos/favicon.ico" type="image/x-icon" />
+<link rel="alternate" href="https://twiki.polycom.com/twiki/bin/edit/Main/BuildUCS5dot4dot0RTS44?t=1435131869" type="application/x-wiki" title="edit BuildUCS5dot4dot0RTS44" />
+<meta name="TEXT_NUM_TOPICS" content="Number of topics:" />
+<meta name="TEXT_MODIFY_SEARCH" content="Modify search" />
+<link rel="alternate" type="application/rss+xml" title="RSS Feed" href="/twiki/bin/view/Main/RssTest?rsstopic=BuildUCS5dot4dot0RTS44" />
+<base href="https://twiki.polycom.com/twiki/bin/view/Main/BuildUCS5dot4dot0RTS44" /><!--[if IE]></base><![endif]-->
+
+<style type="text/css" media="all">
+@import url('/twiki/pub/System/SkinTemplates/base.css');
+</style>
+<style type="text/css" media="all">
+@import url('/twiki/pub/System/PatternSkinTheme2009/layout.css');
+@import url('/twiki/pub/System/PatternSkinTheme2009/style.css');
+@import url('/twiki/pub/System/PatternSkinTheme2009/colors.css');
+</style>
+<style type="text/css" media="all">
+@import url('/twiki/pub/System/PatternSkinTheme2009/column_left.css');
+@import url('/twiki/pub/System/PatternSkinTheme2009/variant_foswiki_noframe.css');
+</style><style type="text/css" media="all">
+	/* Styles that are set using variables */
+	.patternBookView .foswikiTopRow,
+	.patternWebIndicator a img,
+	.patternWebIndicator a:hover img {
+		background-color:#FFEFA6;
+	}
+	#patternTopBarContents { background-image:url(/twiki/pub/System/PatternSkinTheme2009/top_bar_Polycom.png); background-repeat:repeat-x;}
+#patternTopBarContents { background-color:#ffffff;}
+.patternBookView {
+	border-color:#FFEFA6;
+}
+.patternPreviewPage #patternMain {
+	/* uncomment to set the preview image */
+	/*background-image:url("/twiki/pub/System/PreviewBackground/preview2bg.gif");*/
+}
+</style>
+<style type="text/css" media="print">
+	@import url("/twiki/pub/System/PatternSkin/print.css");
+</style>
+<!--[if IE]><style type="text/css" media="screen">
+pre {
+	height:1%;
+	overflow-x:auto;
+}
+.foswikiAttachments,
+.foswikiForm,
+.foswikiHelp,
+.foswikiPreviewArea,
+.patternPreviewPage .foswikiForm,
+.patternSigLine,
+.patternToolBar,
+.patternTop,
+.patternTopicAction,
+#patternSideBarContents .patternLeftBarPersonal,
+#patternSideBarContents h2,
+#patternSideBarContents li,
+#patternTopBarButtons ul {
+	height:1%;
+}
+#patternSideBarContents .patternLeftBarPersonal {
+	width:100%;
+}
+.foswikiFormStep {
+	height:100%;
+}
+#foswikiLogin,
+.patternShadow {
+	border:10px solid #fff;
+	margin-top:10px;
+	margin-bottom:10px;
+	border:2px solid #ccc;
+}
+</style><![endif]-->
+<!--[if gt IE 8 ]><style type="text/css" media="screen">
+#foswikiLogin,
+.patternShadow {
+	border:10px solid #fff;
+	margin-top:10px;
+	margin-bottom:10px;
+	box-shadow: 0 0 10px #ccc;
+}
+</style><![endif]-->
+<meta name="foswiki.TWISTYANIMATIONSPEED" content="fast" /><!--TWISTYPLUGIN::META-->
+<style type="text/css" media="all">
+.foswikiTable {border-width:1px}
+.foswikiTable .tableSortIcon img {padding-left:.3em; vertical-align:text-bottom}
+.foswikiTable td {border-style:solid none; vertical-align:top}
+.foswikiTable th {border-style:none solid; vertical-align:top; background-color:#d6d3cf; color:#000000}
+.foswikiTable th a:link {color:#000000}
+.foswikiTable th a:visited {color:#000000}
+.foswikiTable th a:hover {color:#000000; background-color:#d6d3cf}
+.foswikiTable th.foswikiSortedCol {background-color:#c4c1ba}
+.foswikiTable tr.foswikiTableRowdataBg0 td {background-color:#ffffff}
+.foswikiTable tr.foswikiTableRowdataBg0 td.foswikiSortedCol {background-color:#f7f7f6}
+.foswikiTable tr.foswikiTableRowdataBg1 td {background-color:#f7f7f6}
+.foswikiTable tr.foswikiTableRowdataBg1 td.foswikiSortedCol {background-color:#f0f0ee}
+</style><!--TABLEPLUGIN_default-->
+<style type="text/css" media="all">
+.foswikiTable#tableBuildUCS5dot4dot0RTS441 {border-style:solid none solid none; border-width:0px; width:70%}
+.foswikiTable#tableBuildUCS5dot4dot0RTS441 td.foswikiTableCol0 {width:15%}
+.foswikiTable#tableBuildUCS5dot4dot0RTS441 td.foswikiTableCol1 {width:70%}
+.foswikiTable#tableBuildUCS5dot4dot0RTS441 td.foswikiTableCol2 {width:15%}
+.foswikiTable#tableBuildUCS5dot4dot0RTS441 th {background-color:#003366}
+.foswikiTable#tableBuildUCS5dot4dot0RTS441 th.foswikiSortedCol {background-color:#003366}
+.foswikiTable#tableBuildUCS5dot4dot0RTS441 th.foswikiTableCol0 {width:15%}
+.foswikiTable#tableBuildUCS5dot4dot0RTS441 th.foswikiTableCol1 {width:70%}
+.foswikiTable#tableBuildUCS5dot4dot0RTS441 th.foswikiTableCol2 {width:15%}
+.foswikiTable#tableBuildUCS5dot4dot0RTS442 {border-style:solid none solid none; border-width:0px; width:70%}
+.foswikiTable#tableBuildUCS5dot4dot0RTS442 td.foswikiTableCol0 {width:15%}
+.foswikiTable#tableBuildUCS5dot4dot0RTS442 td.foswikiTableCol1 {width:70%}
+.foswikiTable#tableBuildUCS5dot4dot0RTS442 td.foswikiTableCol2 {width:15%}
+.foswikiTable#tableBuildUCS5dot4dot0RTS442 th {background-color:#003366; color:#FFFFFF}
+.foswikiTable#tableBuildUCS5dot4dot0RTS442 th a:link {color:#FFFFFF}
+.foswikiTable#tableBuildUCS5dot4dot0RTS442 th a:visited {color:#FFFFFF}
+.foswikiTable#tableBuildUCS5dot4dot0RTS442 th a:hover {color:#FFFFFF; background-color:#003366}
+.foswikiTable#tableBuildUCS5dot4dot0RTS442 th.foswikiSortedCol {background-color:#003366}
+.foswikiTable#tableBuildUCS5dot4dot0RTS442 th.foswikiTableCol0 {width:15%}
+.foswikiTable#tableBuildUCS5dot4dot0RTS442 th.foswikiTableCol1 {width:70%}
+.foswikiTable#tableBuildUCS5dot4dot0RTS442 th.foswikiTableCol2 {width:15%}
+.foswikiTable#tableBuildUCS5dot4dot0RTS442 tr.foswikiTableRowdataBg0 td {background-color:#FFFFCC}
+.foswikiTable#tableBuildUCS5dot4dot0RTS442 tr.foswikiTableRowdataBg0 td.foswikiSortedCol {background-color:#FFFFCC}
+.foswikiTable#tableBuildUCS5dot4dot0RTS442 tr.foswikiTableRowdataBg1 td {background-color:#FFCC66}
+.foswikiTable#tableBuildUCS5dot4dot0RTS442 tr.foswikiTableRowdataBg1 td.foswikiSortedCol {background-color:#FFCC66}
+.foswikiTable#tableBuildUCS5dot4dot0RTS443 {border-style:solid none solid none; border-width:0px; width:70%}
+.foswikiTable#tableBuildUCS5dot4dot0RTS443 td.foswikiTableCol0 {width:15%}
+.foswikiTable#tableBuildUCS5dot4dot0RTS443 td.foswikiTableCol1 {width:70%}
+.foswikiTable#tableBuildUCS5dot4dot0RTS443 td.foswikiTableCol2 {width:15%}
+.foswikiTable#tableBuildUCS5dot4dot0RTS443 th {background-color:#003366; color:#FFFFFF}
+.foswikiTable#tableBuildUCS5dot4dot0RTS443 th a:link {color:#FFFFFF}
+.foswikiTable#tableBuildUCS5dot4dot0RTS443 th a:visited {color:#FFFFFF}
+.foswikiTable#tableBuildUCS5dot4dot0RTS443 th a:hover {color:#FFFFFF; background-color:#003366}
+.foswikiTable#tableBuildUCS5dot4dot0RTS443 th.foswikiSortedCol {background-color:#003366}
+.foswikiTable#tableBuildUCS5dot4dot0RTS443 th.foswikiTableCol0 {width:15%}
+.foswikiTable#tableBuildUCS5dot4dot0RTS443 th.foswikiTableCol1 {width:70%}
+.foswikiTable#tableBuildUCS5dot4dot0RTS443 th.foswikiTableCol2 {width:15%}
+.foswikiTable#tableBuildUCS5dot4dot0RTS443 tr.foswikiTableRowdataBg0 td {background-color:#FFFFCC}
+.foswikiTable#tableBuildUCS5dot4dot0RTS443 tr.foswikiTableRowdataBg0 td.foswikiSortedCol {background-color:#FFFFCC}
+.foswikiTable#tableBuildUCS5dot4dot0RTS443 tr.foswikiTableRowdataBg1 td {background-color:#FFCC66}
+.foswikiTable#tableBuildUCS5dot4dot0RTS443 tr.foswikiTableRowdataBg1 td.foswikiSortedCol {background-color:#FFCC66}
+.foswikiTable#tableBuildUCS5dot4dot0RTS444 {border-style:solid none solid none; border-width:0px; width:70%}
+.foswikiTable#tableBuildUCS5dot4dot0RTS444 td.foswikiTableCol0 {width:15%}
+.foswikiTable#tableBuildUCS5dot4dot0RTS444 td.foswikiTableCol1 {width:70%}
+.foswikiTable#tableBuildUCS5dot4dot0RTS444 td.foswikiTableCol2 {width:15%}
+.foswikiTable#tableBuildUCS5dot4dot0RTS444 th {background-color:#003366; color:#FFFFFF}
+.foswikiTable#tableBuildUCS5dot4dot0RTS444 th a:link {color:#FFFFFF}
+.foswikiTable#tableBuildUCS5dot4dot0RTS444 th a:visited {color:#FFFFFF}
+.foswikiTable#tableBuildUCS5dot4dot0RTS444 th a:hover {color:#FFFFFF; background-color:#003366}
+.foswikiTable#tableBuildUCS5dot4dot0RTS444 th.foswikiSortedCol {background-color:#003366}
+.foswikiTable#tableBuildUCS5dot4dot0RTS444 th.foswikiTableCol0 {width:15%}
+.foswikiTable#tableBuildUCS5dot4dot0RTS444 th.foswikiTableCol1 {width:70%}
+.foswikiTable#tableBuildUCS5dot4dot0RTS444 th.foswikiTableCol2 {width:15%}
+.foswikiTable#tableBuildUCS5dot4dot0RTS444 tr.foswikiTableRowdataBg0 td {background-color:#FFFFCC}
+.foswikiTable#tableBuildUCS5dot4dot0RTS444 tr.foswikiTableRowdataBg0 td.foswikiSortedCol {background-color:#FFFFCC}
+.foswikiTable#tableBuildUCS5dot4dot0RTS444 tr.foswikiTableRowdataBg1 td {background-color:#FFCC66}
+.foswikiTable#tableBuildUCS5dot4dot0RTS444 tr.foswikiTableRowdataBg1 td.foswikiSortedCol {background-color:#FFCC66}
+.foswikiTable#tableBuildUCS5dot4dot0RTS445 {border-style:solid none solid none; border-width:0px; width:70%}
+.foswikiTable#tableBuildUCS5dot4dot0RTS445 th {background-color:#003366; color:#FFFFFF}
+.foswikiTable#tableBuildUCS5dot4dot0RTS445 th a:link {color:#FFFFFF}
+.foswikiTable#tableBuildUCS5dot4dot0RTS445 th a:visited {color:#FFFFFF}
+.foswikiTable#tableBuildUCS5dot4dot0RTS445 th a:hover {color:#FFFFFF; background-color:#003366}
+.foswikiTable#tableBuildUCS5dot4dot0RTS445 th.foswikiSortedCol {background-color:#003366}
+.foswikiTable#tableBuildUCS5dot4dot0RTS445 tr.foswikiTableRowdataBg0 td {background-color:#FFFFCC}
+.foswikiTable#tableBuildUCS5dot4dot0RTS445 tr.foswikiTableRowdataBg0 td.foswikiSortedCol {background-color:#FFFFCC}
+.foswikiTable#tableBuildUCS5dot4dot0RTS445 tr.foswikiTableRowdataBg1 td {background-color:#FFCC66}
+.foswikiTable#tableBuildUCS5dot4dot0RTS445 tr.foswikiTableRowdataBg1 td.foswikiSortedCol {background-color:#FFCC66}
+</style><!--TABLEPLUGIN_specific-->
+<meta name="foswiki.PUBURL" content="https://twiki.polycom.com/twiki/pub" /> <!-- PUBURL -->
+<meta name="foswiki.PUBURLPATH" content="/twiki/pub" /> <!-- PUBURLPATH -->
+<meta name="foswiki.SCRIPTSUFFIX" content="" /> <!-- SCRIPTSUFFIX -->
+<meta name="foswiki.SCRIPTURL" content="https://twiki.polycom.com/twiki/bin" /> <!-- SCRIPTURL -->
+<meta name="foswiki.SCRIPTURLPATH" content="/twiki/bin" /> <!-- SCRIPTURLPATH -->
+<meta name="foswiki.SERVERTIME" content="24%20Jun%202015%20-%2002:44" /> <!-- SERVERTIME -->
+<meta name="foswiki.SKIN" content="pattern" /> <!-- SKIN -->
+<meta name="foswiki.SYSTEMWEB" content="System" /> <!-- SYSTEMWEB -->
+<meta name="foswiki.TOPIC" content="BuildUCS5dot4dot0RTS44" /> <!-- TOPIC -->
+<meta name="foswiki.USERNAME" content="GUEST" /> <!-- USERNAME -->
+<meta name="foswiki.USERSWEB" content="Main" /> <!-- USERSWEB -->
+<meta name="foswiki.WEB" content="Main" /> <!-- WEB -->
+<meta name="foswiki.WIKINAME" content="GUEST" /> <!-- WIKINAME -->
+<meta name="foswiki.WIKIUSERNAME" content="Main.GUEST" /> <!-- WIKIUSERNAME -->
+<meta name="foswiki.NAMEFILTER" content="%5b%5cs%5c*%3f~%5e%5c%24%40%25%60%22'%26%3b%7c%3c%3e%5c%5b%5c%5d%23%5cx00-%5cx1f%5d" /> <!-- NAMEFILTER --><!--JQUERYPLUGIN::FOSWIKI::META-->
+<script type='text/javascript' src='/twiki/pub/System/JQueryPlugin/jquery-1.4.3.js'></script><!--JQUERYPLUGIN-->
+<script type='text/javascript' src='/twiki/pub/System/JQueryPlugin/plugins/livequery/jquery.livequery.js?version=1.1.1'></script><!--JQUERYPLUGIN::LIVEQUERY-->
+<script type='text/javascript' src='/twiki/pub/System/JQueryPlugin/plugins/foswiki/jquery.foswiki.js?version=2.01'></script><!--JQUERYPLUGIN::FOSWIKI-->
+<script type="text/javascript" src="/twiki/pub/System/JavascriptFiles/foswikiPref.js"></script><!--JavascriptFiles/foswikiPref-->
+<script type="text/javascript" src="/twiki/pub/System/JavascriptFiles/foswikiString.js"></script><!--JavascriptFiles/foswikiString-->
+<script type="text/javascript" src="/twiki/pub/System/JavascriptFiles/foswikiForm.js"></script><!--JavascriptFiles/foswikiForm-->
+<script type="text/javascript" src="/twiki/pub/System/PatternSkin/pattern.js"></script><!--PatternSkin/pattern-->
+</head>
+<body class="patternViewPage">
+<a name="PageTop"></a><div class="foswikiPage"><div id="patternScreen">
+<div id="patternPageShadow">
+<div id="patternPage">
+<div id="patternWrapper"><div id="patternOuter">
+<div id="patternFloatWrap">
+<div id="patternMain"><div id="patternClearHeaderCenter"></div>
+<div id="patternMainContents"><div class="patternTop"><span class="patternHomePath foswikiLeft"><span class="patternHomePathTitle">You are here: </span><a href="/twiki/bin/view/Main/WebHome" class="foswikiCurrentWebHomeLink">Foswiki</a><span class='foswikiSeparator'>&gt;</span><a href="/twiki/bin/view/Main/WebHome">Main Web</a><span class='foswikiSeparator'>&gt;</span><a href="https://twiki.polycom.com/twiki/bin/view/Main/BuildUCS5dot4dot0RTS44" title='Topic revision: 3 (24 Jun 2015 - 05:09:01)'>BuildUCS5dot4dot0RTS44</a> <span class='patternRevInfo'>(24 Jun 2015, unknown)</span></span><span class="patternToolBar foswikiRight"><span class="foswikiRequiresChangePermission"><a href='https://twiki.polycom.com/twiki/bin/edit/Main/BuildUCS5dot4dot0RTS44?t=1435131869' rel='nofollow' title='Edit this topic text' accesskey='e'><span class='foswikiAccessKey'>E</span>dit</a></span><span class="foswikiRequiresChangePermission"><a href='/twiki/bin/attach/Main/BuildUCS5dot4dot0RTS44' rel='nofollow' title='Attach an image or document to this topic' accesskey='a'><span class='foswikiAccessKey'>A</span>ttach</a></span></span><div class="patternTop" ><span class="patterToolBar foswikiLeft" id="fooG"><input type='button' class='foswikiButtonDisabled' title='Turn on immediate email notifications for changes to this topic. You must be logged in for this button to be enabled' value='TIN ?' onClick=''><input type='button' class='foswikiButtonDisabled' title='Turn on daily email notifications for changes to this topic. You must be logged in for this button to be enabled' value='TN ?' onClick=''><label for="fooG">Email notification for changes to <a href="/twiki/bin/view/Main/BuildUCS5dot4dot0RTS44" class="foswikiCurrentTopicLink">BuildUCS5dot4dot0RTS44</a>:</label></div></span><div class="foswikiClear"></div></div><div class="foswikiContentHeader"></div><div class="patternContent"><div class="foswikiTopic"><!--  <ul>
+ <li>
+ <ul>
+<li> Set DENYTOPICVIEW = <a href="/twiki/bin/view/Main/WikiGuest">WikiGuest</a>      DO NOT Remove this unless you know what you are doing!!      Leave everything between the HTML comment delimiters if you want to restrict viewing       of this topic to registered users. If you do not mind everybody in Polycom seeing this topic       remove this. Note everything between these delimiters will not be rendered on you topic page      and are invisible to the viewer of the topic.
+</li></ul> 
+</li></ul> 
+-->
+<p></p>
+<h1><a name="Build_Report:_UCS_5.4.0.5094_rts44"></a>  Build Report: UCS 5.4.0.5094 rts44 </h1>
+<p></p>
+<p></p>
+UCS 5.4.0.5094 rts44 has been archived.
+<p></p>
+<p></p>
+This build contains: 
+<table width="70%" frame="hsides" id="tableBuildUCS5dot4dot0RTS441" class="foswikiTable" rules="none" border="0">
+	<tbody>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> condor </td>
+			<td class="foswikiTableCol1 foswikiLastCol"> App:5.4.0.5094     Bootrom:5.6.0.7380 </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted1 foswikiTableRowdataBg1">
+			<td class="foswikiTableCol0 foswikiFirstCol"> Tinman </td>
+			<td class="foswikiTableCol1 foswikiLastCol"> App:5.4.0.5094     Bootrom:5.6.0.7380 </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> Ber </td>
+			<td class="foswikiTableCol1 foswikiLastCol"> App:5.4.0.5094     Bootrom:5.6.0.7380 </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted1 foswikiTableRowdataBg1">
+			<td class="foswikiTableCol0 foswikiFirstCol"> Sake </td>
+			<td class="foswikiTableCol1 foswikiLastCol"> App:5.4.0.5094     Bootrom:5.6.0.7380 </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> Merlot Malbec </td>
+			<td class="foswikiTableCol1 foswikiLastCol"> App:5.4.0.5094     Bootrom:5.6.0.7380 </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted1 foswikiTableRowdataBg1">
+			<td class="foswikiTableCol0 foswikiFirstCol foswikiLast"> Concord Maroo <span class="foswikiNewLink">ConcordGigE<a href="/twiki/bin/edit/Main/ConcordGigE?topicparent=Main.BuildUCS5dot4dot0RTS44" rel="nofollow" title="Create this topic">?</a></span> <span class="foswikiNewLink">MarooGigE<a href="/twiki/bin/edit/Main/MarooGigE?topicparent=Main.BuildUCS5dot4dot0RTS44" rel="nofollow" title="Create this topic">?</a></span> </td>
+			<td class="foswikiTableCol1 foswikiLastCol foswikiLast"> App:5.4.0.5094     Bootrom:5.6.0.7380 </td>
+		</tr>
+	</tbody></table>
+<p></p>
+<p></p>
+This build was from the <a href="/twiki/bin/view/Main/SVN">SVN</a> branch B_DANUBE. It is identified in <a href="/twiki/bin/view/Main/SVN">SVN</a> with the tag SIP_5_4_0_RTS44. It is based on the state of <a href="/twiki/bin/view/Main/SVN">SVN</a> Rev 173949 at approximately 2015-06-23 22:00:00 UTC.
+<p></p>
+<table width="70%" frame="hsides" id="tableBuildUCS5dot4dot0RTS442" class="foswikiTable" rules="none" border="0">
+	<thead>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<th colspan="3" class="foswikiFirstCol"> <a rel="nofollow" href="/twiki/bin/view/Main/BuildUCS5dot4dot0RTS44?sortcol=0;table=2;up=0#sorted_table" title="Sort by this column">Issues resolved in UCS 5.4.0.5094 rts44 at time of build</a> </th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<th class="foswikiTableCol0 foswikiFirstCol"> Key </th>
+			<th class="foswikiTableCol1"> Summary </th>
+			<th class="foswikiTableCol2 foswikiLastCol"> Target </th>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted1 foswikiTableRowdataBg1">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="https://jira.polycom.com:8443/browse/VOIP-102557" target="_top">VOIP-102557</a> </td>
+			<td class="foswikiTableCol1"> [Danube,Condor] DUT is not pickup and resumes the remote hold call when short press the line key </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Danube </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="https://jira.polycom.com:8443/browse/VOIP-102714" target="_top">VOIP-102714</a> </td>
+			<td class="foswikiTableCol1"> Phone fails to use first RTP port for first CALL when tcpIpApp.port.rtp.mediaPortRangeStart is configured with an a valid value </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Danube </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted1 foswikiTableRowdataBg1">
+			<td class="foswikiTableCol0 foswikiFirstCol foswikiLast"> <a href="https://jira.polycom.com:8443/browse/VOIP-102727" target="_top">VOIP-102727</a> </td>
+			<td class="foswikiTableCol1 foswikiLast"> [Breakage,Ber/Sake] "&gt;15 results found. Refine search" message is not readable. </td>
+			<td class="foswikiTableCol2 foswikiLastCol foswikiLast"> Danube </td>
+		</tr>
+	</tbody></table>
+<p></p>
+<table width="70%" frame="hsides" id="tableBuildUCS5dot4dot0RTS443" class="foswikiTable" rules="none" border="0">
+	<thead>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<th colspan="3" class="foswikiFirstCol"> <a rel="nofollow" href="/twiki/bin/view/Main/BuildUCS5dot4dot0RTS44?sortcol=0;table=3;up=0#sorted_table" title="Sort by this column">Issues pending in UCS 5.4.0.5094 rts44 at time of build</a> </th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<th class="foswikiTableCol0 foswikiFirstCol"> Key </th>
+			<th class="foswikiTableCol1"> Summary </th>
+			<th class="foswikiTableCol2 foswikiLastCol"> Target </th>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted1 foswikiTableRowdataBg1">
+			<td colspan="3" class="foswikiFirstCol foswikiLast"> None </td>
+		</tr>
+	</tbody></table>
+<p></p>
+<table width="70%" frame="hsides" id="tableBuildUCS5dot4dot0RTS444" class="foswikiTable" rules="none" border="0">
+	<thead>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<th colspan="3" class="foswikiFirstCol"> <a rel="nofollow" href="/twiki/bin/view/Main/BuildUCS5dot4dot0RTS44?sortcol=0;table=4;up=0#sorted_table" title="Sort by this column">Issues open in UCS 5.4.0.5094 rts44 at time of build</a> </th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<th class="foswikiTableCol0 foswikiFirstCol"> Key </th>
+			<th class="foswikiTableCol1"> Summary </th>
+			<th class="foswikiTableCol2 foswikiLastCol"> Target </th>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted1 foswikiTableRowdataBg1">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="https://jira.polycom.com:8443/browse/VOIP-102613" target="_top">VOIP-102613</a> </td>
+			<td class="foswikiTableCol1"> [Lync, 3PIP Core, DCR ] Phones are not registering after DCR is reverted back. </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Danube </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol foswikiLast"> <a href="https://jira.polycom.com:8443/browse/VOIP-102684" target="_top">VOIP-102684</a> </td>
+			<td class="foswikiTableCol1 foswikiLast"> [BLF refactoring, Hunt Group, sustainability] : DUT reboots/watchdog expires or Christmas tree effect is seen when 6 simultaneous hunt groups are placed for 5 minutes. </td>
+			<td class="foswikiTableCol2 foswikiLastCol foswikiLast"> Danube </td>
+		</tr>
+	</tbody></table>
+<p></p>
+<p></p>
+Last updated: 05:09:01 24 Jun 2015 by unknown
+<html><body><p align='center'><H1><u>Smoke Test Result</u></H1><br>                    Tester       : <span class="foswikiNewLink">SmokeTestIIC1<a href="/twiki/bin/edit/Main/SmokeTestIIC1?topicparent=Main.BuildUCS5dot4dot0RTS44" rel="nofollow" title="Create this topic">?</a></span><br><br> Reqeust ID:1435103985_BS<br>                              Snapshot  :na<br>                              User Name :Administrator<br>                              Address   :Administrator@polycom.com<br>							  Location  :IIC<br>                              Build Stream:5.4.0<br>                              Build Time:2015-06-24-05:31:32<br>                              Images    :condor Tinman Ber Sake Merlot Malbec Concord Maroo <span class="foswikiNewLink">ConcordGigE<a href="/twiki/bin/edit/Main/ConcordGigE?topicparent=Main.BuildUCS5dot4dot0RTS44" rel="nofollow" title="Create this topic">?</a></span> <span class="foswikiNewLink">MarooGigE<a href="/twiki/bin/edit/Main/MarooGigE?topicparent=Main.BuildUCS5dot4dot0RTS44" rel="nofollow" title="Create this topic">?</a></span> <br>                              Image Location://chase.polycom.com/Smoketest/complete/Administrator_1435103985_BS_540_IIC.zip</i><br><br>                    Test Start Time:2015-6-24 05:33:49<br>                    Test End Time: 2015-6-24 06:29:35<br><br>                   <br>                    Tester       : <span class="foswikiNewLink">SmokeTestIIC2<a href="/twiki/bin/edit/Main/SmokeTestIIC2?topicparent=Main.BuildUCS5dot4dot0RTS44" rel="nofollow" title="Create this topic">?</a></span><br><br> Reqeust ID:1435103985_LYNC<br>                              Snapshot  :na<br>                              User Name :Administrator<br>                              Address   :Administrator@polycom.com<br>							  Location  :IIC<br>                              Build Stream:5.4.0<br>                              Build Time:2015-06-24-05:32:03<br>                              Images    :condor Tinman Ber Sake Merlot Malbec Concord Maroo <span class="foswikiNewLink">ConcordGigE<a href="/twiki/bin/edit/Main/ConcordGigE?topicparent=Main.BuildUCS5dot4dot0RTS44" rel="nofollow" title="Create this topic">?</a></span> <span class="foswikiNewLink">MarooGigE<a href="/twiki/bin/edit/Main/MarooGigE?topicparent=Main.BuildUCS5dot4dot0RTS44" rel="nofollow" title="Create this topic">?</a></span> <br>                              Image Location://chase.polycom.com/Smoketest/complete/Administrator_1435103985_LYNC_540_IIC.zip</i><br><br>                    Test Start Time:2015-6-24 05:34:57<br>                    Test End Time: 2015-6-24 06:38:32<br><br>                   <font size="2" color="#808000"> Note: Result of phones with tested build are using normal size and color<br>Result of phones without tested build are using smaller size and GRAY color <br></font><table border="3"><tr><td><b><font size="4" color="BLUE"> </font></b></td><td><b><font size="4" color="BLUE"> </font></b></td><td><b><font size="4" color="BLUE">VVX1500</font></b></td><td><b><font size="4" color="BLUE">VVX500</font></b></td><td><b><font size="4" color="BLUE">SOUNDSTRUCTUREVOIPINTERFACE</font></b></td><td><b><font size="4" color="BLUE">VVX600</font></b></td><td><b><font size="4" color="BLUE">VVX310</font></b></td><td><b><font size="4" color="BLUE">VVX410</font></b></td><td><b><font size="4" color="BLUE">VVX101</font></b></td><td><b><font size="4" color="BLUE">VVX201</font></b></td></tr><tr><td><b><font size="4" color="BLUE"> </font></b></td><td><b><font size="2" color="BLACK"> </font></b></td><td><b><font size="2" color="BLACK">condor</font></b></td><td><b><font size="2" color="BLACK">malbec</font></b></td><td><b><font size="2" color="BLACK">tinman</font></b></td><td><b><font size="2" color="BLACK">merlot</font></b></td><td><b><font size="2" color="BLACK">ConcordGigE</font></b></td><td><b><font size="2" color="BLACK">MarooGigE</font></b></td><td><b><font size="2" color="BLACK">Ber</font></b></td><td><b><font size="2" color="BLACK">Sake</font></b></td></tr><tr><td><b><font size="4" color="BLUE"> </font></b></td><td><i><font size="2" color="BLACK"> </font></i></td><td><b><font size ="2" color="BLACK">5.4.0.5094;5.6.0.7380</font></b></td><td><b><font size ="2" color="BLACK">5.4.0.5094;5.6.0.7380</font></b></td><td><b><font size ="2" color="BLACK">5.4.0.5094;5.6.0.7380</font></b></td><td><b><font size ="2" color="BLACK">5.4.0.5094;5.6.0.7380</font></b></td><td><b><font size ="2" color="BLACK">5.4.0.5094;5.6.0.7380</font></b></td><td><b><font size ="2" color="BLACK">5.4.0.5094;5.6.0.7380</font></b></td><td><b><font size ="2" color="BLACK">5.4.0.5094;5.6.0.7380</font></b></td><td><b><font size ="2" color="BLACK">5.4.0.5094;5.6.0.7380</font></b></td></tr><tr><td><b><font size="4" color="BLUE"><a href="https://twiki.polycom.com/twiki//bin/view/Main/SmoketesterteststepsSoftwareUpgrade">Software Upgrade</a></font></b></td><td><i><font size="2" color="BLACK">Load smoke test build on Phone</font></i></td><td><b><font color="GREEN">PASS</font></b></td><td><b><font color="GREEN">PASS</font></b></td><td><b><font color="GREEN">PASS</font></b></td><td><b><font color="GREEN">PASS</font></b></td><td><b><font color="GREEN">PASS</font></b></td><td><b><font color="GREEN">PASS</font></b></td><td><b><font color="GREEN">PASS</font></b></td><td><b><font color="GREEN">PASS</font></b></td></tr><tr><td><b><font size="4" color="BLUE"><a href="https://twiki.polycom.com/twiki//bin/view/Main/SmoketesterteststepsURLCall">URL Call</a></font></b></td><td><i><font size="2" color="BLACK">Place an IP call on tested phone. Audio, IP call setup, IP call end are tested only.</font></i></td><td><b><font color="GREEN">PASS</font></b></td><td><b><font color="GREEN">PASS</font></b></td><td><b><font color="GREEN">PASS</font></b></td><td><b><font color="GREEN">PASS</font></b></td><td><b><font color="GREEN">PASS</font></b></td><td><b><font color="GREEN">PASS</font></b></td><td><b><font color="GREEN">PASS</font></b></td><td><b><font color="GREEN">PASS</font></b></td></tr><tr><td><b><font size="4" color="BLUE"><a href="https://twiki.polycom.com/twiki//bin/view/Main/SmoketesterteststepsPlaceCall">Place Call</a></font></b></td><td><i><font size="2" color="BLACK">Place a number call on tested phone. Registration,Call setup,Audio,Mute/Un-Mute, Hold/Resume,Call end are tested. withBroadSoft R20 </font></i></td><td><b><font color="GREEN">PASS</font></b></td><td><b><font color="GREEN">PASS</font></b></td><td><b><font color="GREEN">PASS</font></b></td><td><b><font color="GREEN">PASS</font></b></td><td><b><font color="GREEN">PASS</font></b></td><td><b><font color="GREEN">PASS</font></b></td><td><b><font color="GREEN">PASS</font></b></td><td><b><font color="GREEN">PASS</font></b></td></tr><tr><td><b><font size="4" color="BLUE"><a href="https://twiki.polycom.com/twiki//bin/view/Main/SmoketesterteststepsReceiveCall">Receive Call</a></font></b></td><td><i><font size="2" color="BLACK">Receive and answer a incoming call on tested phone. Registration,Call answer,Audio, Mute/Un-Mute, Hold/Resume,Call end are tested. withBroadSoft R20 </font></i></td><td><b><font color="GREEN">PASS</font></b></td><td><b><font color="GREEN">PASS</font></b></td><td><b><font color="GREEN">PASS</font></b></td><td><b><font color="GREEN">PASS</font></b></td><td><b><font color="GREEN">PASS</font></b></td><td><b><font color="GREEN">PASS</font></b></td><td><b><font color="GREEN">PASS</font></b></td><td><b><font color="GREEN">PASS</font></b></td></tr><tr><td><b><font size="4" color="BLUE"><a href="https://twiki.polycom.com/twiki//bin/view/Main/SmoketesterteststepsBlindTransfer">Blind Transfer</a></font></b></td><td><i><font size="2" color="BLACK">Blind Transfer a call on tested phone. Call setup, Audio, Blind transfer, Call end are tested. withBroadSoft R20 </font></i></td><td><b><font color="GREEN">PASS</font></b></td><td><b><font color="GREEN">PASS</font></b></td><td><b><font color="GREEN">PASS</font></b></td><td><b><font color="GREEN">PASS</font></b></td><td><b><font color="GREEN">PASS</font></b></td><td><b><font color="GREEN">PASS</font></b></td><td><b><font color="GREEN">PASS</font></b></td><td><b><font color="GREEN">PASS</font></b></td></tr><tr><td><b><font size="4" color="BLUE"><a href="https://twiki.polycom.com/twiki//bin/view/Main/SmoketesterteststepsConsultativeTransfer">Consultative Transfer</a></font></b></td><td><i><font size="2" color="BLACK">Consultative Transfer a call on tested phone.  Call setup, Audio, Consultative transfer, Call end are tested. withBroadSoft R20 </font></i></td><td><b><font color="GREEN">PASS</font></b></td><td><b><font color="GREEN">PASS</font></b></td><td><b><font color="GREEN">PASS</font></b></td><td><b><font color="GREEN">PASS</font></b></td><td><b><font color="GREEN">PASS</font></b></td><td><b><font color="GREEN">PASS</font></b></td><td><b><font color="GREEN">PASS</font></b></td><td><b><font color="GREEN">PASS</font></b></td></tr><tr><td><b><font size="4" color="BLUE"><a href="https://twiki.polycom.com/twiki//bin/view/Main/SmoketesterteststepsConference">Conference Call</a></font></b></td><td><i><font size="2" color="BLACK">Establish a conference call on tested phone. Call setup, Audio, Conference call , Call end are tested. withBroadSoft R20 </font></i></td><td><b><font color="GREEN">PASS</font></b></td><td><b><font color="GREEN">PASS</font></b></td><td><b><font color="GREEN">PASS</font></b></td><td><b><font color="GREEN">PASS</font></b></td><td><b><font color="GREEN">PASS</font></b></td><td><b><font color="GREEN">PASS</font></b></td><td><b><font color="GREEN">PASS</font></b></td><td><b><font color="GREEN">PASS</font></b></td></tr><tr><td><b><font size="4" color="BLUE"><a href="https://twiki.polycom.com/twiki//bin/view/Main/SmoketesterteststepsJoinCall">Join Calls</a></font></b></td><td><i><font size="2" color="BLACK">Join two calls into a conference Call. withBroadSoft R20 </font></i></td><td><b><font color="GREEN">PASS</font></b></td><td><b><font color="GREEN">PASS</font></b></td><td><b><font color="GREEN">PASS</font></b></td><td><b><font color="GREEN">PASS</font></b></td><td><b><font color="GREEN">PASS</font></b></td><td><b><font color="GREEN">PASS</font></b></td><td><b><font color="GREEN">PASS</font></b></td><td><b><font color="GREEN">PASS</font></b></td></tr><tr><td><b><font size="4" color="BLUE"><a href="https://twiki.polycom.com/twiki//bin/view/Main/SmoketesterteststepsSplitCall">Split Calls</a></font></b></td><td><i><font size="2" color="BLACK">Split a conference all into two single calls. withBroadSoft R20 </font></i></td><td><b><font color="GREEN">PASS</font></b></td><td><b><font color="GREEN">PASS</font></b></td><td><b><font color="GREEN">PASS</font></b></td><td><b><font color="GREEN">PASS</font></b></td><td><b><font color="GREEN">PASS</font></b></td><td><b><font color="GREEN">PASS</font></b></td><td><b><font color="GREEN">PASS</font></b></td><td><b><font color="GREEN">PASS</font></b></td></tr><tr><td><b><font size="4" color="BLUE"><a href="https://twiki.polycom.com/twiki//bin/view/Main/SmoketesterteststepsSIPVideo">SIP Video Call</a></font></b></td><td><i><font size="2" color="BLACK">Place a SIP video call and SIP video conference. withBroadSoft R20 </font></i></td><td><b><font color="GREEN">PASS</font></b></td><td><b><font color="GREEN">PASS</font></b></td><td><b><font color="GRAY">-</font></b></td><td><b><font color="GREEN">PASS</font></b></td><td><b><font color="GRAY">-</font></b></td><td><b><font color="GRAY">-</font></b></td><td><b><font color="GRAY">-</font></b></td><td><b><font color="GRAY">-</font></b></td></tr><tr><td><b><font size="4" color="BLUE"><a href="https://twiki.polycom.com/twiki//bin/view/Main/SmoketesterteststepsSRTPCall">SRTP Call</a></font></b></td><td><i><font size="2" color="BLACK">Place a <a href="/twiki/bin/view/Main/SRTP">SRTP</a> Call. withBroadSoft R20 </font></i></td><td><b><font color="GREEN">PASS</font></b></td><td><b><font color="GREEN">PASS</font></b></td><td><b><font color="GREEN">PASS</font></b></td><td><b><font color="GREEN">PASS</font></b></td><td><b><font color="GREEN">PASS</font></b></td><td><b><font color="GREEN">PASS</font></b></td><td><b><font color="GREEN">PASS</font></b></td><td><b><font color="GREEN">PASS</font></b></td></tr><tr><td><b><font size="4" color="BLUE"><a href="https://twiki.polycom.com/twiki//bin/view/Main/SmoketesterteststepsSRTPConference">SRTP Conference</a></font></b></td><td><i><font size="2" color="BLACK">Establish <a href="/twiki/bin/view/Main/SRTP">SRTP</a> Conference. withBroadSoft R20 </font></i></td><td><b><font color="GREEN">PASS</font></b></td><td><b><font color="GREEN">PASS</font></b></td><td><b><font color="GREEN">PASS</font></b></td><td><b><font color="GREEN">PASS</font></b></td><td><b><font color="GREEN">PASS</font></b></td><td><b><font color="GREEN">PASS</font></b></td><td><b><font color="GREEN">PASS</font></b></td><td><b><font color="GREEN">PASS</font></b></td></tr><tr><td><b><font size="4" color="BLUE"><a href="https://twiki.polycom.com/twiki//bin/view/Main/SmoketesterteststepsLYNC">LYNC Call</a></font></b></td><td><i><font size="2" color="BLACK">Registration and Call with LYNC server</font></i></td><td><b><font color="">N/A</font></b></td><td><b><font color="GREEN">PASS</font></b></td><td><b><font color="GREEN">PASS</font></b></td><td><b><font color="GREEN">PASS</font></b></td><td><b><font color="GREEN">PASS</font></b></td><td><b><font color="GREEN">PASS</font></b></td><td><b><font color="">N/A</font></b></td><td><b><font color="GREEN">PASS</font></b></td></tr><tr><td><b><font size="4" color="BLUE"><a href="https://twiki.polycom.com/twiki//bin/view/Main/SmoketesterteststepsConference">LYNC Conference Call</a></font></b></td><td><i><font size="2" color="BLACK">Conference Call with LYNC server</font></i></td><td><b><font color="">N/A</font></b></td><td><b><font color="GREEN">PASS</font></b></td><td><b><font color="">N/A</font></b></td><td><b><font color="GREEN">PASS</font></b></td><td><b><font color="GREEN">PASS</font></b></td><td><b><font color="GREEN">PASS</font></b></td><td><b><font color="">N/A</font></b></td><td><b><font color="GREEN">PASS</font></b></td></tr><tr><td><b><font size="4" color="BLUE"><a href="https://twiki.polycom.com/twiki//bin/view/Main/SmoketesterteststepsBlindTransfer">LYNC Blind Transfer</a></font></b></td><td><i><font size="2" color="BLACK">Blind transfer Call with LYNC server</font></i></td><td><b><font color="">N/A</font></b></td><td><b><font color="GREEN">PASS</font></b></td><td><b><font color="GREEN">PASS</font></b></td><td><b><font color="GREEN">PASS</font></b></td><td><b><font color="GREEN">PASS</font></b></td><td><b><font color="GREEN">PASS</font></b></td><td><b><font color="">N/A</font></b></td><td><b><font color="GREEN">PASS</font></b></td></tr><tr><td><b><font size="4" color="BLUE"><a href="https://twiki.polycom.com/twiki//bin/view/Main/SmoketesterteststepsConsultativeTransfer">LYNC Consultative Transfer</a></font></b></td><td><i><font size="2" color="BLACK">Consultative transfer Call with LYNC server</font></i></td><td><b><font color="">N/A</font></b></td><td><b><font color="GREEN">PASS</font></b></td><td><b><font color="GREEN">PASS</font></b></td><td><b><font color="GREEN">PASS</font></b></td><td><b><font color="GREEN">PASS</font></b></td><td><b><font color="GREEN">PASS</font></b></td><td><b><font color="">N/A</font></b></td><td><b><font color="GREEN">PASS</font></b></td></tr><tr><td><b><font size="4" color="BLUE"><a href="https://twiki.polycom.com/twiki//bin/view/Main/SmoketesterteststepsBootTime">Reboot time Seconds </a></font></b></td><td><i><font size="2" color="BLACK">Time duration from reboot till idle state</font></i></td><td><b><font color="">79</font></b></td><td><b><font color="">65</font></b></td><td><b><font color="">74</font></b></td><td><b><font color="">65</font></b></td><td><b><font color="">78</font></b></td><td><b><font color="">77</font></b></td><td><b><font color="">69</font></b></td><td><b><font color="">72</font></b></td></tr><tr><td><b><font size="4" color="BLUE"><a href="https://twiki.polycom.com/twiki//bin/view/Main/SmoketesterteststepsFreemem">Free Memory KBytes </a></font></b></td><td><i><font size="2" color="BLACK">Compare free memory bytes after phone in idle state for 5 minutes. It will fail when free memory lose more than 10K</font></i></td><td><b><font color="">See below</font></b></td><td><b><font color="">See below</font></b></td><td><b><font color="">See below</font></b></td><td><b><font color="">See below</font></b></td><td><b><font color="">See below</font></b></td><td><b><font color="">See below</font></b></td><td><b><font color="">See below</font></b></td><td><b><font color="">See below</font></b></td></tr></table><p><font size="2" color="GRAY"> <u>Failed Test Cases:<br><br><br></u><br><br>  <span class="foswikiNewLink">SmokeTest<a href="/twiki/bin/edit/SIP/SmokeTest?topicparent=Main.BuildUCS5dot4dot0RTS44" rel="nofollow" title="Create this topic">?</a></span>.LYNCCall.VVX101                 : NOT APPLICABLE<br>    Ber doesn't support Lync.<br><br>  <span class="foswikiNewLink">SmokeTest<a href="/twiki/bin/edit/SIP/SmokeTest?topicparent=Main.BuildUCS5dot4dot0RTS44" rel="nofollow" title="Create this topic">?</a></span>.LYNCCall.VVX1500                : NOT APPLICABLE<br>    Lync support was not there for Condor from Congo release.<br><br>  <span class="foswikiNewLink">SoundStructureVoIPInterface<a href="/twiki/bin/edit/SIP.SmokeTest.LyncConferenceCall/SoundStructureVoIPInterface?topicparent=Main.BuildUCS5dot4dot0RTS44" rel="nofollow" title="Create this topic">?</a></span>: NOT APPLICABLE<br>    Lync centralized conference call was not supported on Tinman from Congo release.<br><br>  <span class="foswikiNewLink">LyncConferenceCall<a href="/twiki/bin/edit/SIP.SmokeTest/LyncConferenceCall?topicparent=Main.BuildUCS5dot4dot0RTS44" rel="nofollow" title="Create this topic">?</a></span>.VVX101       : NOT APPLICABLE<br>    Ber doesn't support Lync.<br><br>  <span class="foswikiNewLink">LyncConferenceCall<a href="/twiki/bin/edit/SIP.SmokeTest/LyncConferenceCall?topicparent=Main.BuildUCS5dot4dot0RTS44" rel="nofollow" title="Create this topic">?</a></span>.VVX1500      : NOT APPLICABLE<br>    Lync support was not there for Condor from Congo release.<br><br>  <span class="foswikiNewLink">LyncblindTransferCallOrig<a href="/twiki/bin/edit/SIP.SmokeTest/LyncblindTransferCallOrig?topicparent=Main.BuildUCS5dot4dot0RTS44" rel="nofollow" title="Create this topic">?</a></span>.VVX101: NOT APPLICABLE<br>    Ber doesn't support Lync.<br><br>  <span class="foswikiNewLink">LyncblindTransferCallOrig<a href="/twiki/bin/edit/SIP.SmokeTest/LyncblindTransferCallOrig?topicparent=Main.BuildUCS5dot4dot0RTS44" rel="nofollow" title="Create this topic">?</a></span>.VVX1500: NOT APPLICABLE<br>    Lync support was not there for Condor from Congo release.<br><br>  <span class="foswikiNewLink">LyncconsultativeTransferCallOrig<a href="/twiki/bin/edit/SIP.SmokeTest/LyncconsultativeTransferCallOrig?topicparent=Main.BuildUCS5dot4dot0RTS44" rel="nofollow" title="Create this topic">?</a></span>.VVX101: NOT APPLICABLE<br>    Ber doesn't support Lync.<br><br>  <span class="foswikiNewLink">LyncconsultativeTransferCallOrig<a href="/twiki/bin/edit/SIP.SmokeTest/LyncconsultativeTransferCallOrig?topicparent=Main.BuildUCS5dot4dot0RTS44" rel="nofollow" title="Create this topic">?</a></span>.VVX1500: NOT APPLICABLE<br>    Lync support was not there for Condor from Congo release.<br><br>  </font></p><p><font size="2" color="GRAY"> <u>Free Memory Status:</u><br><i>VVX201 compared with 5.4.0.5006;5.6.0.7212 : gain 552 K 95776.0K vs. 95224.0K <br>VVX310 compared with 5.4.0.5006;5.6.0.7212 : gain 736 K 74268.0K vs. 73532.0K <br>VVX101 compared with 5.4.0.5006;5.6.0.7212 : gain 460 K 32652.0K vs. 32192.0K <br>VVX410 compared with 5.4.0.5006;5.6.0.7212 : gain 96 K 202984.0K vs. 202888.0K <br>VVX500 compared with 5.4.0.5006;5.6.0.7212 : lose 2112 K 168580.0K vs. 170692.0K <br>SOUNDSTRUCTUREVOIPINTERFACE compared with 5.4.0.5006;5.6.0.7212 : gain 388 K 178728.0K vs. 178340.0K <br>VVX1500 compared with 5.4.0.5006;5.6.0.7212 : gain 448 K 163632.0K vs. 163184.0K <br>VVX600 compared with 5.4.0.5006;5.6.0.7212 : gain 284 K 167844.0K vs. 167560.0K <br></i></font></p>	<p><font size="2" color="BLUE"> Notes:	<br>1.See <a href="http://chase.polycom.com/freememory/memory-chart.html"> Free Memory History Charts </a>	<br>2.See <a href="http://chase.polycom.com/cpu/cpu-chart.html"> SRTP Call CPU Charts </a>	<br>3.See <a href="http://chase.polycom.com/FastBootTime/FastBootTime-chart.html">Reboot time Charts </a>	<br>4.See <a href="http://chase.polycom.com/tip/tip-builds-history.html"> Tip Build Test Result </a>	<br>5.See <a href="http://chase.polycom.com/usage%20report.html"> Smoke Tester Usage </a>	<br>6.See <a href="http://twiki.polycom.com/twiki/bin/view/Main/SmokeTester"> Smoke Tester Q/A </a> <br></font></p></p></body></html><br><br> </div>
+<div class="foswikiContentFooter"></div><div class="foswikiFormSteps"><a name="topic-actions"></a><div class="patternTopicActions foswikiFormStep"><span class="patternActionButtons"><span class="foswikiRequiresChangePermission"><a href='https://twiki.polycom.com/twiki/bin/edit/Main/BuildUCS5dot4dot0RTS44?t=1435131869' rel='nofollow' title='Edit this topic text' accesskey='e'><span class='foswikiAccessKey'>E</span>dit</a></span><span class='foswikiSeparator'>&nbsp;|&nbsp;</span><span class="foswikiRequiresChangePermission"><a href='/twiki/bin/attach/Main/BuildUCS5dot4dot0RTS44' rel='nofollow' title='Attach an image or document to this topic' accesskey='a'><span class='foswikiAccessKey'>A</span>ttach</a></span><span class='foswikiSeparator'>&nbsp;|&nbsp;</span><span><a href='/twiki/bin/view/Main/BuildUCS5dot4dot0RTS44?cover=print' rel='nofollow' title='Printable version of this topic' accesskey='p'><span class='foswikiAccessKey'>P</span>rint version</a></span><span class='foswikiSeparator'>&nbsp;|&nbsp;</span><span><span class="foswikiRequiresChangePermission"><a href='/twiki/bin/oops/Main/BuildUCS5dot4dot0RTS44?template=oopshistory' rel='nofollow' title='View total topic history' accesskey='h'><span class='foswikiAccessKey'>H</span>istory</a></span>: r3&nbsp;<a rel="nofollow" href="/twiki/bin/compare/Main/BuildUCS5dot4dot0RTS44?rev1=2;rev2=3">&lt;</a>&nbsp;<a rel="nofollow" href="/twiki/bin/view/Main/BuildUCS5dot4dot0RTS44?rev=2">r2</a>&nbsp;<a rel="nofollow" href="/twiki/bin/compare/Main/BuildUCS5dot4dot0RTS44?rev1=1;rev2=2">&lt;</a>&nbsp;<a rel="nofollow" href="/twiki/bin/view/Main/BuildUCS5dot4dot0RTS44?rev=1">r1</a></span><span class='foswikiSeparator'>&nbsp;|&nbsp;</span><span><a href='/twiki/bin/view/Main/BuildUCS5dot4dot0RTS44?template=backlinksweb' rel='nofollow' title='Search the Main Web for topics that link to here' accesskey='b'><span class='foswikiAccessKey'>B</span>acklinks</a></span><span class='foswikiSeparator'>&nbsp;|&nbsp;</span><span><a href='/twiki/bin/view/Main/BuildUCS5dot4dot0RTS44?raw=on' rel='nofollow' title='View without formatting' accesskey='v'><span class='foswikiAccessKey'>V</span>iew wiki text</a></span><span class='foswikiSeparator'>&nbsp;|&nbsp;</span><span class="foswikiRequiresChangePermission"><a href='https://twiki.polycom.com/twiki/bin/edit/Main/BuildUCS5dot4dot0RTS44?t=1435131869;nowysiwyg=1' rel='nofollow' title='Edit Wiki text' accesskey='w'>Edit <span class='foswikiAccessKey'>w</span>iki text</a></span><span class='foswikiSeparator'>&nbsp;|&nbsp;</span><span><a href='/twiki/bin/view/Main/BuildUCS5dot4dot0RTS44?template=more&amp;maxrev=3&amp;currrev=3' rel='nofollow' title='Delete or rename this topic; set parent topic; view and compare revisions' accesskey='m'><span class='foswikiAccessKey'>M</span>ore topic actions</a></span></span></div></div></div><div class="patternInfo"><div class="patternRevInfo">Topic revision: r3 - 24 Jun 2015 - 05:09:01 - unknown</div></div>
+</div>
+</div><div id="patternSideBar"><div id="patternClearHeaderLeft"></div>
+<div id="patternSideBarContents"><div class="patternWebIndicator" style="border-color:#FFEFA6">
+<a href='https://twiki.polycom.com/twiki/bin/view/Main/WebHome'>Main</a>
+</div>
+<div class="patternLeftBarPersonal">
+<ul><li class="patternLogIn"><a href="/twiki/bin/logon/Main/BuildUCS5dot4dot0RTS44">Log In</a> or <a href="/twiki/bin/view/System/UserRegistration">Register</a></li></ul>
+<div class="patternLeftBarPersonalContent">
+<!--
+Customise this topic; samples and ideas available at <a class="interwikiLink" href="http://twiki.org/cgi-bin/view/TWiki.WebLeftBarCookbook" title="'TWiki.WebLeftBarCookbook' on TWiki.org">TWiki:TWiki.WebLeftBarCookbook</a>.
+--> <strong>My links:</strong> <ul>
+<li> <a href="/twiki/bin/view/Main/KenRains">My home page</a>
+</li> <li> <a href="https://twiki.polycom.com/twiki/bin/search/Main/?search=KenRains;order=modified;limit=50;reverse=on" target="_top">My Main activities</a>
+</li> <li> <a href="/twiki/bin/view/Main/ACMESBCConfiguration">https://twiki.polycom.com/twiki/bin/view/Main/ACMESBCConfiguration</a>
+</li></ul> 
+<a class="twikiSmallish" href="/twiki/bin/edit/Main/GUESTLeftBar?t=1435131869">edit</a>
+</div></div> <ul>
+<li> <strong><a href="/twiki/bin/view/Main/WebSearch"> <span class="foswikiIcon"><img src="/twiki/pub/System/DocumentGraphics/searchtopic.png" width="16" height="16" alt="searchtopic" /></span> Search tWiki</a></strong>
+</li> <li> <a href="/twiki/bin/view/Main/RssTest?rsstopic=BuildUCS5dot4dot0RTS44"> <span class="foswikiIcon"><img src="/twiki/pub/System/DocumentGraphics/rss.png" width="16" height="16" alt="rss" /></span> RSS Feed to current page</a>
+</li></ul> 
+<p></p> <ul>
+<li> <strong><a href="/twiki/bin/view/Main/SetoffAlarm"><font color="#ff0000">Oops I Set Off The Alarm in Vancouver</font></a></strong>
+</li></ul> 
+<font color="#0000ff"><strong><u> </u></strong></font>
+<p></p>
+<font color="#0000ff"><strong><u> </u></strong></font> <ul>
+<li> <strong><a href="/twiki/bin/view/Main/EngineeringMain">Engineering</a></strong>
+</li> <li> <a href="/twiki/bin/view/Main/EngineeringMain">Engineering Main Page</a>
+</li> <li> <a href="http://planetpolycom/sites/engineering/USEndpointsDevices/SitePages/Home.aspx" target="_top"> UCEndpoint Devices</a>
+</li> <li> <a href="http://planetpolycom/sites/engineering/voice1/projects/default.aspx" target="_top"> PlanetPolycom Projects</a>
+</li> <li> <a href="/twiki/bin/view/Main/ProjectCodeNames"> Codenames &amp; Codebases</a>
+</li> <li> <a href="/twiki/bin/view/Main/ChiefSystemIntegrator"> CSI &amp; Builds</a>
+</li> <li> <a href="/twiki/bin/view/Main/SoftwareDevelopment"> Software &amp; DSP/Audio</a>
+</li> <li> <a href="http://uiblog" target="_top"> UI Blog</a>
+</li> <li> <a href="/twiki/bin/view/Main/HardwareDevelopment"> Hardware &amp; Mech</a>
+</li> <li> <a href="/twiki/bin/view/Main/TestSQA"> SQA &amp; Test</a>
+</li> <li> <a href="/twiki/bin/view/Main/CodeImprovement">Improving Code</a>
+</li> <li> <a href="/twiki/bin/view/Forum/WebHome">Discussion Forums</a>
+</li> <li> <a href="/twiki/bin/view/DocLib/DocumentLibrary">Document Library</a><img src="/twiki/pub/System/DocumentGraphics/new.png" alt="NEW" title="NEW" width="30" height="16" border="0" />
+</li> <li> 
+</li> <li> <a href="http://twiki/toolkit/cgi-bin/whosgot.pl" target="_top">WindRiver Licenses CheckedOut</a>
+</li> <li> <a href="https://timeliveserver.vancouver.polycom.com/TimeLive" target="_top"><font class="WYSIWYG_COLOR" color="darkred">TimeLive</font></a>
+</li> <li> 
+</li></ul> 
+<p></p> <ul>
+<li> <strong><a href="/twiki/bin/view/Main/FAEGroup">Bugs &amp; Field Support</a></strong>
+</li> <li> <a href="/twiki/bin/view/Main/PartnerInformation"> Partner Information</a>
+</li> <li> <a href="/twiki/bin/view/Main/CustomerDocs"> Customer Docs</a>
+</li> <li> <a href="/twiki/bin/view/Main/FAEGroup"> FAE Group</a>
+</li> <li> <a href="/twiki/bin/view/Main/FieldIssues"> Field Issues</a>
+</li> <li> <a href="/twiki/bin/view/Main/JiRA"> JIRA</a>
+</li></ul> 
+<p></p> <ul>
+<li> <strong><a href="/twiki/bin/view/Main/ProductManagement">Product Management</a></strong>
+</li> <li> <a href="/twiki/bin/view/Main/UCSoftware"> UC Software</a>
+</li> <li> <strong><a href="/twiki/bin/view/Main/VTC">Other Technical</a></strong>
+</li> <li> <a href="/twiki/bin/view/Main/CTO"> Voice Technology</a>
+</li> <li> <a href="/twiki/bin/view/Main/VTC"> VTC</a>
+</li> <li> <a href="/twiki/bin/view/Main/VoiceCTOCouncil"> VOCTOC</a>
+</li> <li> <a href="/twiki/bin/view/Main/OperationsHome"> OPS</a>
+</li> <li> <a href="/twiki/bin/view/Main/ComplianceTesting"> CTC</a>
+</li> <li> <a href="/twiki/bin/view/Main/InformationTechnology"> IT</a>
+</li></ul> 
+<p></p> <ul>
+<li> <strong><a href="/twiki/bin/view/Main/LunchLearn">Lunch and Learns</a></strong>
+</li> <li> <a href="/twiki/bin/view/Main/VanCouver">Vancouver</a>
+</li> <li> <a href="/twiki/bin/view/Main/HyderaBad">Hyderabad</a>
+</li></ul> 
+<p></p> <ul>
+<li> <strong><a href="http://planetpolycom/sites/hr/Pages/default.aspx" target="_top">Administration</a></strong>
+</li> <li> <a href="/twiki/bin/view/Main/HumanResources"> Vancouver HR</a>
+</li> <li> <a href="/twiki/bin/view/Main/GreenNewsletterArchive">Van Green Newsletter Archive</a>
+</li> <li> <a href="/twiki/bin/view/Main/EventsPage">Vancouver Events</a>
+</li> <li> <a href="/twiki/bin/view/Main/VancouverPhones"> Vancouver Phone List</a>
+</li></ul> 
+<p></p> <ul>
+<li> <strong><a href="/twiki/bin/view/Main/VancouverStuff">Voice Division Locations</a></strong>
+</li> <li> <a href="http://172.22.2.9/wiki/index.php/Main_Page" target="_top"> Atlanta Wiki</a>
+</li> <li> <a href="/twiki/bin/view/Main/BostonStuff"> Boston &amp; Andover</a>
+</li> <li> <a href="/twiki/bin/view/Main/HyderabadStuff"> Hyderabad</a>
+</li> <li> <a href="/twiki/bin/view/Main/SanJoseStuff"> San Jose</a>
+</li> <li> <a href="/twiki/bin/view/Main/ThailandStuff"> Thailand</a>
+</li> <li> <a href="/twiki/bin/view/Main/VancouverStuff"> Vancouver</a>
+</li></ul> 
+<p></p> <ul>
+<li> <strong><a href="/twiki/bin/view/Main/CorporateLinks">Corporate Links</a></strong>
+</li> <li> <a href="http://www.polycom.com" target="_top">Polycom</a> (external)
+</li> <li> <a href="http://planetpolycom" target="_top">PlanetPolycom</a> (internal)
+</li> <li> <a href="http://planetpolycom/sites/policies/default.aspx" target="_top">Policies &amp; Procedures</a>
+</li> <li> <a href="http://planetpolycom/pages/organizationcharts.aspx" target="_top">Org Charts</a>
+</li></ul> 
+<p></p> <ul>
+<li> <a href="/twiki/bin/view/Main/WebLeftBar"><font color="#ff0000">Change Menu</font></a>
+</li></ul> 
+Logged in as:<br /> GUEST none"&gt; none"&gt;<a href="/twiki/bin/logon/Main/BuildUCS5dot4dot0RTS44">Log In</a> <!-- currently, the logout is not actually logging the user out, and the login is not showing anything -->
+<hr />
+<p></p>
+</div><!-- /patternSideBarContents--></div><!-- /patternSideBar-->
+</div>
+<div class="clear">&nbsp;</div>
+</div></div><!-- /patternWrapper--><div id="patternTopBar"><div id="patternTopBarContentsWrapper"><div id="patternTopBarContents"><table border="0" cellpadding="0" cellspacing="0" style="width:100%" summary="">
+<tr><td valign="middle"><span id="foswikiLogo" class="foswikiImage"><a href="https://twiki.polycom.com/twiki/bin/view/Main/WebHome"><img src="/twiki/pub/Main/WebPreferences/Polycom.gif" border="0" alt="Powered by Foswiki, The Free and Open Source Wiki" style="border:none;" /></a></span></td>
+<td align="right" valign="top" class="patternMetaMenu">
+<p></p>
+</td></tr></table></div><!--/patternTopBarContents--></div><!--/patternTopBarContentsWrapper--></div><!-- /patternTopBar--><div id="patternBottomBar"><div id="patternBottomBarContents"><div id="patternWebBottomBar"><span class="foswikiRight"> <a href="http://foswiki.org/"><img src="/twiki/pub/System/ProjectLogos/foswiki-badge.gif" alt="This site is powered by Foswiki" title="This site is powered by Foswiki" border="0" /></a></span>Copyright &amp;© by the contributing authors. All material on this collaboration platform is the property of the contributing authors. <br /> Ideas, requests, problems regarding Foswiki? <a href='mailto:gurquhart@polycom.com?subject=Foswiki%20Feedback%20on%20Main.BuildUCS5dot4dot0RTS44'>Send feedback</a></div></div></div>
+</div>
+</div>
+</div>
+</div></body></html>

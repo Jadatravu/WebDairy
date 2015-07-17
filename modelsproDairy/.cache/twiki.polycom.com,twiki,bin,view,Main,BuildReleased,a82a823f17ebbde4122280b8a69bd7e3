@@ -1,0 +1,2100 @@
+status: 200
+content-length: 156917
+content-location: https://twiki.polycom.com/twiki/bin/view/Main/BuildReleased
+x-foswikiaction: view
+x-foswikiuri: /twiki/bin/view/Main/BuildReleased
+set-cookie: FOSWIKISID=c7150fc6ed29f3b09eb9f6fd80f7a287; path=/; secure
+server: Apache/2.2.3 (CentOS)
+connection: close
+cache-control: max-age=0
+date: Wed, 24 Jun 2015 07:48:02 GMT
+content-type: text/html; charset=iso-8859-1
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en_US" lang="en_US">
+<head>
+<link rel="stylesheet" href="https://twiki.polycom.com/twiki/pub/System/HeadlinesPlugin/style.css" type="text/css" media="all" />
+<title> BuildReleased &lt; Main &lt; Foswiki</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<link rel="icon" href="/twiki/pub/System/ProjectLogos/favicon.ico" type="image/x-icon" />
+<link rel="shortcut icon" href="/twiki/pub/System/ProjectLogos/favicon.ico" type="image/x-icon" />
+<link rel="alternate" href="https://twiki.polycom.com/twiki/bin/edit/Main/BuildReleased?t=1435132083" type="application/x-wiki" title="edit BuildReleased" />
+<meta name="TEXT_NUM_TOPICS" content="Number of topics:" />
+<meta name="TEXT_MODIFY_SEARCH" content="Modify search" />
+<link rel="alternate" type="application/rss+xml" title="RSS Feed" href="/twiki/bin/view/Main/RssTest?rsstopic=BuildReleased" />
+<base href="https://twiki.polycom.com/twiki/bin/view/Main/BuildReleased" /><!--[if IE]></base><![endif]-->
+
+<style type="text/css" media="all">
+@import url('/twiki/pub/System/SkinTemplates/base.css');
+</style>
+<style type="text/css" media="all">
+@import url('/twiki/pub/System/PatternSkinTheme2009/layout.css');
+@import url('/twiki/pub/System/PatternSkinTheme2009/style.css');
+@import url('/twiki/pub/System/PatternSkinTheme2009/colors.css');
+</style>
+<style type="text/css" media="all">
+@import url('/twiki/pub/System/PatternSkinTheme2009/column_left.css');
+@import url('/twiki/pub/System/PatternSkinTheme2009/variant_foswiki_noframe.css');
+</style><style type="text/css" media="all">
+	/* Styles that are set using variables */
+	.patternBookView .foswikiTopRow,
+	.patternWebIndicator a img,
+	.patternWebIndicator a:hover img {
+		background-color:#FFEFA6;
+	}
+	#patternTopBarContents { background-image:url(/twiki/pub/System/PatternSkinTheme2009/top_bar_Polycom.png); background-repeat:repeat-x;}
+#patternTopBarContents { background-color:#ffffff;}
+.patternBookView {
+	border-color:#FFEFA6;
+}
+.patternPreviewPage #patternMain {
+	/* uncomment to set the preview image */
+	/*background-image:url("/twiki/pub/System/PreviewBackground/preview2bg.gif");*/
+}
+</style>
+<style type="text/css" media="print">
+	@import url("/twiki/pub/System/PatternSkin/print.css");
+</style>
+<!--[if IE]><style type="text/css" media="screen">
+pre {
+	height:1%;
+	overflow-x:auto;
+}
+.foswikiAttachments,
+.foswikiForm,
+.foswikiHelp,
+.foswikiPreviewArea,
+.patternPreviewPage .foswikiForm,
+.patternSigLine,
+.patternToolBar,
+.patternTop,
+.patternTopicAction,
+#patternSideBarContents .patternLeftBarPersonal,
+#patternSideBarContents h2,
+#patternSideBarContents li,
+#patternTopBarButtons ul {
+	height:1%;
+}
+#patternSideBarContents .patternLeftBarPersonal {
+	width:100%;
+}
+.foswikiFormStep {
+	height:100%;
+}
+#foswikiLogin,
+.patternShadow {
+	border:10px solid #fff;
+	margin-top:10px;
+	margin-bottom:10px;
+	border:2px solid #ccc;
+}
+</style><![endif]-->
+<!--[if gt IE 8 ]><style type="text/css" media="screen">
+#foswikiLogin,
+.patternShadow {
+	border:10px solid #fff;
+	margin-top:10px;
+	margin-bottom:10px;
+	box-shadow: 0 0 10px #ccc;
+}
+</style><![endif]-->
+<meta name="foswiki.TWISTYANIMATIONSPEED" content="fast" /><!--TWISTYPLUGIN::META-->
+<style type="text/css" media="all">
+.foswikiTable {border-width:1px}
+.foswikiTable .tableSortIcon img {padding-left:.3em; vertical-align:text-bottom}
+.foswikiTable td {border-style:solid none; vertical-align:top}
+.foswikiTable th {border-style:none solid; vertical-align:top; background-color:#d6d3cf; color:#000000}
+.foswikiTable th a:link {color:#000000}
+.foswikiTable th a:visited {color:#000000}
+.foswikiTable th a:hover {color:#000000; background-color:#d6d3cf}
+.foswikiTable th.foswikiSortedCol {background-color:#c4c1ba}
+.foswikiTable tr.foswikiTableRowdataBg0 td {background-color:#ffffff}
+.foswikiTable tr.foswikiTableRowdataBg0 td.foswikiSortedCol {background-color:#f7f7f6}
+.foswikiTable tr.foswikiTableRowdataBg1 td {background-color:#f7f7f6}
+.foswikiTable tr.foswikiTableRowdataBg1 td.foswikiSortedCol {background-color:#f0f0ee}
+</style><!--TABLEPLUGIN_default-->
+<style type="text/css" media="all">
+.foswikiTable#tableBuildReleased1 {border-style:solid none solid none; border-width:0px; width:80%}
+.foswikiTable#tableBuildReleased1 td {border-style:solid; text-align:left}
+.foswikiTable#tableBuildReleased1 td.foswikiTableCol0 {width:20%}
+.foswikiTable#tableBuildReleased1 td.foswikiTableCol1 {width:12%}
+.foswikiTable#tableBuildReleased1 td.foswikiTableCol2 {width:12%}
+.foswikiTable#tableBuildReleased1 td.foswikiTableCol3 {width:12%}
+.foswikiTable#tableBuildReleased1 td.foswikiTableCol4 {width:44%}
+.foswikiTable#tableBuildReleased1 th {border-style:solid; background-color:#003366; color:#FFFFFF}
+.foswikiTable#tableBuildReleased1 th a:link {color:#FFFFFF}
+.foswikiTable#tableBuildReleased1 th a:visited {color:#FFFFFF}
+.foswikiTable#tableBuildReleased1 th a:hover {color:#FFFFFF; background-color:#003366}
+.foswikiTable#tableBuildReleased1 th.foswikiSortedCol {background-color:#003366}
+.foswikiTable#tableBuildReleased1 th.foswikiTableCol0 {width:20%}
+.foswikiTable#tableBuildReleased1 th.foswikiTableCol1 {width:12%}
+.foswikiTable#tableBuildReleased1 th.foswikiTableCol2 {width:12%}
+.foswikiTable#tableBuildReleased1 th.foswikiTableCol3 {width:12%}
+.foswikiTable#tableBuildReleased1 th.foswikiTableCol4 {width:44%}
+.foswikiTable#tableBuildReleased1 tr.foswikiTableRowdataBg0 td {background-color:#FFFFCC}
+.foswikiTable#tableBuildReleased1 tr.foswikiTableRowdataBg0 td.foswikiSortedCol {background-color:#FFFFCC}
+.foswikiTable#tableBuildReleased1 tr.foswikiTableRowdataBg1 td {background-color:#FFCC66}
+.foswikiTable#tableBuildReleased1 tr.foswikiTableRowdataBg1 td.foswikiSortedCol {background-color:#FFCC66}
+</style><!--TABLEPLUGIN_specific-->
+<meta name="foswiki.PUBURL" content="https://twiki.polycom.com/twiki/pub" /> <!-- PUBURL -->
+<meta name="foswiki.PUBURLPATH" content="/twiki/pub" /> <!-- PUBURLPATH -->
+<meta name="foswiki.SCRIPTSUFFIX" content="" /> <!-- SCRIPTSUFFIX -->
+<meta name="foswiki.SCRIPTURL" content="https://twiki.polycom.com/twiki/bin" /> <!-- SCRIPTURL -->
+<meta name="foswiki.SCRIPTURLPATH" content="/twiki/bin" /> <!-- SCRIPTURLPATH -->
+<meta name="foswiki.SERVERTIME" content="24%20Jun%202015%20-%2002:48" /> <!-- SERVERTIME -->
+<meta name="foswiki.SKIN" content="pattern" /> <!-- SKIN -->
+<meta name="foswiki.SYSTEMWEB" content="System" /> <!-- SYSTEMWEB -->
+<meta name="foswiki.TOPIC" content="BuildReleased" /> <!-- TOPIC -->
+<meta name="foswiki.USERNAME" content="GUEST" /> <!-- USERNAME -->
+<meta name="foswiki.USERSWEB" content="Main" /> <!-- USERSWEB -->
+<meta name="foswiki.WEB" content="Main" /> <!-- WEB -->
+<meta name="foswiki.WIKINAME" content="GUEST" /> <!-- WIKINAME -->
+<meta name="foswiki.WIKIUSERNAME" content="Main.GUEST" /> <!-- WIKIUSERNAME -->
+<meta name="foswiki.NAMEFILTER" content="%5b%5cs%5c*%3f~%5e%5c%24%40%25%60%22'%26%3b%7c%3c%3e%5c%5b%5c%5d%23%5cx00-%5cx1f%5d" /> <!-- NAMEFILTER --><!--JQUERYPLUGIN::FOSWIKI::META-->
+<script type='text/javascript' src='/twiki/pub/System/JQueryPlugin/jquery-1.4.3.js'></script><!--JQUERYPLUGIN-->
+<script type='text/javascript' src='/twiki/pub/System/JQueryPlugin/plugins/livequery/jquery.livequery.js?version=1.1.1'></script><!--JQUERYPLUGIN::LIVEQUERY-->
+<script type='text/javascript' src='/twiki/pub/System/JQueryPlugin/plugins/foswiki/jquery.foswiki.js?version=2.01'></script><!--JQUERYPLUGIN::FOSWIKI-->
+<script type="text/javascript" src="/twiki/pub/System/JavascriptFiles/foswikiPref.js"></script><!--JavascriptFiles/foswikiPref-->
+<script type="text/javascript" src="/twiki/pub/System/JavascriptFiles/foswikiString.js"></script><!--JavascriptFiles/foswikiString-->
+<script type="text/javascript" src="/twiki/pub/System/JavascriptFiles/foswikiForm.js"></script><!--JavascriptFiles/foswikiForm-->
+<script type="text/javascript" src="/twiki/pub/System/PatternSkin/pattern.js"></script><!--PatternSkin/pattern-->
+</head>
+<body class="patternViewPage">
+<a name="PageTop"></a><div class="foswikiPage"><div id="patternScreen">
+<div id="patternPageShadow">
+<div id="patternPage">
+<div id="patternWrapper"><div id="patternOuter">
+<div id="patternFloatWrap">
+<div id="patternMain"><div id="patternClearHeaderCenter"></div>
+<div id="patternMainContents"><div class="patternTop"><span class="patternHomePath foswikiLeft"><span class="patternHomePathTitle">You are here: </span><a href="/twiki/bin/view/Main/WebHome" class="foswikiCurrentWebHomeLink">Foswiki</a><span class='foswikiSeparator'>&gt;</span><a href="/twiki/bin/view/Main/WebHome">Main Web</a><span class='foswikiSeparator'>&gt;</span><a href="/twiki/bin/view/Main/ChiefSystemIntegrator">ChiefSystemIntegrator</a><span class='foswikiSeparator'>&gt;</span><a href="/twiki/bin/view/Main/ReleasePackages">ReleasePackages</a><span class='foswikiSeparator'>&gt;</span><a href="https://twiki.polycom.com/twiki/bin/view/Main/BuildReleased" title='Topic revision: 3927 (24 Jun 2015 - 05:26:28)'>BuildReleased</a> <span class='patternRevInfo'>(24 Jun 2015, unknown)</span></span><span class="patternToolBar foswikiRight"><span class="foswikiRequiresChangePermission"><a href='https://twiki.polycom.com/twiki/bin/edit/Main/BuildReleased?t=1435132083' rel='nofollow' title='Edit this topic text' accesskey='e'><span class='foswikiAccessKey'>E</span>dit</a></span><span class="foswikiRequiresChangePermission"><a href='/twiki/bin/attach/Main/BuildReleased' rel='nofollow' title='Attach an image or document to this topic' accesskey='a'><span class='foswikiAccessKey'>A</span>ttach</a></span></span><div class="patternTop" ><span class="patterToolBar foswikiLeft" id="fooG"><input type='button' class='foswikiButtonDisabled' title='Turn on immediate email notifications for changes to this topic. You must be logged in for this button to be enabled' value='TIN ?' onClick=''><input type='button' class='foswikiButtonDisabled' title='Turn on daily email notifications for changes to this topic. You must be logged in for this button to be enabled' value='TN ?' onClick=''><label for="fooG">Email notification for changes to <a href="/twiki/bin/view/Main/BuildReleased" class="foswikiCurrentTopicLink">BuildReleased</a>:</label></div></span><div class="foswikiClear"></div></div><div class="foswikiContentHeader"></div><div class="patternContent"><div class="foswikiTopic"><h1><a name="Released_Builds"></a>  Released Builds </h1>
+<h2><a name="List_of_ALL_GA_SIP_Builds_released_to_the_public"></a>  List of ALL GA SIP Builds released to the public </h2>
+<p></p>
+Click <a href="http://downloads.polycom.com/voice/voip/sip_sw_releases_matrix.html" target="_top">here</a> for the official list of GA releases.
+<p></p>
+<h2><a name="List_of_ALL_Externally_released_builds"></a>  List of ALL Externally released builds </h2>
+<p></p>
+Click <a href="/twiki/bin/view/Main/HotPatchList">HotPatchList</a> for the list.1089
+<p></p>
+<h2><a name="List_of_ALL_SIP_Builds_and_Releases"></a>  List of ALL SIP Builds and Releases </h2>
+<p></p>
+<strong><br /></strong>
+<p></p>
+Archive is located here for all builds: <a href="file:///\\vannetapp\SoftwareDevel\Engineering\Projects\IPPhone\Software\Archive" target="_top">\\vannetapp\SoftwareDevel\Engineering\Projects\IPPhone\Software\Archive</a>.
+<p></p>
+IIC Server: <a href="file:///\\iic-netapp1\Software\Archive" target="_top">\\iic-netapp1\Software\Archive</a>. Note:- This server is in sync from 11/06/2013 till date
+<p></p>
+ 
+<table width="80%" frame="hsides" id="tableBuildReleased1" class="foswikiTable" rules="all" border="0">
+	<thead>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<th class="foswikiTableCol0 foswikiFirstCol"> Build Identifier </th>
+			<th class="foswikiTableCol1"> Build Date </th>
+			<th class="foswikiTableCol2 foswikiLastCol"> Notes </th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildUCS5dot4dot0RTS44"> UCS 5.4.0.5094 rts44</a> </td>
+			<td class="foswikiTableCol1"> 24Jun2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Done </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted1 foswikiTableRowdataBg1">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildDANUBEO365ITS12"> DANUBE.0373 O365 its12</a> </td>
+			<td class="foswikiTableCol1"> 24Jun2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Done </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildVVXREFRESHVINOITS2"> VVXREFRESHVINO.0149 its2</a> </td>
+			<td class="foswikiTableCol1"> 23Jun2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Done </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted1 foswikiTableRowdataBg1">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildUCS5dot2dot2RTS27L"> UCS 5.2.2.0975 rts27 L</a> </td>
+			<td class="foswikiTableCol1"> 23Jun2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Pending ... </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildUCS5dot4dot0RTS43"> UCS 5.4.0.5050 rts43</a> </td>
+			<td class="foswikiTableCol1"> 23Jun2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Pending ... </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted1 foswikiTableRowdataBg1">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildDANUBEO365ITS11"> DANUBE.0325 O365 its11</a> </td>
+			<td class="foswikiTableCol1"> 23Jun2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Done </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildUCS5dot4dot1ITS1"> UCS 5.4.1.0131 its1</a> </td>
+			<td class="foswikiTableCol1"> 22Jun2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Pending ... </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted1 foswikiTableRowdataBg1">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildUCSMKIBETAITS3"> UCS MKI.0203 BETA its3</a> </td>
+			<td class="foswikiTableCol1"> 22Jun2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Pending ... </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildMKIITS3"> MKI.0159 its3</a> </td>
+			<td class="foswikiTableCol1"> 22Jun2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Pending ... </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted1 foswikiTableRowdataBg1">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildVVXREFRESHSUBVINOITS21"> VVXREFRESHSUBVINO.2668 its21</a> </td>
+			<td class="foswikiTableCol1"> 22Jun2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Pending ... </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildUCS5dot4dot0RTS42"> UCS 5.4.0.5006 rts42</a> </td>
+			<td class="foswikiTableCol1"> 22Jun2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Pending ... </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted1 foswikiTableRowdataBg1">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildUCS5dot3dot1RTS9"> UCS 5.3.1.0350 rts9</a> </td>
+			<td class="foswikiTableCol1"> 19Jun2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Done </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildUCS5dot3dot0RTS44H"> UCS 5.3.0.13157 rts44 H</a> </td>
+			<td class="foswikiTableCol1"> 19Jun2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Pending ... </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted1 foswikiTableRowdataBg1">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildMKIITS2"> MKI.0116 its2</a> </td>
+			<td class="foswikiTableCol1"> 19Jun2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Done </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildDECTITS6"> DECT.0360 its6</a> </td>
+			<td class="foswikiTableCol1"> 19Jun2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Done </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted1 foswikiTableRowdataBg1">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildUCS5dot4dot0RTS41"> UCS 5.4.0.4960 rts41</a> </td>
+			<td class="foswikiTableCol1"> 19Jun2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Done </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildUCS5dot2dot2RTS26K"> UCS 5.2.2.0938 rts26 K</a> </td>
+			<td class="foswikiTableCol1"> 18Jun2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Done </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted1 foswikiTableRowdataBg1">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildUCS5dot3dot1RTS8"> UCS 5.3.1.0314 rts8</a> </td>
+			<td class="foswikiTableCol1"> 18Jun2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Done </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildDANUBEO365BETAITS9"> DANUBE.0154 O365 BETA ITS9</a> </td>
+			<td class="foswikiTableCol1"> 18Jun2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Done </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted1 foswikiTableRowdataBg1">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildUCS5dot4dot0RTS40"> UCS 5.4.0.4911 rts40</a> </td>
+			<td class="foswikiTableCol1"> 18Jun2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Done </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildVVXREFRESHSUBVINOITS20"> VVXREFRESHSUBVINO.2520 its20</a> </td>
+			<td class="foswikiTableCol1"> 18Jun2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Done(<a href="https://jira.polycom.com:8443/browse/VOIP-102151" target="_parent">VOIP-102151</a>) </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted1 foswikiTableRowdataBg1">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildDANUBEO365ITS10"> DANUBE.0196 O365 its10</a> </td>
+			<td class="foswikiTableCol1"> 18Jun2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Done </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildUCS5dot4dot0BETARTS38"> UCS 5.4.0.4866 BETA rts38</a> </td>
+			<td class="foswikiTableCol1"> 17Jun2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Done( <a href="https://jira.polycom.com:8443/browse/VOIP-102451" target="_top">VOIP-102451</a>) </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted1 foswikiTableRowdataBg1">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildMKIITS1"> MKI.0034 its1</a> </td>
+			<td class="foswikiTableCol1"> 17Jun2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Done( <a href="https://jira.polycom.com:8443/browse/VOIP-102510" target="_top">VOIP-102510</a>) </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildUCS5dot3dot1RTS7"> UCS 5.3.1.0264 rts7</a> </td>
+			<td class="foswikiTableCol1"> 17Jun2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Done </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted1 foswikiTableRowdataBg1">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildDANUBEO365ITS9"> DANUBE.0066 O365 its9</a> </td>
+			<td class="foswikiTableCol1"> 17Jun2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Done </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildDECTITS5"> DECT.0338 its5</a> </td>
+			<td class="foswikiTableCol1"> 17Jun2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Done </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted1 foswikiTableRowdataBg1">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildUCS5dot4dot0RTS39"> UCS 5.4.0.4822 rts39</a> </td>
+			<td class="foswikiTableCol1"> 17Jun2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Done </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildUCS5dot4dot0RTS38"> UCS 5.4.0.4730 rts38</a> </td>
+			<td class="foswikiTableCol1"> 16Jun2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Done( <a href="https://jira.polycom.com:8443/browse/VOIP-102451" target="_top">VOIP-102451</a>) </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted1 foswikiTableRowdataBg1">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildUCS5dot3dot0RTS43BETAG"> UCS 5.3.0.13118 rts43 BETA G</a> </td>
+			<td class="foswikiTableCol1"> 16Jun2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Done </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildUCS5dot4dot0RTS37"> UCS 5.4.0.4688 rts37</a> </td>
+			<td class="foswikiTableCol1"> 16Jun2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Done( <a href="https://jira.polycom.com:8443/browse/VOIP-102451" target="_top">VOIP-102451</a>) </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted1 foswikiTableRowdataBg1">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildVVXREFRESHSUBVINOITS19"> VVXREFRESHSUBVINO.2420 its19</a> </td>
+			<td class="foswikiTableCol1"> 15Jun2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Pending ... </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildUCS5dot4dot0RTS36"> UCS 5.4.0.4637 rts36</a> </td>
+			<td class="foswikiTableCol1"> 15Jun2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Pending ... </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted1 foswikiTableRowdataBg1">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildUCS5dot3dot1RTS6"> UCS 5.3.1.0205 rts6</a> </td>
+			<td class="foswikiTableCol1"> 15Jun2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Pending ... </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildUCS4dot1dot8RTS8E"> UCS 4.1.8.0889 rts8 E</a> </td>
+			<td class="foswikiTableCol1"> 12Jun2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Pending ... </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted1 foswikiTableRowdataBg1">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildVVXREFRESHSUBVINOITS18"> VVXREFRESHSUBVINO.2328 its18</a> </td>
+			<td class="foswikiTableCol1"> 12Jun2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Pending ... </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildUCS5dot4dot0RTS35"> UCS 5.4.0.4591 rts35</a> </td>
+			<td class="foswikiTableCol1"> 12Jun2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Pending ... </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted1 foswikiTableRowdataBg1">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildUCSDECTITS4"> UCS DECT.0318 its4</a> </td>
+			<td class="foswikiTableCol1"> 11Jun2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Pending ... </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildUCS5dot4dot0RTS34"> UCS 5.4.0.4545 rts34</a> </td>
+			<td class="foswikiTableCol1"> 11Jun2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Pending ... </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted1 foswikiTableRowdataBg1">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildUCS5dot3dot1RTS5"> UCS 5.3.1.0176 rts5</a> </td>
+			<td class="foswikiTableCol1"> 11Jun2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Pending ... </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildUCS5dot4dot0RTS33"> UCS 5.4.0.4444 rts33</a> </td>
+			<td class="foswikiTableCol1"> 10Jun2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Done </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted1 foswikiTableRowdataBg1">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildUCS5dot4dot0RTS32"> UCS 5.4.0.4396 rts32</a> </td>
+			<td class="foswikiTableCol1"> 9Jun2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Done </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildVVXREFRESHSUBVINOITS17"> VVXREFRESHSUBVINO.2149 its17</a> </td>
+			<td class="foswikiTableCol1"> 8Jun2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Pending ... </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted1 foswikiTableRowdataBg1">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildVVXREFRESHSUBVINOITS16"> VVXREFRESHSUBVINO.2100 its16</a> </td>
+			<td class="foswikiTableCol1"> 8Jun2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Pending ... </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildUCS5dot4dot0RTS31"> UCS 5.4.0.4292 rts31</a> </td>
+			<td class="foswikiTableCol1"> 8Jun2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Done </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted1 foswikiTableRowdataBg1">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildUCS5dot3dot1RTS4"> UCS 5.3.1.0129 rts4</a> </td>
+			<td class="foswikiTableCol1"> 7Jun2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Done </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildUCS5dot4dot0RTS30"> UCS 5.4.0.4246 rts30</a> </td>
+			<td class="foswikiTableCol1"> 6Jun2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Done </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted1 foswikiTableRowdataBg1">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildUCSDECTITS3"> UCS DECT.0171 its3</a> </td>
+			<td class="foswikiTableCol1"> 5Jun2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Pending ... </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildUCSDECTITS2"> UCS DECT.0157 its2</a> </td>
+			<td class="foswikiTableCol1"> 5Jun2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Pending ... </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted1 foswikiTableRowdataBg1">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildUCS5dot4dot0RTS29"> UCS 5.4.0.4204 rts29</a> </td>
+			<td class="foswikiTableCol1"> 5Jun2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Done </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildUCS5dot3dot1RTS3"> UCS 5.3.1.0099 rts3</a> </td>
+			<td class="foswikiTableCol1"> 4Jun2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Done </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted1 foswikiTableRowdataBg1">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildVVXREFRESHSUBVINOITS15"> VVXREFRESHSUBVINO.1968 its15</a> </td>
+			<td class="foswikiTableCol1"> 4Jun2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Pending ... </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildUCS5dot4dot0RTS28"> UCS 5.4.0.4153/4152 rts28</a> </td>
+			<td class="foswikiTableCol1"> 4Jun2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Done </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted1 foswikiTableRowdataBg1">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildUCS5dot2dot2RTS25J"> UCS 5.2.2.0902 rts25 J</a> </td>
+			<td class="foswikiTableCol1"> 3Jun2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Pending ... </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildUCSDANUBEO365ITS8"> UCS DANUBE.4106 O365 its8</a> </td>
+			<td class="foswikiTableCol1"> 3Jun2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Pending ... </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted1 foswikiTableRowdataBg1">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildUCS5dot4dot0RTS27"> UCS 5.4.0.4046 rts27</a> </td>
+			<td class="foswikiTableCol1"> 3Jun2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Pending ... </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildUCS5dot2dot2RTS24J"> UCS 5.2.2.0873 rts24 J</a> </td>
+			<td class="foswikiTableCol1"> 1Jun2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Pending ... </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted1 foswikiTableRowdataBg1">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildVVXREFRESHSUBVINOITS14"> VVXREFRESHSUBVINO.1772 its14</a> </td>
+			<td class="foswikiTableCol1"> 1Jun2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Pending ... </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildUCS5dot4dot0RTS26"> UCS 5.4.0.4002 rts26</a> </td>
+			<td class="foswikiTableCol1"> 1Jun2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Pending ... </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted1 foswikiTableRowdataBg1">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildUCS4dot0dot5RTS30H"> UCS 4.0.5.5202 rts30 H</a> </td>
+			<td class="foswikiTableCol1"> 1Jun2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Pending ... </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildUCS5dot3dot1RTS2"> UCS 5.3.1.0050 rts2</a> </td>
+			<td class="foswikiTableCol1"> 1Jun2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Pending ... </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted1 foswikiTableRowdataBg1">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildUCSDECTITS1"> UCS DECT.0141 its1</a> </td>
+			<td class="foswikiTableCol1"> 1Jun2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Pending ... </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildVVXREFRESHSUBVINOITS13"> VVXREFRESHSUBVINO.1723 its13</a> </td>
+			<td class="foswikiTableCol1"> 1Jun2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Done( <a href="https://jira.polycom.com:8443/browse/VOIP-101869" target="_top">VOIP-101869</a>) </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted1 foswikiTableRowdataBg1">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildUCS5dot4dot0RTS25"> UCS 5.4.0.3954 rts25</a> </td>
+			<td class="foswikiTableCol1"> 1Jun2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Done( <a href="https://jira.polycom.com:8443/browse/VOIP-101869" target="_top">VOIP-101869</a>) </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildUCS4dot0dot9RTS8"> UCS 4.0.9.0509 rts8</a> </td>
+			<td class="foswikiTableCol1"> 28May2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Done </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted1 foswikiTableRowdataBg1">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildVVXREFRESHSUBVINOITS12"> VVXREFRESHSUBVINO.1625 its12</a> </td>
+			<td class="foswikiTableCol1"> 28May2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Done(<a href="https://jira.polycom.com:8443/browse/VOIP-102151" target="_parent">VOIP-102151</a>) </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildUCS5dot4dot0RTS24"> UCS 5.4.0.3761 rts24</a> </td>
+			<td class="foswikiTableCol1"> 28May2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Done </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted1 foswikiTableRowdataBg1">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildUCSVVXREFRESHVINOITS1"> UCS VVXREFRESHVINO.0069 its1</a> </td>
+			<td class="foswikiTableCol1"> 27May2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Pending ... </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildUCS5dot3dot1RTS1"> UCS 5.3.1.0001 rts1</a> </td>
+			<td class="foswikiTableCol1"> 27May2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Done </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted1 foswikiTableRowdataBg1">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildUCS5dot4dot0RTS23"> UCS 5.4.0.3621 rts23</a> </td>
+			<td class="foswikiTableCol1"> 27May2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Done </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildUCS5dot4dot0RTS22"> UCS 5.4.0.3542 rts22</a> </td>
+			<td class="foswikiTableCol1"> 26May2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Done </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted1 foswikiTableRowdataBg1">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildUCSCONGORTS10CA"> UCS CONGO.13056 rts10 C A</a> </td>
+			<td class="foswikiTableCol1"> 25May2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Done </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildVVXREFRESHSUBVINOITS11"> VVXREFRESHSUBVINO.1339 its11</a> </td>
+			<td class="foswikiTableCol1"> 25May2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Done(<a href="https://jira.polycom.com:8443/browse/VOIP-102151" target="_parent">VOIP-102151</a>) </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted1 foswikiTableRowdataBg1">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildUCS4dot0dot9RTS7"> UCS 4.0.9.0415 rts7</a> </td>
+			<td class="foswikiTableCol1"> 24May2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Done </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildUCS5dot4dot0RTS21"> UCS 5.4.0.3385 rts21</a> </td>
+			<td class="foswikiTableCol1"> 22May2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Done(<a href="https://jira.polycom.com:8443/browse/TPER-13265" target="_parent">TPER-13265</a>) </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted1 foswikiTableRowdataBg1">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildUCS5dot4dot0RTS20"> UCS 5.4.0.3329 rts20</a> </td>
+			<td class="foswikiTableCol1"> 21May2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Done(<a href="https://jira.polycom.com:8443/browse/TPER-13265" target="_parent">TPER-13265</a>) </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildVVXREFRESHSUBVINOITS10"> VVXREFRESHSUBVINO.0970 its10</a> </td>
+			<td class="foswikiTableCol1"> 20May2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Done </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted1 foswikiTableRowdataBg1">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildUCS5dot4dot0RTS19"> UCS 5.4.0.3270 rts19</a> </td>
+			<td class="foswikiTableCol1"> 20May2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Done(<a href="https://jira.polycom.com:8443/browse/TPER-13265" target="_parent">TPER-13265</a>) </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildUCS5dot2dot2RTS23I"> UCS 5.2.2.0845 rts23 I</a> </td>
+			<td class="foswikiTableCol1"> 19May2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Done </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted1 foswikiTableRowdataBg1">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildVVXREFRESHSUBVINOITS9"> VVXREFRESHSUBVINO.0806 its9</a> </td>
+			<td class="foswikiTableCol1"> 19May2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Done(<a href="https://jira.polycom.com:8443/browse/TPER-13265" target="_parent">TPER-13265</a>) </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildUCS5dot4dot0RTS18"> UCS 5.4.0.3184 rts18</a> </td>
+			<td class="foswikiTableCol1"> 19May2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Done(<a href="https://jira.polycom.com:8443/browse/TPER-13265" target="_parent">TPER-13265</a>) </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted1 foswikiTableRowdataBg1">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildUCS5dot2dot2RTS22I"> UCS 5.2.2.0814 rts22 I</a> </td>
+			<td class="foswikiTableCol1"> 18May2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Done </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildUCS5dot4dot0RTS17"> UCS 5.4.0.3133 rts17</a> </td>
+			<td class="foswikiTableCol1"> 18May2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Done </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted1 foswikiTableRowdataBg1">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildUCS5dot3dot0RTS42F"> UCS 5.3.0.13016 rts42 F</a> </td>
+			<td class="foswikiTableCol1"> 18May2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Done </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildUCS5dot3dot0RTS41F"> UCS 5.3.0.12986 rts41 F</a> </td>
+			<td class="foswikiTableCol1"> 15May2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Done </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted1 foswikiTableRowdataBg1">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildUCS5dot4dot0BETARTS16"> UCS 5.4.0.3086 BETA rts16</a> </td>
+			<td class="foswikiTableCol1"> 15May2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Done </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildVVXREFRESHSUBVINOITS8"> VVXREFRESHSUBVINO.0594 its8</a> </td>
+			<td class="foswikiTableCol1"> 14May2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Done </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted1 foswikiTableRowdataBg1">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildUCS4dot0dot9RTS6"> UCS 4.0.9.0218 rts6</a> </td>
+			<td class="foswikiTableCol1"> 14May2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Done </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildVVXREFRESHSUBVINOITS7"> VVXREFRESHSUBVINO.0508 its7</a> </td>
+			<td class="foswikiTableCol1"> 14May2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Done </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted1 foswikiTableRowdataBg1">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildUCS5dot4dot0RTS15"> UCS 5.4.0.3016 rts15</a> </td>
+			<td class="foswikiTableCol1"> 14May2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Done </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildUCS4dot0dot4RTS46Y"> UCS 4.0.4.6161 rts46 Y</a> </td>
+			<td class="foswikiTableCol1"> 13May2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Done </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted1 foswikiTableRowdataBg1">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildUCS5dot4dot0BETARTS14"> UCS 5.4.0.2979 BETA rts14</a> </td>
+			<td class="foswikiTableCol1"> 13May2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Done </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildUCS5dot4dot0RTS14"> UCS 5.4.0.2917 rts14</a> </td>
+			<td class="foswikiTableCol1"> 13May2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Done </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted1 foswikiTableRowdataBg1">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildUCS5dot4dot0RTS13"> UCS 5.4.0.2828 rts13</a> </td>
+			<td class="foswikiTableCol1"> 12May2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Done </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildUCS5dot2dot2RTS21H"> UCS 5.2.2.0785 rts21 H</a> </td>
+			<td class="foswikiTableCol1"> 11May2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Done </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted1 foswikiTableRowdataBg1">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildUCS5dot3dot0RTS41BETAE"> UCS 5.3.0.12912 rts41 BETA E</a> </td>
+			<td class="foswikiTableCol1"> 11May2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Done </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildUCS5dot4dot0RTS12"> UCS 5.4.0.2722 rts12</a> </td>
+			<td class="foswikiTableCol1"> 11May2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Done </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted1 foswikiTableRowdataBg1">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildUCS5dot2dot0RTS95AE"> UCS 5.2.0.13631 rts95 AE</a> </td>
+			<td class="foswikiTableCol1"> 8May2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Done </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildUCS5dot4dot0RTS11"> UCS 5.4.0.2653 rts11</a> </td>
+			<td class="foswikiTableCol1"> 8May2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Done( <a href="https://jira.polycom.com:8443/browse/TPER-13132" target="_top">TPER-13132</a>) </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted1 foswikiTableRowdataBg1">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildVVXREFRESHSUBVINOITS6"> VVXREFRESHSUBVINO.0354 its6</a> </td>
+			<td class="foswikiTableCol1"> 7May2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Done </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildUCS4dot0dot9RTS5"> UCS 4.0.9.0149 rts5</a> </td>
+			<td class="foswikiTableCol1"> 7May2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Done </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted1 foswikiTableRowdataBg1">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildUCS5dot4dot0RTS10"> UCS 5.4.0.2595 rts10</a> </td>
+			<td class="foswikiTableCol1"> 7May2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Done( <a href="https://jira.polycom.com:8443/browse/TPER-13132" target="_top">TPER-13132</a>) </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildUCS5dot4dot0RTS9"> UCS 5.4.0.2541 rts9</a> </td>
+			<td class="foswikiTableCol1"> 6May2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Done </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted1 foswikiTableRowdataBg1">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildUCS4dot0dot9RTS4"> UCS 4.0.9.0119 rts4</a> </td>
+			<td class="foswikiTableCol1"> 6May2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Done </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildUCS4dot1dot8RTS7D"> UCS 4.1.8.0864 rts7 D</a> </td>
+			<td class="foswikiTableCol1"> 5May2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Done( <a href="https://jira.polycom.com:8443/browse/VOIP-99606" target="_top">VOIP-99606</a>) </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted1 foswikiTableRowdataBg1">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildUCS5dot4dot0RTS8"> UCS 5.4.0.2440 rts8</a> </td>
+			<td class="foswikiTableCol1"> 5May2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Done( <a href="https://jira.polycom.com:8443/browse/TPER-13132" target="_top">TPER-13132</a>) </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildUCS5dot4dot0RTS7"> UCS 5.4.0.2383 rts7</a> </td>
+			<td class="foswikiTableCol1"> 4May2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Done( <a href="https://jira.polycom.com:8443/browse/TPER-13132" target="_top">TPER-13132</a>) </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted1 foswikiTableRowdataBg1">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildUCS4dot0dot9RTS3"> UCS 4.0.9.0090 rts3</a> </td>
+			<td class="foswikiTableCol1"> 4May2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Done </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildUCS4dot0dot9RTS2"> UCS 4.0.9.0062 rts2</a> </td>
+			<td class="foswikiTableCol1"> 1May2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Done </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted1 foswikiTableRowdataBg1">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildUCS5dot4dot0RTS6"> UCS 5.4.0.2314 rts6</a> </td>
+			<td class="foswikiTableCol1"> 1May2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Done( <a href="https://jira.polycom.com:8443/browse/TPER-13132" target="_top">TPER-13132</a>) </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildUCS5dot2dot2RTS20G"> UCS 5.2.2.0752 rts20G</a> </td>
+			<td class="foswikiTableCol1"> 30Apr2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Done </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted1 foswikiTableRowdataBg1">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildUCS5dot4dot0RTS5"> UCS 5.4.0.2255 rts5</a> </td>
+			<td class="foswikiTableCol1"> 30Apr2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Done( <a href="https://jira.polycom.com:8443/browse/TPER-13132" target="_top">TPER-13132</a>) </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildUCS5dot4dot0BETARTS2"> UCS 5.4.0.2221 BETA rts2</a> </td>
+			<td class="foswikiTableCol1"> 29Apr2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Done </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted1 foswikiTableRowdataBg1">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildUCS4dot0dot9RTS1"> UCS 4.0.9.0012 rts1</a> </td>
+			<td class="foswikiTableCol1"> 29Apr2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Done </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildUCS5dot4dot0RTS4"> UCS 5.4.0.2175/2176 rts4</a> </td>
+			<td class="foswikiTableCol1"> 29Apr2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Done( <a href="https://jira.polycom.com:8443/browse/TPER-13132" target="_top">TPER-13132</a>) </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted1 foswikiTableRowdataBg1">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildUCS5dot2dot0RTS94AD"> UCS 5.2.0.13596 rts94 AD</a> </td>
+			<td class="foswikiTableCol1"> 28Apr2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Done </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildUCS5dot4dot0RTS3"> UCS 5.4.0.2108 rts3</a> </td>
+			<td class="foswikiTableCol1"> 28Apr2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Done( <a href="https://jira.polycom.com:8443/browse/TPER-13132" target="_top">TPER-13132</a>) </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted1 foswikiTableRowdataBg1">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildUCS4dot0dot5RTS29G"> UCS 4.0.5.5169 rts29 G</a> </td>
+			<td class="foswikiTableCol1"> 27Apr2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Done </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildVVXREFRESHSUBVINOITS5"> VVXREFRESHSUBVINO.0212 its5</a> </td>
+			<td class="foswikiTableCol1"> 27Apr2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Done </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted1 foswikiTableRowdataBg1">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildUCS5dot4dot0RTS2"> UCS 5.4.0.1926 rts2</a> </td>
+			<td class="foswikiTableCol1"> 27Apr2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Done( <a href="https://jira.polycom.com:8443/browse/TPER-13132" target="_top">TPER-13132</a>) </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildUCS5dot4dot0RTS1"> UCS 5.4.0.1845 rts1</a> </td>
+			<td class="foswikiTableCol1"> 24Apr2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Done( <a href="https://jira.polycom.com:8443/browse/TPER-13132" target="_top">TPER-13132</a>) </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted1 foswikiTableRowdataBg1">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildUCS5dot4dot0BETARTS1"> UCS 5.4.0.1798 BETA rts1</a> </td>
+			<td class="foswikiTableCol1"> 23Apr2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Done </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildUCS5dot3dot0RTS40E"> UCS 5.3.0.12833 rts40 E</a> </td>
+			<td class="foswikiTableCol1"> 23Apr2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Done </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted1 foswikiTableRowdataBg1">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildUCS5dot4dot0ITS25"> UCS 5.4.0.1751 its25</a> </td>
+			<td class="foswikiTableCol1"> 23Apr2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Done( <a href="https://jira.polycom.com:8443/browse/TPER-13132" target="_top">TPER-13132</a>) </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildUCS5dot2dot3RTS8"> UCS 5.2.3.0220 rts8</a> </td>
+			<td class="foswikiTableCol1"> 23Apr2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Done </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted1 foswikiTableRowdataBg1">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildUCS5dot4dot0ITS24"> UCS 5.4.0.1650 its24</a> </td>
+			<td class="foswikiTableCol1"> 22Apr2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Done(<a href="https://jira.polycom.com:8443/browse/VOIP-100462" target="_parent">VOIP-100462</a>) </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildUCS5dot3dot0RTS39D"> UCS 5.3.0.12797 rts39 D</a> </td>
+			<td class="foswikiTableCol1"> 21Apr2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Done </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted1 foswikiTableRowdataBg1">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildUCS5dot2dot2RTS19F"> UCS 5.2.2.0721 rts19F</a> </td>
+			<td class="foswikiTableCol1"> 21Apr2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Done </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildUCS5dot4dot0ITS23"> UCS 5.4.0.1601 its23</a> </td>
+			<td class="foswikiTableCol1"> 21Apr2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Done(<a href="https://jira.polycom.com:8443/browse/VOIP-100462" target="_parent">VOIP-100462</a>) </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted1 foswikiTableRowdataBg1">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildUCS5dot3dot0RTS38C"> UCS 5.3.0.12768 rts38 C</a> </td>
+			<td class="foswikiTableCol1"> 20Apr2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Done </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildUCS5dot4dot0ITS22"> UCS 5.4.0.1542 its22</a> </td>
+			<td class="foswikiTableCol1"> 20Apr2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Done( <a href="https://jira.polycom.com:8443/browse/VOIP-100462" target="_top">VOIP-100462</a>) </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted1 foswikiTableRowdataBg1">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildUCS5dot2dot3RTS7"> UCS 5.2.3.0192 rts7</a> </td>
+			<td class="foswikiTableCol1"> 17Apr2015 </td>
+			<th class="foswikiTableCol2 foswikiLastCol"> UCS 5.2.3 GA </th>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildUCS5dot2dot0RTS93AC"> UCS 5.2.0.13529 rts93 AC</a> </td>
+			<td class="foswikiTableCol1"> 17Apr2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Done </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted1 foswikiTableRowdataBg1">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildUCS5dot4dot0ITS21"> UCS 5.4.0.1471 its21</a> </td>
+			<td class="foswikiTableCol1"> 17Apr2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Done(<a href="https://jira.polycom.com:8443/browse/VOIP-100462" target="_parent">VOIP-100462</a>) </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildUCS5dot2dot0RTS92AA"> UCS 5.2.0.13499 rts92 AA</a> </td>
+			<td class="foswikiTableCol1"> 16Apr2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Done </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted1 foswikiTableRowdataBg1">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildUCS5dot4dot0ITS20"> UCS 5.4.0.1422 its20</a> </td>
+			<td class="foswikiTableCol1"> 16Apr2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Done(<a href="https://jira.polycom.com:8443/browse/VOIP-100462" target="_parent">VOIP-100462</a>) </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildUCS5dot2dot0RTS91AB"> UCS 5.2.0.13470 rts91 AB</a> </td>
+			<td class="foswikiTableCol1"> 15Apr2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Done </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted1 foswikiTableRowdataBg1">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildUCS5dot4dot0ITS19"> UCS 5.4.0.1371 its19</a> </td>
+			<td class="foswikiTableCol1"> 15Apr2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Done(<a href="https://jira.polycom.com:8443/browse/VOIP-100462" target="_parent">VOIP-100462</a>) </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildUCS5dot4dot0ITS18"> UCS 5.4.0.1323 its18</a> </td>
+			<td class="foswikiTableCol1"> 14Apr2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Done </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted1 foswikiTableRowdataBg1">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildUCSCONGORTS9A"> UCS CONGO.12734 rts9 A</a> </td>
+			<td class="foswikiTableCol1"> 13Apr2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Done </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildUCS5dot4dot0ITS17"> UCS 5.4.0.1273 its17</a> </td>
+			<td class="foswikiTableCol1"> 13Apr2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Done </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted1 foswikiTableRowdataBg1">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildUCS5dot2dot2RTS18E"> UCS 5.2.2.0692 rts18E</a> </td>
+			<td class="foswikiTableCol1"> 10Apr2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Done </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildUCS5dot2dot2RTS17E"> UCS 5.2.2.0663 rts17E</a> </td>
+			<td class="foswikiTableCol1"> 10Apr2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Done </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted1 foswikiTableRowdataBg1">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildUCS5dot4dot0ITS16"> UCS 5.4.0.1224 its16</a> </td>
+			<td class="foswikiTableCol1"> 10Apr2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Done </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildUCSCONGORTS8A"> UCS CONGO.12703 rts8 A</a> </td>
+			<td class="foswikiTableCol1"> 10Apr2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Done </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted1 foswikiTableRowdataBg1">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildUCS5dot4dot0ITS15"> UCS 5.4.0.1176 its15</a> </td>
+			<td class="foswikiTableCol1"> 9Apr2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Done </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildVVXREFRESHSUBVINOITS4"> VVXREFRESHSUBVINO.0128 its4</a> </td>
+			<td class="foswikiTableCol1"> 9Apr2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Done </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted1 foswikiTableRowdataBg1">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildUCS5dot2dot2RTS16D"> UCS 5.2.2.0598 rts16D</a> </td>
+			<td class="foswikiTableCol1"> 8Apr2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Done </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildUCS5dot2dot3RTS6"> UCS 5.2.3.0157 rts6</a> </td>
+			<td class="foswikiTableCol1"> 8Apr2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Done </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted1 foswikiTableRowdataBg1">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildUCS5dot4dot0ITS14"> UCS 5.4.0.1042 its14</a> </td>
+			<td class="foswikiTableCol1"> 8Apr2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Done </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildUCSCONGORTS7A"> UCS CONGO.12667 rts7 A</a> </td>
+			<td class="foswikiTableCol1"> 7Apr2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Done </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted1 foswikiTableRowdataBg1">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildUCSCONGORTS6A"> UCS CONGO.12636 rts6 A</a> </td>
+			<td class="foswikiTableCol1"> 7Apr2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Done </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildUCSCONGORTS5A"> UCS CONGO.12583 rts5 A</a> </td>
+			<td class="foswikiTableCol1"> 6Apr2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Done </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted1 foswikiTableRowdataBg1">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildUCS5dot2dot3RTS5"> UCS 5.2.3.0123 rts5</a> </td>
+			<td class="foswikiTableCol1"> 6Apr2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Done </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildUCSCONGOALUBETAITS18"> UCS CONGOALU.1340 BETA its18</a> </td>
+			<td class="foswikiTableCol1"> 6Apr2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Done </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted1 foswikiTableRowdataBg1">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildUCS5dot4dot0ITS13"> UCS 5.4.0.0903 its13</a> </td>
+			<td class="foswikiTableCol1"> 6Apr2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Done </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildUCS5dot2dot0RTS90Z"> UCS 5.2.0.13430 rts90 Z</a> </td>
+			<td class="foswikiTableCol1"> 3Apr2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Done </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted1 foswikiTableRowdataBg1">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildUCSCONGORTS4A"> UCS CONGO.12553 rts4 A</a> </td>
+			<td class="foswikiTableCol1"> 3Apr2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Done </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildUCS5dot2dot3RTS4"> UCS 5.2.3.0094 rts4</a> </td>
+			<td class="foswikiTableCol1"> 3Apr2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Done </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted1 foswikiTableRowdataBg1">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildUCSCONGOALUBETAITS17"> UCS CONGOALU.1311 BETA its17</a> </td>
+			<td class="foswikiTableCol1"> 3Apr2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Done </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildUCS5dot4dot0ITS12"> UCS 5.4.0.0851 its12</a> </td>
+			<td class="foswikiTableCol1"> 3Apr2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Done </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted1 foswikiTableRowdataBg1">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildUCSCONGORTS3A"> UCS CONGO.12498 rts3 A</a> </td>
+			<td class="foswikiTableCol1"> 2Apr2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Done </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildUCSCONGOALUBETAITS16"> UCS CONGOALU.1282 BETA its16</a> </td>
+			<td class="foswikiTableCol1"> 2Apr2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Done </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted1 foswikiTableRowdataBg1">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildVVXREFRESHSUBVINOITS3"> VVXREFRESHSUBVINO.0093 its3</a> </td>
+			<td class="foswikiTableCol1"> 2Apr2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Done </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildUCS5dot4dot0ITS11"> UCS 5.4.0.0795 its11</a> </td>
+			<td class="foswikiTableCol1"> 2Apr2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Done </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted1 foswikiTableRowdataBg1">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildUCSDANUBEO365ITS7"> UCS DANUBE.0701 O365 its7</a> </td>
+			<td class="foswikiTableCol1"> 1Apr2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Done </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildUCSDANUBEO365ITS6"> UCS DANUBE.0385 O365 its6</a> </td>
+			<td class="foswikiTableCol1"> 25Mar2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Done </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted1 foswikiTableRowdataBg1">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildUCSCONGORTS2A"> UCS CONGO.12470 rts2 A</a> </td>
+			<td class="foswikiTableCol1"> 1Apr2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Done </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildUCSCONGOALUBETAITS15"> UCS CONGOALU.1252 BETA its15</a> </td>
+			<td class="foswikiTableCol1"> 1Apr2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Done </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted1 foswikiTableRowdataBg1">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildUCS5dot4dot0ITS10"> UCS 5.4.0.0730 its10</a> </td>
+			<td class="foswikiTableCol1"> 1Apr2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Done </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildUCS5dot2dot3RTS3"> UCS 5.2.3.0064 rts3</a> </td>
+			<td class="foswikiTableCol1"> 31Mar2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Done </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted1 foswikiTableRowdataBg1">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildUCSCONGOALUBETAITS14"> UCS CONGOALU.1222 BETA its14</a> </td>
+			<td class="foswikiTableCol1"> 31Mar2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Done </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildUCSCONGORTS1A"> UCS CONGO.12416 rts1 A</a> </td>
+			<td class="foswikiTableCol1"> 31Mar2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Done </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted1 foswikiTableRowdataBg1">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildUCS5dot4dot0ITS9"> UCS 5.4.0.0648 its9</a> </td>
+			<td class="foswikiTableCol1"> 31Mar2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Done </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildUCS4dot0dot4RTS45X"> UCS 4.0.4.6132 rts45 X</a> </td>
+			<td class="foswikiTableCol1"> 30Mar2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Done </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted1 foswikiTableRowdataBg1">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildUCSCONGOALUBETAITS13"> UCS CONGOALU.1144 BETA its13</a> </td>
+			<td class="foswikiTableCol1"> 30Mar2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Done </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildUCSCONGOATS21A"> UCS CONGO.12375 ats21 A</a> </td>
+			<td class="foswikiTableCol1"> 30Mar2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Done </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted1 foswikiTableRowdataBg1">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildUCS5dot4dot0ITS8"> UCS 5.4.0.0589 its8</a> </td>
+			<td class="foswikiTableCol1"> 30Mar2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Done(<a href="https://jira.polycom.com:8443/browse/TPER-12910" target="_parent">TPER-12910</a>,<a href="https://jira.polycom.com:8443/browse/VOIP-99527" target="_parent">VOIP-99527</a>) </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildUCS5dot2dot0RTS89Y"> UCS 5.2.0.13344 rts89 Y</a> </td>
+			<td class="foswikiTableCol1"> 27Mar2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Done </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted1 foswikiTableRowdataBg1">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildUCS5dot2dot3RTS2"> UCS 5.2.3.0033 rts2</a> </td>
+			<td class="foswikiTableCol1"> 27Mar2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Done </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildUCS5dot4dot0ITS7"> UCS 5.4.0.0520 its7</a> </td>
+			<td class="foswikiTableCol1"> 27Mar2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Done(<a href="https://jira.polycom.com:8443/browse/TPER-12910" target="_parent">TPER-12910</a>,<a href="https://jira.polycom.com:8443/browse/VOIP-99527" target="_parent">VOIP-99527</a>) </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted1 foswikiTableRowdataBg1">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildUCSCONGOATS20A"> UCS CONGO.12342 ats20 A</a> </td>
+			<td class="foswikiTableCol1"> 27Mar2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Done </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildUCSCONGOALUBETAITS12"> UCS CONGOALU.1089 BETA its12</a> </td>
+			<td class="foswikiTableCol1"> 27Mar2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Done(<a href="https://jira.polycom.com:8443/browse/VOIP-97966" target="_parent">VOIP-97966</a>) </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted1 foswikiTableRowdataBg1">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildUCS5dot4dot0ITS6"> UCS 5.4.0.0473 its6</a> </td>
+			<td class="foswikiTableCol1"> 27Mar2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Done(<a href="https://jira.polycom.com:8443/browse/TPER-12910" target="_parent">TPER-12910</a>,<a href="https://jira.polycom.com:8443/browse/VOIP-99527" target="_parent">VOIP-99527</a>) </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildUCS5dot1dot2RTS12E"> UCS 5.1.2.2456 rts12 E</a> </td>
+			<td class="foswikiTableCol1"> 26Mar2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Done </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted1 foswikiTableRowdataBg1">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildUCS5dot2dot0RTS88X"> UCS 5.2.0.13312 rts88 X</a> </td>
+			<td class="foswikiTableCol1"> 26Mar2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Done </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildUCS5dot4dot0ITS5"> UCS 5.4.0.0415 its5</a> </td>
+			<td class="foswikiTableCol1"> 26Mar2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Done(<a href="https://jira.polycom.com:8443/browse/TPER-12910" target="_parent">TPER-12910</a>,<a href="https://jira.polycom.com:8443/browse/VOIP-99527" target="_parent">VOIP-99527</a>) </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted1 foswikiTableRowdataBg1">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildUCSCONGOATS19A"> UCS CONGO.12256 ats19 A</a> </td>
+			<td class="foswikiTableCol1"> 26Mar2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Done </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildVVXREFRESHSUBVINOITS2"> VVXREFRESHSUBVINO.0058 its2</a> </td>
+			<td class="foswikiTableCol1"> 26Mar2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Done </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted1 foswikiTableRowdataBg1">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildUCS4dot0dot8RTS20D"> UCS 4.0.8.1688 rts20 D</a> </td>
+			<td class="foswikiTableCol1"> 25Mar2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Done </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildUCSCONGOALUBETAITS11"> UCS CONGOALU.1058 BETA its11</a> </td>
+			<td class="foswikiTableCol1"> 25Mar2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Done(<a href="https://jira.polycom.com:8443/browse/VOIP-97966" target="_parent">VOIP-97966</a>) </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted1 foswikiTableRowdataBg1">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildUCSCONGOATS18A"> UCS CONGO.12165 ats18 A</a> </td>
+			<td class="foswikiTableCol1"> 25Mar2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Done </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildUCS5dot4dot0ITS4"> UCS 5.4.0.0326 its4</a> </td>
+			<td class="foswikiTableCol1"> 25Mar2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Done(<a href="https://jira.polycom.com:8443/browse/TPER-12910" target="_parent">TPER-12910</a>,<a href="https://jira.polycom.com:8443/browse/VOIP-99527" target="_parent">VOIP-99527</a>) </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted1 foswikiTableRowdataBg1">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildUCS5dot2dot3RTS1"> UCS 5.2.3.0001 rts1</a> </td>
+			<td class="foswikiTableCol1"> 24Mar2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Done </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildUCSCONGOALUBETAITS10"> UCS CONGOALU.1028 BETA its10</a> </td>
+			<td class="foswikiTableCol1"> 24Mar2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Done( <a href="https://jira.polycom.com:8443/browse/VOIP-97966" target="_top">VOIP-97966</a>) </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted1 foswikiTableRowdataBg1">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildUCS5dot3dot0RTS37"> UCS 5.3.0.12074 rts37</a> </td>
+			<td class="foswikiTableCol1"> 24Mar2015 </td>
+			<th align="center" class="foswikiTableCol2 foswikiLastCol"> <strong>UCS 5.3.0 GA</strong> </th>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildUCS5dot3dot0BETARTS36"> UCS 5.3.0.12045 BETA rts36</a> </td>
+			<td class="foswikiTableCol1"> 23Mar2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Done </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted1 foswikiTableRowdataBg1">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildUCSCONGOALUBETAITS9"> UCS CONGOALU.0999 BETA its9</a> </td>
+			<td class="foswikiTableCol1"> 23Mar2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Done( <a href="https://jira.polycom.com:8443/browse/VOIP-97966" target="_top">VOIP-97966</a>) </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildUCS4dot0dot4RTS44W"> UCS 4.0.4.6093 rts44 W</a> </td>
+			<td class="foswikiTableCol1"> 23Mar2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Done </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted1 foswikiTableRowdataBg1">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildUCSCONGOALUBETAITS8"> UCS CONGOALU.0968 BETA its8</a> </td>
+			<td class="foswikiTableCol1"> 23Mar2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Done( <a href="https://jira.polycom.com:8443/browse/VOIP-97966" target="_top">VOIP-97966</a>) </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildUCSCONGOATS17A"> UCS CONGO.11986 ats17 A</a> </td>
+			<td class="foswikiTableCol1"> 23Mar2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Done </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted1 foswikiTableRowdataBg1">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildUCS5dot4dot0ITS3"> UCS 5.4.0.0175 its3</a> </td>
+			<td class="foswikiTableCol1"> 23Mar2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Done(<a href="https://jira.polycom.com:8443/browse/TPER-12910" target="_parent">TPER-12910</a>,<a href="https://jira.polycom.com:8443/browse/VOIP-99527" target="_parent">VOIP-99527</a>) </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildUCS5dot3dot0RTS35"> UCS 5.3.0.11956 rts35</a> </td>
+			<td class="foswikiTableCol1"> 23Mar2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Done </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted1 foswikiTableRowdataBg1">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildUCS5dot3dot0RTS34"> UCS 5.3.0.11928 rts34</a> </td>
+			<td class="foswikiTableCol1"> 22Mar2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Done </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildUCSCONGOATS16A"> UCS CONGO.11896 ats16 A</a> </td>
+			<td class="foswikiTableCol1"> 20Mar2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Done </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted1 foswikiTableRowdataBg1">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildUCS5dot2dot0RTS87W"> UCS 5.2.0.13225 rts87 W</a> </td>
+			<td class="foswikiTableCol1"> 20Mar2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Done </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildUCSCONGOALUBETAITS7"> UCS CONGOALU.0938 BETA its7</a> </td>
+			<td class="foswikiTableCol1"> 20Mar2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Done( <a href="https://jira.polycom.com:8443/browse/VOIP-97966" target="_top">VOIP-97966</a>) </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted1 foswikiTableRowdataBg1">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildVVXREFRESHSUBVINOITS1"> VVXREFRESHSUBVINO.0030 its1</a> </td>
+			<td class="foswikiTableCol1"> 20Mar2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Done </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildUCS5dot4dot0ITS2"> UCS 5.4.0.0111 its2</a> </td>
+			<td class="foswikiTableCol1"> 20Mar2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Done( <a href="https://jira.polycom.com:8443/browse/TPER-12910" target="_top">TPER-12910</a><a href="https://jira.polycom.com:8443/browse/VOIP-99527" target="_parent">,VOIP-99527</a>) </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted1 foswikiTableRowdataBg1">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildUCS5dot3dot0RTS33"> UCS 5.3.0.11839 rts33</a> </td>
+			<td class="foswikiTableCol1"> 20Mar2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Done </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildUCSCONGOALUBETAITS6"> UCS CONGOALU.0909 BETA its6</a> </td>
+			<td class="foswikiTableCol1"> 19Mar2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Done( <a href="https://jira.polycom.com:8443/browse/VOIP-97966" target="_top">VOIP-97966</a>) </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted1 foswikiTableRowdataBg1">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildUCS5dot3dot0RTS32"> UCS 5.3.0.11777 rts32</a> </td>
+			<td class="foswikiTableCol1"> 19Mar2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Done </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildUCS5dot4dot0ITS1"> UCS 5.4.0.0001 its1</a> </td>
+			<td class="foswikiTableCol1"> 18Mar2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Done(<a href="https://jira.polycom.com:8443/browse/VOIP-99527" target="_parent">VOIP-99527</a>,<a href="https://jira.polycom.com:8443/browse/VOIP-99382" target="_parent">VOIP-99382</a>,<a href="https://jira.polycom.com:8443/browse/VOIP-99576" target="_parent">VOIP-99576</a>) </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted1 foswikiTableRowdataBg1">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildUCSCONGOATS15A"> UCS CONGO.11715 ats15 A</a> </td>
+			<td class="foswikiTableCol1"> 18Mar2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Done </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildUCSCONGOALUBETAITS5"> UCS CONGOALU.0823 BETA its5</a> </td>
+			<td class="foswikiTableCol1"> 18Mar2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Done( <a href="https://jira.polycom.com:8443/browse/VOIP-97966" target="_top">VOIP-97966</a>) </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted1 foswikiTableRowdataBg1">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildUCSCONGOATS14A"> UCS CONGO.11687 ats14 A</a> </td>
+			<td class="foswikiTableCol1"> 18Mar2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Done </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildBERSAKEITS21"> BERSAKE.1687 its21</a> </td>
+			<td class="foswikiTableCol1"> 18Mar2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Done(<a href="https://jira.polycom.com:8443/browse/VOIP-99527" target="_parent">VOIP-99527</a>,<a href="https://jira.polycom.com:8443/browse/VOIP-99382" target="_parent">VOIP-99382</a>,<a href="https://jira.polycom.com:8443/browse/VOIP-99576" target="_parent">VOIP-99576</a>) </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted1 foswikiTableRowdataBg1">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildUCS5dot3dot0RTS31"> UCS 5.3.0.11658 rts31</a> </td>
+			<td class="foswikiTableCol1"> 18Mar2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Done </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildUCS4dot1dot8RTS6C"> UCS 4.1.8.0839 rts6 C</a> </td>
+			<td class="foswikiTableCol1"> 17Mar2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Done(<a href="https://jira.polycom.com:8443/browse/VOIP-99606" target="_parent">VOIP-99606</a>) </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted1 foswikiTableRowdataBg1">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildUCSCONGOALUBETAITS4"> UCS CONGOALU.0757 BETA its4</a> </td>
+			<td class="foswikiTableCol1"> 17Mar2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Done( <a href="https://jira.polycom.com:8443/browse/VOIP-97966" target="_top">VOIP-97966</a>) </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildUCS5dot2dot0RTS86V"> UCS 5.2.0.13196 rts86 V</a> </td>
+			<td class="foswikiTableCol1"> 17Mar2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Done </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted1 foswikiTableRowdataBg1">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildUCSCONGOATS13A"> UCS CONGO.11593 ats13 A</a> </td>
+			<td class="foswikiTableCol1"> 17Mar2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Done </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildUCSDANUBEO365ITS5"> UCS DANUBE.11561 O365 its5</a> </td>
+			<td class="foswikiTableCol1"> 17Mar2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Done </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted1 foswikiTableRowdataBg1">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildUCS4dot1dot1RTS20H"> UCS 4.1.1.0536 rts20 H</a> </td>
+			<td class="foswikiTableCol1"> 17Mar2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Done </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildUCS5dot3dot0RTS30"> UCS 5.3.0.11533 rts30</a> </td>
+			<td class="foswikiTableCol1"> 17Mar2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Done </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted1 foswikiTableRowdataBg1">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildUCSCONGOATS12A"> UCS CONGO.11464 ats12 A</a> </td>
+			<td class="foswikiTableCol1"> 16Mar2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Done </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildBERSAKEITS20"> BERSAKE.1599 its20</a> </td>
+			<td class="foswikiTableCol1"> 16Mar2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Done( <a href="https://jira.polycom.com:8443/browse/TPER-12910" target="_top">TPER-12910</a>,<a href="https://jira.polycom.com:8443/browse/VOIP-99382" target="_parent">VOIP-99382</a>) </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted1 foswikiTableRowdataBg1">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildUCS5dot3dot0RTS29"> UCS 5.3.0.11433 rts29</a> </td>
+			<td class="foswikiTableCol1"> 16Mar2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Done </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildUCSCONGOATS11A"> UCS CONGO.11356 ats11 A</a> </td>
+			<td class="foswikiTableCol1"> 13Mar2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Done </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted1 foswikiTableRowdataBg1">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildBERSAKEITS19"> BERSAKE.1552 its19</a> </td>
+			<td class="foswikiTableCol1"> 13Mar2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Done(<a href="https://jira.polycom.com:8443/browse/TPER-12910" target="_parent">TPER-12910,</a><a href="https://jira.polycom.com:8443/browse/VOIP-99382" target="_parent">VOIP-99382</a>) </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildUCS5dot3dot0RTS28"> UCS 5.3.0.11326 rts28</a> </td>
+			<td class="foswikiTableCol1"> 13Mar2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Done </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted1 foswikiTableRowdataBg1">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildUCSCONGOALUBETAITS3"> UCS CONGOALU.0637 BETA its3</a> </td>
+			<td class="foswikiTableCol1"> 12Mar2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Done( <a href="https://jira.polycom.com:8443/browse/VOIP-97966" target="_top">VOIP-97966</a>) </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildBERSAKEITS18"> BERSAKE.1505 its18</a> </td>
+			<td class="foswikiTableCol1"> 12Mar2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Done(<a href="https://jira.polycom.com:8443/browse/TPER-12910" target="_parent">TPER-12910</a>,<a href="https://jira.polycom.com:8443/browse/VOIP-99382" target="_parent">VOIP-99382</a>) </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted1 foswikiTableRowdataBg1">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildUCSDANUBEO365ITS4"> UCS DANUBE.11258 O365 its4</a> </td>
+			<td class="foswikiTableCol1"> 12Mar2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Done(<a href="https://jira.polycom.com:8443/browse/VOIP-99310" target="_parent">VOIP-99310</a>) </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildUCSCONGOATS10A"> UCS CONGO.11230 ats10 A</a> </td>
+			<td class="foswikiTableCol1"> 12Mar2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Done(<a href="https://jira.polycom.com:8443/browse/VOIP-99310" target="_parent">VOIP-99310</a>) </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted1 foswikiTableRowdataBg1">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildUCS5dot3dot0RTS27"> UCS 5.3.0.11195 rts27</a> </td>
+			<td class="foswikiTableCol1"> 12Mar2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Done </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildUCS5dot3dot0RTS26"> UCS 5.3.0.11111 rts26</a> </td>
+			<td class="foswikiTableCol1"> 11Mar2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Done(<a href="https://jira.polycom.com:8443/browse/VOIP-99310" target="_parent">VOIP-99310</a>) </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted1 foswikiTableRowdataBg1">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildBERSAKEITS17"> BERSAKE.1419 its17</a> </td>
+			<td class="foswikiTableCol1"> 11Mar2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Done(<a href="https://jira.polycom.com:8443/browse/TPER-12910" target="_parent">TPER-12910</a>,<a href="https://jira.polycom.com:8443/browse/VOIP-99382" target="_parent">VOIP-99382</a>) </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildUCS5dot2dot2RTS15C"> UCS 5.2.2.0532 rts15C</a> </td>
+			<td class="foswikiTableCol1"> 10Mar2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Done </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted1 foswikiTableRowdataBg1">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildUCS5dot3dot0BETARTS25"> UCS 5.3.0.11035 BETA rts25</a> </td>
+			<td class="foswikiTableCol1"> 10Mar2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Done(<a href="https://jira.polycom.com:8443/browse/VOIP-99423" target="_parent">VOIP-99423</a>) </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildBERSAKEITS16"> BERSAKE.1378/1377 its16</a> </td>
+			<td class="foswikiTableCol1"> 10Mar2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Done(<a href="https://jira.polycom.com:8443/browse/TPER-12910" target="_parent">TPER-12910</a>,<a href="https://jira.polycom.com:8443/browse/VOIP-99382" target="_parent">VOIP-99382</a>) </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted1 foswikiTableRowdataBg1">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildUCSCONGOALUBETAITS2"> UCS CONGOALU.0519 BETA its2</a> </td>
+			<td class="foswikiTableCol1"> 9Mar2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Done(<a href="https://jira.polycom.com:8443/browse/VOIP-97966" target="_parent">VOIP-97966</a>,<a href="https://jira.polycom.com:8443/browse/VOIP-99310" target="_parent">VOIP-99310</a>) </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildUCSCONGOALUBETAITS1"> UCS CONGOALU.0489 BETA its1</a> </td>
+			<td class="foswikiTableCol1"> 9Mar2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Done(<a href="https://jira.polycom.com:8443/browse/VOIP-97966" target="_parent">VOIP-97966</a>,<a href="https://jira.polycom.com:8443/browse/VOIP-99310" target="_parent">VOIP-99310</a>) </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted1 foswikiTableRowdataBg1">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildUCSCONGOATS9A"> UCS CONGO.10882 ats9 A</a> </td>
+			<td class="foswikiTableCol1"> 9Mar2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Done(<a href="https://jira.polycom.com:8443/browse/VOIP-99310" target="_parent">VOIP-99310</a>) </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildBERSAKEITS15"> BERSAKE.1334 its15</a> </td>
+			<td class="foswikiTableCol1"> 9Mar2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Done(<a href="https://jira.polycom.com:8443/browse/TPER-12910" target="_parent">TPER-12910</a>,<a href="https://jira.polycom.com:8443/browse/VOIP-99382" target="_parent">VOIP-99382</a>) </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted1 foswikiTableRowdataBg1">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildUCS5dot3dot0RTS24"> UCS 5.3.0.10845 rts24</a> </td>
+			<td class="foswikiTableCol1"> 9Mar2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Done(<a href="https://jira.polycom.com:8443/browse/VOIP-99310" target="_parent">VOIP-99310</a>) </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildUCS5dot3dot0BETARTS23"> UCS 5.3.0.10737 BETA rts23</a> </td>
+			<td class="foswikiTableCol1"> 6Mar2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Done(<a href="https://jira.polycom.com:8443/browse/VOIP-99310" target="_parent">VOIP-99310</a>) </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted1 foswikiTableRowdataBg1">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildUCSCONGOATS8A"> UCS CONGO.10678 ats8 A</a> </td>
+			<td class="foswikiTableCol1"> 5Mar2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Done(<a href="https://jira.polycom.com:8443/browse/VOIP-99310" target="_parent">VOIP-99310</a>) </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildBERSAKEITS14"> BERSAKE.1250 its14</a> </td>
+			<td class="foswikiTableCol1"> 5Mar2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Done(<a href="https://jira.polycom.com:8443/browse/VOIP-99193" target="_parent">VOIP-99193</a>) </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted1 foswikiTableRowdataBg1">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildUCSCONGOATS7A"> UCS CONGO.10646 ats7 A</a> </td>
+			<td class="foswikiTableCol1"> 5Mar2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Done(<a href="https://jira.polycom.com:8443/browse/VOIP-99310" target="_parent">VOIP-99310</a>) </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildUCS5dot3dot0RTS22"> UCS 5.3.0.10619 rts22</a> </td>
+			<td class="foswikiTableCol1"> 5Mar2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Done( <a href="https://jira.polycom.com:8443/browse/VOIP-99310" target="_top">VOIP-99310</a>) </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted1 foswikiTableRowdataBg1">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildUCSCONGOATS6A"> UCS CONGO.10549 ats6 A</a> </td>
+			<td class="foswikiTableCol1"> 4Mar2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Done </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildBERSAKEITS13"> BERSAKE.1207/1206 its13</a> </td>
+			<td class="foswikiTableCol1"> 4Mar2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Done(<a href="https://jira.polycom.com:8443/browse/VOIP-99193" target="_parent">VOIP-99193</a>) </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted1 foswikiTableRowdataBg1">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildUCS5dot3dot0RTS21"> UCS 5.3.0.10512 rts21</a> </td>
+			<td class="foswikiTableCol1"> 4Mar2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Done </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildUCS5dot3dot0BETARTS20"> UCS 5.3.0.10480 BETA rts20</a> </td>
+			<td class="foswikiTableCol1"> 3Mar2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Done </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted1 foswikiTableRowdataBg1">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildUCS4dot1dot1RTS19G"> UCS 4.1.1.0532 rts19 G</a> </td>
+			<td class="foswikiTableCol1"> 3Mar2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Done </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildUCSCONGOATS5A"> UCS CONGO.10416 ats5 A</a> </td>
+			<td class="foswikiTableCol1"> 3Mar2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Done </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted1 foswikiTableRowdataBg1">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildBERSAKEITS12"> BERSAKE.1164 its12</a> </td>
+			<td class="foswikiTableCol1"> 3Mar2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Done(<a href="https://jira.polycom.com:8443/browse/VOIP-98819" target="_parent">VOIP-98819</a>,<a href="https://jira.polycom.com:8443/browse/VOIP-99193" target="_parent">VOIP-99193</a>) </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildUCS5dot3dot0RTS19"> UCS 5.3.0.10388 rts19</a> </td>
+			<td class="foswikiTableCol1"> 3Mar2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Done </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted1 foswikiTableRowdataBg1">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildUCSDANUBEO365ITS3"> UCS DANUBE.10356 O365 its3</a> </td>
+			<td class="foswikiTableCol1"> 2Mar2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Done </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildUCSCONGOATS4A"> UCS CONGO.10253 ats4 A</a> </td>
+			<td class="foswikiTableCol1"> 2Mar2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Done </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted1 foswikiTableRowdataBg1">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildUCS5dot3dot0RTS18"> UCS 5.3.0.10220 rts18</a> </td>
+			<td class="foswikiTableCol1"> 2Mar2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Done </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildUCSCONGOATS3A"> UCS CONGO.10142 ats3 A</a> </td>
+			<td class="foswikiTableCol1"> 27Feb2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Done </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted1 foswikiTableRowdataBg1">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildUCS5dot3dot0RTS17"> UCS 5.3.0.10109 rts17</a> </td>
+			<td class="foswikiTableCol1"> 27Feb2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Done </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildUCS5dot3dot0RTS16"> UCS 5.3.0.10047 rts16</a> </td>
+			<td class="foswikiTableCol1"> 26Feb2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Done </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted1 foswikiTableRowdataBg1">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildUCS5dot2dot2RTS14"> UCS 5.2.2.0501 rts14</a> </td>
+			<td class="foswikiTableCol1"> 26Feb2015 </td>
+			<th class="foswikiTableCol2 foswikiLastCol"> UCS 5.2.2 GA </th>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildUCS5dot3dot0RTS15"> UCS 5.3.0.9970 rts15</a> </td>
+			<td class="foswikiTableCol1"> 25Feb2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Done </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted1 foswikiTableRowdataBg1">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildUCSDANUBEO365ITS2"> UCS DANUBE.9904 O365 its2</a> </td>
+			<td class="foswikiTableCol1"> 24Feb2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Done </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildBERSAKEITS11"> BERSAKE.0992 its11</a> </td>
+			<td class="foswikiTableCol1"> 24Feb2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Done(VOIP-98819) </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted1 foswikiTableRowdataBg1">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildUCS5dot3dot0RTS14"> UCS 5.3.0.9856 rts14</a> </td>
+			<td class="foswikiTableCol1"> 24Feb2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Done </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildUCS5dot2dot0RTS85U"> UCS 5.2.0.13062 rts85 U</a> </td>
+			<td class="foswikiTableCol1"> 23Feb2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Done </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted1 foswikiTableRowdataBg1">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildUCSCONGOATS2A"> UCS CONGO.9785 ats2 A</a> </td>
+			<td class="foswikiTableCol1"> 23Feb2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Done </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildUCS5dot3dot0RTS13"> UCS 5.3.0.9750 rts13</a> </td>
+			<td class="foswikiTableCol1"> 23Feb2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Done </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted1 foswikiTableRowdataBg1">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildUCS5dot2dot2RTS13"> UCS 5.2.2.0443 rts13</a> </td>
+			<td class="foswikiTableCol1"> 21Feb2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Done </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildBERSAKEITS10"> BERSAKE.0907 its10</a> </td>
+			<td class="foswikiTableCol1"> 20Feb2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Done(VOIP-98819) </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted1 foswikiTableRowdataBg1">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildUCS5dot3dot0RTS12"> UCS 5.3.0.9668 rts12</a> </td>
+			<td class="foswikiTableCol1"> 20Feb2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Done </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildUCSDANUBEO365ITS1"> UCS DANUBE.9638/9641/9640 O365 its1</a> </td>
+			<td class="foswikiTableCol1"> 19Feb2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Done </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted1 foswikiTableRowdataBg1">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildUCS5dot2dot0RTS84T"> UCS 5.2.0.13028 rts84 T</a> </td>
+			<td class="foswikiTableCol1"> 19Feb2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Done </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildUCS5dot2dot0RTS83T"> UCS 5.2.0.12999 rts83 T</a> </td>
+			<td class="foswikiTableCol1"> 19Feb2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Done </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted1 foswikiTableRowdataBg1">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildUCS5dot2dot2RTS12"> UCS 5.2.2.0415 rts12</a> </td>
+			<td class="foswikiTableCol1"> 19Feb2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Done </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildBERSAKEITS9"> BERSAKE.0862 its9</a> </td>
+			<td class="foswikiTableCol1"> 19Feb2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Done(VOIP-98819) </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted1 foswikiTableRowdataBg1">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildUCS5dot3dot0RTS11"> UCS 5.3.0.9575 rts11</a> </td>
+			<td class="foswikiTableCol1"> 19Feb2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Done </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildBERSAKEITS8"> BERSAKE.0818 its8</a> </td>
+			<td class="foswikiTableCol1"> 18Feb2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Done </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted1 foswikiTableRowdataBg1">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildUCS5dot3dot0RTS10"> UCS 5.3.0.9537 rts10</a> </td>
+			<td class="foswikiTableCol1"> 18Feb2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Done </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildUCS5dot3dot0RTS9"> UCS 5.3.0.9508 rts9</a> </td>
+			<td class="foswikiTableCol1"> 18Feb2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Done </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted1 foswikiTableRowdataBg1">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildUCS5dot2dot2RTS11"> UCS 5.2.2.0371 rts11</a> </td>
+			<td class="foswikiTableCol1"> 18Feb2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Done </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildUCS5dot3dot0RTS8"> UCS 5.3.0.9450 rts8</a> </td>
+			<td class="foswikiTableCol1"> 17Feb2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Done(TPER-12800) </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted1 foswikiTableRowdataBg1">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildUCS5dot2dot2RTS10"> UCS 5.2.2.0342 rts10</a> </td>
+			<td class="foswikiTableCol1"> 16Feb2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Done </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildUCS5dot3dot0RTS7"> UCS 5.3.0.9382 rts7</a> </td>
+			<td class="foswikiTableCol1"> 16Feb2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Done(TPER-12800) </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted1 foswikiTableRowdataBg1">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildUCS5dot3dot0RTS6"> UCS 5.3.0.9320 rts6</a> </td>
+			<td class="foswikiTableCol1"> 13Feb2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Done(TPER-12800) </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildUCS5dot2dot2RTS9"> UCS 5.2.2.0307 rts9</a> </td>
+			<td class="foswikiTableCol1"> 12Feb2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Done </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted1 foswikiTableRowdataBg1">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildUCS5dot3dot0RTS5"> UCS 5.3.0.9259 rts5</a> </td>
+			<td class="foswikiTableCol1"> 12Feb2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Done(TPER-12800) </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildUCS5dot3dot0RTS4"> UCS 5.3.0.9187 rts4</a> </td>
+			<td class="foswikiTableCol1"> 11Feb2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Done(TPER-12800) </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted1 foswikiTableRowdataBg1">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildUCS5dot3dot0RTS3"> UCS 5.3.0.9114 rts3</a> </td>
+			<td class="foswikiTableCol1"> 10Feb2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Done(VOIP-98487) </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildUCS5dot2dot2RTS8"> UCS 5.2.2.0278 rts8</a> </td>
+			<td class="foswikiTableCol1"> 9Feb2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Done </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted1 foswikiTableRowdataBg1">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildBERSAKEITS7"> BERSAKE.0547 its7</a> </td>
+			<td class="foswikiTableCol1"> 9Feb2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Done </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildUCS5dot3dot0RTS2"> UCS 5.3.0.9024 rts2</a> </td>
+			<td class="foswikiTableCol1"> 9Feb2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Done(VOIP-98487) </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted1 foswikiTableRowdataBg1">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildUCS4dot0dot8RTS19C"> UCS 4.0.8.1608 rts19 C</a> </td>
+			<td class="foswikiTableCol1"> 7Feb2015 </td>
+			<th class="foswikiTableCol2 foswikiLastCol"> UCS 4.0.8 GA </th>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildBERSAKEITS6"> BERSAKE.0511 its6</a> </td>
+			<td class="foswikiTableCol1"> 6Feb2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Done </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted1 foswikiTableRowdataBg1">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildUCS5dot3dot0RTS1"> UCS 5.3.0.8951 rts1</a> </td>
+			<td class="foswikiTableCol1"> 6Feb2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Done(VOIP-98487) </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildUCS5dot2dot0RTS82S"> UCS 5.2.0.12932 rts82 S</a> </td>
+			<td class="foswikiTableCol1"> 6Feb2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Done </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted1 foswikiTableRowdataBg1">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildUCS5dot3dot0ATS62"> UCS 5.3.0.8882 ats62</a> </td>
+			<td class="foswikiTableCol1"> 5Feb2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Done(VOIP-98211) </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildBERSAKEITS5"> BERSAKE.0475 its5</a> </td>
+			<td class="foswikiTableCol1"> 5Feb2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Done </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted1 foswikiTableRowdataBg1">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildUCS5dot2dot2RTS7"> UCS 5.2.2.0247 rts7</a> </td>
+			<td class="foswikiTableCol1"> 5Feb2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Done(VOIP-98211) </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildUCS5dot3dot0ATS61"> UCS 5.3.0.8841 ats61</a> </td>
+			<td class="foswikiTableCol1"> 5Feb2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Done(VOIP-98343) </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted1 foswikiTableRowdataBg1">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildBERSAKEITS4"> BERSAKE.0439 its4</a> </td>
+			<td class="foswikiTableCol1"> 4Feb2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Done </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildUCS5dot3dot0ATS60"> UCS 5.3.0.8764 ats60</a> </td>
+			<td class="foswikiTableCol1"> 4Feb2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Done(VOIP-98322) </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted1 foswikiTableRowdataBg1">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildUCS5dot3dot0ATS59"> UCS 5.3.0.8678 ats59</a> </td>
+			<td class="foswikiTableCol1"> 3Feb2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Done(VOIP-98042) </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildBERSAKEITS3"> BERSAKE.0329 its3</a> </td>
+			<td class="foswikiTableCol1"> 2Feb2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Done </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted1 foswikiTableRowdataBg1">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildUCS5dot3dot0ATS58"> UCS 5.3.0.8627 ats58</a> </td>
+			<td class="foswikiTableCol1"> 2Feb2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Done(VOIP-98042) </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildUCS5dot2dot2RTS6"> UCS 5.2.2.0213 rts6</a> </td>
+			<td class="foswikiTableCol1"> 2Feb2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Done(VOIP-98211) </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted1 foswikiTableRowdataBg1">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildUCS5dot3dot0ATS57"> UCS 5.3.0.8414 ats57</a> </td>
+			<td class="foswikiTableCol1"> 30Jan2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Done (VOIP-98042) </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildUCS5dot3dot0ATS56"> UCS 5.3.0.8381 ats56</a> </td>
+			<td class="foswikiTableCol1"> 29Jan2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Done (VOIP-98042) </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted1 foswikiTableRowdataBg1">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildUCS5dot2dot2RTS5"> UCS 5.2.2.0182 rts5</a> </td>
+			<td class="foswikiTableCol1"> 29Jan2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Done(VOIP-98211) </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildUCSDANUBEALUALPHA1ITS4"> UCS DANUBEALU.3863 ALPHA1 its4</a> </td>
+			<td class="foswikiTableCol1"> 28Jan2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Done(VOIP-97966) </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted1 foswikiTableRowdataBg1">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildUCS5dot3dot0ATS55"> UCS 5.3.0.8269 ats55</a> </td>
+			<td class="foswikiTableCol1"> 28Jan2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Done(VOIP-98042) </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildUCS5dot2dot0RTS81R"> UCS 5.2.0.12807 rts81 R</a> </td>
+			<td class="foswikiTableCol1"> 27Jan2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Done </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted1 foswikiTableRowdataBg1">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildUCS4dot0dot8RTS18"> UCS 4.0.8.1547 rts18</a> </td>
+			<td class="foswikiTableCol1"> 27Jan2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Done </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildUCS5dot2dot2RTS4"> UCS 5.2.2.0132 rts4</a> </td>
+			<td class="foswikiTableCol1"> 27Jan2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Done(VOIP-98211) </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted1 foswikiTableRowdataBg1">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildBERSAKEITS2"> BERSAKE.0265 its2</a> </td>
+			<td class="foswikiTableCol1"> 24Jan2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Done </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildUCS4dot0dot8RTS17"> UCS 4.0.8.1454 rts17</a> </td>
+			<td class="foswikiTableCol1"> 24Jan2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Done </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted1 foswikiTableRowdataBg1">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildUCS4dot0dot8RTS16"> UCS 4.0.8.1384 rts16</a> </td>
+			<td class="foswikiTableCol1"> 23Jan2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Done </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildBERSAKEITS1"> BERSAKE.0227 its1</a> </td>
+			<td class="foswikiTableCol1"> 23Jan2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Done </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted1 foswikiTableRowdataBg1">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildUCS5dot3dot0ATS54"> UCS 5.3.0.8095 ats54</a> </td>
+			<td class="foswikiTableCol1"> 23Jan2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Done(VOIP-98042) </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildUCS5dot3dot0BETAATS8"> UCS 5.3.0.8030 BETA ats8</a> </td>
+			<td class="foswikiTableCol1"> 22Jan2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Done </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted1 foswikiTableRowdataBg1">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildUCS4dot0dot5RTS28F"> UCS 4.0.5.5074 rts28 F</a> </td>
+			<td class="foswikiTableCol1"> 22Jan2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Done </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildUCS5dot3dot0ATS53"> UCS 5.3.0.7997 ats53</a> </td>
+			<td class="foswikiTableCol1"> 22Jan2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Done(VOIP-97982,VOIP-98042) </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted1 foswikiTableRowdataBg1">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildUCSDANUBEALUALPHA1ITS3"> UCS DANUBEALU.3698 ALPHA1 its3</a> </td>
+			<td class="foswikiTableCol1"> 21Jan2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Done(VOIP-97966) </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildUCSCONGOATS1A"> UCS CONGO.7927 ats1 A</a> </td>
+			<td class="foswikiTableCol1"> 21Jan2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Done(VOIP-97982) </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted1 foswikiTableRowdataBg1">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildUCS5dot3dot0ATS52"> UCS 5.3.0.7899 ats52</a> </td>
+			<td class="foswikiTableCol1"> 21Jan2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Done(VOIP-97982,VOIP-98042) </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildUCS5dot3dot0BETAATS7"> UCS 5.3.0.7869 BETA ats7</a> </td>
+			<td class="foswikiTableCol1"> 21Jan2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Done </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted1 foswikiTableRowdataBg1">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildUCS5dot3dot0BETAATS6"> UCS 5.3.0.7707 BETA ats6</a> </td>
+			<td class="foswikiTableCol1"> 20Jan2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Done </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildUCS5dot3dot0ATS51"> UCS 5.3.0.7674 ats51</a> </td>
+			<td class="foswikiTableCol1"> 20Jan2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Done(VOIP-97982) </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted1 foswikiTableRowdataBg1">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildUCS5dot3dot0BETAATS5"> UCS 5.3.0.7604 BETA ats5</a> </td>
+			<td class="foswikiTableCol1"> 19Jan2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Done </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildUCS4dot0dot8RTS15"> UCS 4.0.8.1251 rts15</a> </td>
+			<td class="foswikiTableCol1"> 19Jan2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Done </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted1 foswikiTableRowdataBg1">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildUCS5dot3dot0ATS50"> UCS 5.3.0.7572 ats50</a> </td>
+			<td class="foswikiTableCol1"> 19Jan2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Done </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildUCSDANUBEALUALPHA1ITS2"> UCS DANUBEALU.3579 ALPHA1 its2</a> </td>
+			<td class="foswikiTableCol1"> 16Jan2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Done(VOIP-97966) </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted1 foswikiTableRowdataBg1">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildUCS5dot3dot0BETAATS4"> UCS 5.3.0.7446 BETA ats4</a> </td>
+			<td class="foswikiTableCol1"> 15Jan2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Done </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildUCS4dot0dot8RTS14"> UCS 4.0.8.1217 rts14</a> </td>
+			<td class="foswikiTableCol1"> 15Jan2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Done </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted1 foswikiTableRowdataBg1">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildUCS5dot3dot0ATS49"> UCS 5.3.0.7415 ats49</a> </td>
+			<td class="foswikiTableCol1"> 15Jan2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Done </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildUCSDANUBEALUALPHA1ITS1"> UCS DANUBEALU.3493 ALPHA1 its1</a> </td>
+			<td class="foswikiTableCol1"> 14Jan2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Done(VOIP-97966) </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted1 foswikiTableRowdataBg1">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildUCS5dot3dot0BETAATS3"> UCS 5.3.0.7351 BETA ats3</a> </td>
+			<td class="foswikiTableCol1"> 14Jan2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Done </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildUCS5dot3dot0ATS48"> UCS 5.3.0.7315 ats48</a> </td>
+			<td class="foswikiTableCol1"> 14Jan2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Done </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted1 foswikiTableRowdataBg1">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildUCS5dot3dot0BETAATS2"> UCS 5.3.0.7246 BETA ats2</a> </td>
+			<td class="foswikiTableCol1"> 13Jan2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Done </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildUCS4dot0dot8RTS13"> UCS 4.0.8.1180 rts13</a> </td>
+			<td class="foswikiTableCol1"> 13Jan2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Done </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted1 foswikiTableRowdataBg1">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildUCS5dot3dot0ATS47"> UCS 5.3.0.7215 ats47</a> </td>
+			<td class="foswikiTableCol1"> 13Jan2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Done </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildUCS5dot3dot0BETAATS1"> UCS 5.3.0.7153 BETA ats1</a> </td>
+			<td class="foswikiTableCol1"> 12Jan2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Done </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted1 foswikiTableRowdataBg1">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildUCS5dot3dot0ATS46"> UCS 5.3.0.7120 ats46</a> </td>
+			<td class="foswikiTableCol1"> 12Jan2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Done </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildUCS5dot2dot2RTS3"> UCS 5.2.2.0075 rts3</a> </td>
+			<td class="foswikiTableCol1"> 8Jan2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Done(VOIP-98222) </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted1 foswikiTableRowdataBg1">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildUCS5dot3dot0ATS45"> UCS 5.3.0.6983 ats45</a> </td>
+			<td class="foswikiTableCol1"> 8Jan2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Done </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildUCS5dot3dot0ATS44"> UCS 5.3.0.6951 ats44</a> </td>
+			<td class="foswikiTableCol1"> 7Jan2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Done </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted1 foswikiTableRowdataBg1">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildUCS4dot0dot8RTS12"> UCS 4.0.8.1079 rts12</a> </td>
+			<td class="foswikiTableCol1"> 7Jan2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Done </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildUCS5dot3dot0ATS43"> UCS 5.3.0.6883 ats43</a> </td>
+			<td class="foswikiTableCol1"> 7Jan2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Done(VOIP-97688) </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted1 foswikiTableRowdataBg1">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildUCS5dot3dot0ATS42"> UCS 5.3.0.6813 ats42</a> </td>
+			<td class="foswikiTableCol1"> 6Jan2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Done </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildUCS5dot2dot0RTS80P"> UCS 5.2.0.12289 rts80 P</a> </td>
+			<td class="foswikiTableCol1"> 5Jan2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Done </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted1 foswikiTableRowdataBg1">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildUCS4dot0dot8RTS11"> UCS 4.0.8.1025 rts11</a> </td>
+			<td class="foswikiTableCol1"> 5Jan2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Done </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildUCS5dot3dot0ATS41"> UCS 5.3.0.6746 ats41</a> </td>
+			<td class="foswikiTableCol1"> 5Jan2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Done </td>
+		</tr>
+		<tr class="foswikiTableOdd foswikiTableRowdataBgSorted1 foswikiTableRowdataBg1">
+			<td class="foswikiTableCol0 foswikiFirstCol"> <a href="/twiki/bin/view/Main/BuildUCS5dot3dot0ATS40"> UCS 5.3.0.6604 ats40</a> </td>
+			<td class="foswikiTableCol1"> 1Jan2015 </td>
+			<td class="foswikiTableCol2 foswikiLastCol"> Smoke Test Done </td>
+		</tr>
+		<tr class="foswikiTableEven foswikiTableRowdataBgSorted0 foswikiTableRowdataBg0">
+			<td class="foswikiTableCol0 foswikiFirstCol foswikiLast"> <a href="/twiki/bin/view/Main/BuildUCS5dot3dot0ATS39"> UCS 5.3.0.6576 ats39</a> </td>
+			<td class="foswikiTableCol1 foswikiLast"> 31Dec2014 </td>
+			<td class="foswikiTableCol2 foswikiLastCol foswikiLast"> Smoke Test Done </td>
+		</tr>
+	</tbody></table> </div>
+<div class="foswikiContentFooter"></div><div class="foswikiFormSteps"><a name="topic-actions"></a><div class="patternTopicActions foswikiFormStep"><span class="patternActionButtons"><span class="foswikiRequiresChangePermission"><a href='https://twiki.polycom.com/twiki/bin/edit/Main/BuildReleased?t=1435132083' rel='nofollow' title='Edit this topic text' accesskey='e'><span class='foswikiAccessKey'>E</span>dit</a></span><span class='foswikiSeparator'>&nbsp;|&nbsp;</span><span class="foswikiRequiresChangePermission"><a href='/twiki/bin/attach/Main/BuildReleased' rel='nofollow' title='Attach an image or document to this topic' accesskey='a'><span class='foswikiAccessKey'>A</span>ttach</a></span><span class='foswikiSeparator'>&nbsp;|&nbsp;</span><span><a href='/twiki/bin/view/Main/BuildReleased?cover=print' rel='nofollow' title='Printable version of this topic' accesskey='p'><span class='foswikiAccessKey'>P</span>rint version</a></span><span class='foswikiSeparator'>&nbsp;|&nbsp;</span><span><span class="foswikiRequiresChangePermission"><a href='/twiki/bin/oops/Main/BuildReleased?template=oopshistory' rel='nofollow' title='View total topic history' accesskey='h'><span class='foswikiAccessKey'>H</span>istory</a></span>: r3927&nbsp;<a rel="nofollow" href="/twiki/bin/compare/Main/BuildReleased?rev1=3926;rev2=3927">&lt;</a>&nbsp;<a rel="nofollow" href="/twiki/bin/view/Main/BuildReleased?rev=3926">r3926</a>&nbsp;<a rel="nofollow" href="/twiki/bin/compare/Main/BuildReleased?rev1=3925;rev2=3926">&lt;</a>&nbsp;<a rel="nofollow" href="/twiki/bin/view/Main/BuildReleased?rev=3925">r3925</a>&nbsp;<a rel="nofollow" href="/twiki/bin/compare/Main/BuildReleased?rev1=3924;rev2=3925">&lt;</a>&nbsp;<a rel="nofollow" href="/twiki/bin/view/Main/BuildReleased?rev=3924">r3924</a></span><span class='foswikiSeparator'>&nbsp;|&nbsp;</span><span><a href='/twiki/bin/view/Main/BuildReleased?template=backlinksweb' rel='nofollow' title='Search the Main Web for topics that link to here' accesskey='b'><span class='foswikiAccessKey'>B</span>acklinks</a></span><span class='foswikiSeparator'>&nbsp;|&nbsp;</span><span><a href='/twiki/bin/view/Main/BuildReleased?raw=on' rel='nofollow' title='View without formatting' accesskey='v'><span class='foswikiAccessKey'>V</span>iew wiki text</a></span><span class='foswikiSeparator'>&nbsp;|&nbsp;</span><span class="foswikiRequiresChangePermission"><a href='https://twiki.polycom.com/twiki/bin/edit/Main/BuildReleased?t=1435132083;nowysiwyg=1' rel='nofollow' title='Edit Wiki text' accesskey='w'>Edit <span class='foswikiAccessKey'>w</span>iki text</a></span><span class='foswikiSeparator'>&nbsp;|&nbsp;</span><span><a href='/twiki/bin/view/Main/BuildReleased?template=more&amp;maxrev=3927&amp;currrev=3927' rel='nofollow' title='Delete or rename this topic; set parent topic; view and compare revisions' accesskey='m'><span class='foswikiAccessKey'>M</span>ore topic actions</a></span></span></div></div></div><div class="patternInfo"><div class="patternRevInfo">Topic revision: r3927 - 24 Jun 2015 - 05:26:28 - unknown</div></div>
+</div>
+</div><div id="patternSideBar"><div id="patternClearHeaderLeft"></div>
+<div id="patternSideBarContents"><div class="patternWebIndicator" style="border-color:#FFEFA6">
+<a href='https://twiki.polycom.com/twiki/bin/view/Main/WebHome'>Main</a>
+</div>
+<div class="patternLeftBarPersonal">
+<ul><li class="patternLogIn"><a href="/twiki/bin/logon/Main/BuildReleased">Log In</a> or <a href="/twiki/bin/view/System/UserRegistration">Register</a></li></ul>
+<div class="patternLeftBarPersonalContent">
+<!--
+Customise this topic; samples and ideas available at <a class="interwikiLink" href="http://twiki.org/cgi-bin/view/TWiki.WebLeftBarCookbook" title="'TWiki.WebLeftBarCookbook' on TWiki.org">TWiki:TWiki.WebLeftBarCookbook</a>.
+--> <strong>My links:</strong> <ul>
+<li> <a href="/twiki/bin/view/Main/KenRains">My home page</a>
+</li> <li> <a href="https://twiki.polycom.com/twiki/bin/search/Main/?search=KenRains;order=modified;limit=50;reverse=on" target="_top">My Main activities</a>
+</li> <li> <a href="/twiki/bin/view/Main/ACMESBCConfiguration">https://twiki.polycom.com/twiki/bin/view/Main/ACMESBCConfiguration</a>
+</li></ul> 
+<a class="twikiSmallish" href="/twiki/bin/edit/Main/GUESTLeftBar?t=1435132083">edit</a>
+</div></div> <ul>
+<li> <strong><a href="/twiki/bin/view/Main/WebSearch"> <span class="foswikiIcon"><img src="/twiki/pub/System/DocumentGraphics/searchtopic.png" width="16" height="16" alt="searchtopic" /></span> Search tWiki</a></strong>
+</li> <li> <a href="/twiki/bin/view/Main/RssTest?rsstopic=BuildReleased"> <span class="foswikiIcon"><img src="/twiki/pub/System/DocumentGraphics/rss.png" width="16" height="16" alt="rss" /></span> RSS Feed to current page</a>
+</li></ul> 
+<p></p> <ul>
+<li> <strong><a href="/twiki/bin/view/Main/SetoffAlarm"><font color="#ff0000">Oops I Set Off The Alarm in Vancouver</font></a></strong>
+</li></ul> 
+<font color="#0000ff"><strong><u> </u></strong></font>
+<p></p>
+<font color="#0000ff"><strong><u> </u></strong></font> <ul>
+<li> <strong><a href="/twiki/bin/view/Main/EngineeringMain">Engineering</a></strong>
+</li> <li> <a href="/twiki/bin/view/Main/EngineeringMain">Engineering Main Page</a>
+</li> <li> <a href="http://planetpolycom/sites/engineering/USEndpointsDevices/SitePages/Home.aspx" target="_top"> UCEndpoint Devices</a>
+</li> <li> <a href="http://planetpolycom/sites/engineering/voice1/projects/default.aspx" target="_top"> PlanetPolycom Projects</a>
+</li> <li> <a href="/twiki/bin/view/Main/ProjectCodeNames"> Codenames &amp; Codebases</a>
+</li> <li> <a href="/twiki/bin/view/Main/ChiefSystemIntegrator"> CSI &amp; Builds</a>
+</li> <li> <a href="/twiki/bin/view/Main/SoftwareDevelopment"> Software &amp; DSP/Audio</a>
+</li> <li> <a href="http://uiblog" target="_top"> UI Blog</a>
+</li> <li> <a href="/twiki/bin/view/Main/HardwareDevelopment"> Hardware &amp; Mech</a>
+</li> <li> <a href="/twiki/bin/view/Main/TestSQA"> SQA &amp; Test</a>
+</li> <li> <a href="/twiki/bin/view/Main/CodeImprovement">Improving Code</a>
+</li> <li> <a href="/twiki/bin/view/Forum/WebHome">Discussion Forums</a>
+</li> <li> <a href="/twiki/bin/view/DocLib/DocumentLibrary">Document Library</a><img src="/twiki/pub/System/DocumentGraphics/new.png" alt="NEW" title="NEW" width="30" height="16" border="0" />
+</li> <li> 
+</li> <li> <a href="http://twiki/toolkit/cgi-bin/whosgot.pl" target="_top">WindRiver Licenses CheckedOut</a>
+</li> <li> <a href="https://timeliveserver.vancouver.polycom.com/TimeLive" target="_top"><font class="WYSIWYG_COLOR" color="darkred">TimeLive</font></a>
+</li> <li> 
+</li></ul> 
+<p></p> <ul>
+<li> <strong><a href="/twiki/bin/view/Main/FAEGroup">Bugs &amp; Field Support</a></strong>
+</li> <li> <a href="/twiki/bin/view/Main/PartnerInformation"> Partner Information</a>
+</li> <li> <a href="/twiki/bin/view/Main/CustomerDocs"> Customer Docs</a>
+</li> <li> <a href="/twiki/bin/view/Main/FAEGroup"> FAE Group</a>
+</li> <li> <a href="/twiki/bin/view/Main/FieldIssues"> Field Issues</a>
+</li> <li> <a href="/twiki/bin/view/Main/JiRA"> JIRA</a>
+</li></ul> 
+<p></p> <ul>
+<li> <strong><a href="/twiki/bin/view/Main/ProductManagement">Product Management</a></strong>
+</li> <li> <a href="/twiki/bin/view/Main/UCSoftware"> UC Software</a>
+</li> <li> <strong><a href="/twiki/bin/view/Main/VTC">Other Technical</a></strong>
+</li> <li> <a href="/twiki/bin/view/Main/CTO"> Voice Technology</a>
+</li> <li> <a href="/twiki/bin/view/Main/VTC"> VTC</a>
+</li> <li> <a href="/twiki/bin/view/Main/VoiceCTOCouncil"> VOCTOC</a>
+</li> <li> <a href="/twiki/bin/view/Main/OperationsHome"> OPS</a>
+</li> <li> <a href="/twiki/bin/view/Main/ComplianceTesting"> CTC</a>
+</li> <li> <a href="/twiki/bin/view/Main/InformationTechnology"> IT</a>
+</li></ul> 
+<p></p> <ul>
+<li> <strong><a href="/twiki/bin/view/Main/LunchLearn">Lunch and Learns</a></strong>
+</li> <li> <a href="/twiki/bin/view/Main/VanCouver">Vancouver</a>
+</li> <li> <a href="/twiki/bin/view/Main/HyderaBad">Hyderabad</a>
+</li></ul> 
+<p></p> <ul>
+<li> <strong><a href="http://planetpolycom/sites/hr/Pages/default.aspx" target="_top">Administration</a></strong>
+</li> <li> <a href="/twiki/bin/view/Main/HumanResources"> Vancouver HR</a>
+</li> <li> <a href="/twiki/bin/view/Main/GreenNewsletterArchive">Van Green Newsletter Archive</a>
+</li> <li> <a href="/twiki/bin/view/Main/EventsPage">Vancouver Events</a>
+</li> <li> <a href="/twiki/bin/view/Main/VancouverPhones"> Vancouver Phone List</a>
+</li></ul> 
+<p></p> <ul>
+<li> <strong><a href="/twiki/bin/view/Main/VancouverStuff">Voice Division Locations</a></strong>
+</li> <li> <a href="http://172.22.2.9/wiki/index.php/Main_Page" target="_top"> Atlanta Wiki</a>
+</li> <li> <a href="/twiki/bin/view/Main/BostonStuff"> Boston &amp; Andover</a>
+</li> <li> <a href="/twiki/bin/view/Main/HyderabadStuff"> Hyderabad</a>
+</li> <li> <a href="/twiki/bin/view/Main/SanJoseStuff"> San Jose</a>
+</li> <li> <a href="/twiki/bin/view/Main/ThailandStuff"> Thailand</a>
+</li> <li> <a href="/twiki/bin/view/Main/VancouverStuff"> Vancouver</a>
+</li></ul> 
+<p></p> <ul>
+<li> <strong><a href="/twiki/bin/view/Main/CorporateLinks">Corporate Links</a></strong>
+</li> <li> <a href="http://www.polycom.com" target="_top">Polycom</a> (external)
+</li> <li> <a href="http://planetpolycom" target="_top">PlanetPolycom</a> (internal)
+</li> <li> <a href="http://planetpolycom/sites/policies/default.aspx" target="_top">Policies &amp; Procedures</a>
+</li> <li> <a href="http://planetpolycom/pages/organizationcharts.aspx" target="_top">Org Charts</a>
+</li></ul> 
+<p></p> <ul>
+<li> <a href="/twiki/bin/view/Main/WebLeftBar"><font color="#ff0000">Change Menu</font></a>
+</li></ul> 
+Logged in as:<br /> GUEST none"&gt; none"&gt;<a href="/twiki/bin/logon/Main/BuildReleased">Log In</a> <!-- currently, the logout is not actually logging the user out, and the login is not showing anything -->
+<hr />
+<p></p>
+</div><!-- /patternSideBarContents--></div><!-- /patternSideBar-->
+</div>
+<div class="clear">&nbsp;</div>
+</div></div><!-- /patternWrapper--><div id="patternTopBar"><div id="patternTopBarContentsWrapper"><div id="patternTopBarContents"><table border="0" cellpadding="0" cellspacing="0" style="width:100%" summary="">
+<tr><td valign="middle"><span id="foswikiLogo" class="foswikiImage"><a href="https://twiki.polycom.com/twiki/bin/view/Main/WebHome"><img src="/twiki/pub/Main/WebPreferences/Polycom.gif" border="0" alt="Powered by Foswiki, The Free and Open Source Wiki" style="border:none;" /></a></span></td>
+<td align="right" valign="top" class="patternMetaMenu">
+<p></p>
+</td></tr></table></div><!--/patternTopBarContents--></div><!--/patternTopBarContentsWrapper--></div><!-- /patternTopBar--><div id="patternBottomBar"><div id="patternBottomBarContents"><div id="patternWebBottomBar"><span class="foswikiRight"> <a href="http://foswiki.org/"><img src="/twiki/pub/System/ProjectLogos/foswiki-badge.gif" alt="This site is powered by Foswiki" title="This site is powered by Foswiki" border="0" /></a></span>Copyright &amp;© by the contributing authors. All material on this collaboration platform is the property of the contributing authors. <br /> Ideas, requests, problems regarding Foswiki? <a href='mailto:gurquhart@polycom.com?subject=Foswiki%20Feedback%20on%20Main.BuildReleased'>Send feedback</a></div></div></div>
+</div>
+</div>
+</div>
+</div></body></html>

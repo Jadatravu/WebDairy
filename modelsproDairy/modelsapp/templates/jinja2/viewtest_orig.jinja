@@ -1,0 +1,8 @@
+{% include 'header.jinja' %}
+<h4>{{ msg }}</h4>
+{% for dep in d_list %}
+    {% for sub in dep.subject_set.all %}
+        <h4> {{sub.sub_name.split(',')}} </h4>
+    {% endfor %}
+{% endfor %}
+{% include 'footer.jinja' %}
