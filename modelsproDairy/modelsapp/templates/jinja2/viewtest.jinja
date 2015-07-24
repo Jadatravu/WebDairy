@@ -1,56 +1,59 @@
 {% include 'header.jinja' %}
 <h4>{{ msg }}</h4>
-          
-<form action="{{ url('viewtest') }}"  method="post" enctype="multipart/form-data">  
-       <div class="form-group">
-<input type="hidden" name="csrfmiddlewaretoken" value="{{ csrf_token }}">
-          <p> Test list </p>
-          <select name="test">
-                 {% for test in t_list %}
-                     <option value="{{test}}" >{{test}} </option>
-                 {% endfor %}
-          </select>
-          <p> Department list </p>
-          <select name="department">
-                 {% for dep in d_list %}
-                     <option value="{{dep.id}}" >{{dep.dep_name}} </option>
-                 {% endfor %}
-          </select>
-          <p><input type=submit value="Submit"></p>
-          </div>
+<form action="{{ url('viewtest') }}"  method="post" enctype="multipart/form-data">
+   <div class="form-group">
+      <input type="hidden" name="csrfmiddlewaretoken" value="{{ csrf_token }}">
+      <p> Test list </p>
+      <select name="test">
+         {% for test in t_list %}
+         <option value="{{test}}" >{{test}} </option>
+         {% endfor %}
+      </select>
+      <p> Department list </p>
+      <select name="department">
+         {% for dep in d_list %}
+         <option value="{{dep.id}}" >{{dep.dep_name}} </option>
+         {% endfor %}
+      </select>
+      <p><input type=submit value="Submit"></p>
+   </div>
 </form>
-
-
 {% if department %}
 <h4>Department {{department.dep_name}}</h4>
 <h4>Test {{te_name}}</h4>
 <table class="table table-striped table-bordered">
-<thead><tr><th>contact</th>
-{% for sub in department.subject_set.all()%}
-     <th>{{ sub.sub_name }}</th>
-{% endfor %}
-</tr></thead>
-<tbody>
-    {% for con in department.contact_set.all() %}
-         <tr><td>{{con.sur_name}},{{con.first_name}}</td>
+   <thead>
+      <tr>
+         <th>contact</th>
          {% for sub in department.subject_set.all()%}
-                {% for tes in ay.test_set.filter(test_name = te_name, subject = sub, contact = con) %}
-                     <td>{{tes.marks}}</td>
-                {% endfor %}
+         <th>{{ sub.sub_name }}</th>
          {% endfor %}
-         </tr>
-    {% endfor %}
-    <tr><td></td>
-    {% for sub in department.subject_set.all()%}
-          <td>
-          <form action="{{ url('edittest') }}"  method="post" enctype="multipart/form-data">
-            <input type="hidden" name="csrfmiddlewaretoken" value="{{ csrf_token }}">
-            <input type="hidden" name="{{te_name}}^{{sub.id}}^{{department.id}}" value="">
-            <input type="submit" value="Edit">
-          </form>
-          </td>
-    {% endfor %}
-    </tr>
-{% endif %}
-</tbody></table>
+      </tr>
+   </thead>
+   <tbody>
+      {% for con in department.contact_set.all() %}
+      <tr>
+         <td>{{con.sur_name}},{{con.first_name}}</td>
+         {% for sub in department.subject_set.all()%}
+         {% for tes in ay.test_set.filter(test_name = te_name, subject = sub, contact = con) %}
+         <td>{{tes.marks}}</td>
+         {% endfor %}
+         {% endfor %}
+      </tr>
+      {% endfor %}
+      <tr>
+         <td></td>
+         {% for sub in department.subject_set.all()%}
+         <td>
+            <form action="{{ url('edittest') }}"  method="post" enctype="multipart/form-data">
+               <input type="hidden" name="csrfmiddlewaretoken" value="{{ csrf_token }}">
+               <input type="hidden" name="{{te_name}}^{{sub.id}}^{{department.id}}" value="">
+               <input type="submit" value="Edit">
+            </form>
+         </td>
+         {% endfor %}
+      </tr>
+      {% endif %}
+   </tbody>
+</table>
 {% include 'footer.jinja' %}

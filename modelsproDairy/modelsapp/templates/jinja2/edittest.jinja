@@ -1,29 +1,36 @@
 {% include 'header.jinja' %}
 <h4>{{ msg }}</h4>
-          
-<form action="{{ url('viewtest') }}"  method="post" enctype="multipart/form-data">  
-       
-<input type="hidden" name="csrfmiddlewaretoken" value="{{ csrf_token }}">
-<input type="hidden" name="edit_test" value="">
-<input type="hidden" name="{{te_name}}^{{subt.id}}^{{dept.id}}" value="">    
-
-<table class="table table-striped table-bordered">
-<thead><tr><th>Contact</th><th>Marks</th><th>Grade</th><th>Comments</th><tr></thead>
-<tbody>
-<h4>Department {{dept.dep_name}}</h4>
-<h4>Subject {{subt.sub_name}}</h4>
-<h4>Test {{te_name}}</h4>
-{% if dept and subt %}
-    {% for con in dept.contact_set.all() %}
-         <tr><td>{{con.sur_name}},{{con.first_name}}</td>
-                {% for tes in ay.test_set.filter(test_name = te_name, subject = subt, contact = con) %}
-                     <td><input type="text" name="{{tes.test_name}}^{{subt.id}}^{{con.id}}^marks" value="{{tes.marks}}"></td>
-                     <td><input type="text" name="{{tes.test_name}}^{{subt.id}}^{{con.id}}^grade" value="{{tes.grade}}"></td>
-                     <td><input type="text" name="{{tes.test_name}}^{{subt.id}}^{{con.id}}^comment" value="{{tes.comment}}"></td>
-                {% endfor %}
+<form action="{{ url('viewtest') }}"  method="post" enctype="multipart/form-data">
+   <input type="hidden" name="csrfmiddlewaretoken" value="{{ csrf_token }}">
+   <input type="hidden" name="edit_test" value="">
+   <input type="hidden" name="{{te_name}}^{{subt.id}}^{{dept.id}}" value="">    
+   <table class="table table-striped table-bordered">
+      <thead>
+         <tr>
+            <th>Contact</th>
+            <th>Marks</th>
+            <th>Grade</th>
+            <th>Comments</th>
+         <tr>
+      </thead>
+      <tbody>
+         <h4>Department {{dept.dep_name}}</h4>
+         <h4>Subject {{subt.sub_name}}</h4>
+         <h4>Test {{te_name}}</h4>
+         {% if dept and subt %}
+         {% for con in dept.contact_set.all() %}
+         <tr>
+            <td>{{con.sur_name}},{{con.first_name}}</td>
+            {% for tes in ay.test_set.filter(test_name = te_name, subject = subt, contact = con) %}
+            <td><input type="text" name="{{tes.test_name}}^{{subt.id}}^{{con.id}}^marks" value="{{tes.marks}}"></td>
+            <td><input type="text" name="{{tes.test_name}}^{{subt.id}}^{{con.id}}^grade" value="{{tes.grade}}"></td>
+            <td><input type="text" name="{{tes.test_name}}^{{subt.id}}^{{con.id}}^comment" value="{{tes.comment}}"></td>
+            {% endfor %}
          </tr>
-    {% endfor %}
-{% endif %}
-</tbody></table><input type="submit" value="Save">
+         {% endfor %}
+         {% endif %}
+      </tbody>
+   </table>
+   <input type="submit" value="Save">
 </form>
 {% include 'footer.jinja' %}

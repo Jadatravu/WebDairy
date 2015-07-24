@@ -1,98 +1,160 @@
 <!DOCTYPE html>
 {% include 'header.html' %}
 <section>
-<section0>
-</section0>
-<section1>
-<!--<div class="row">
-<div class="col-sm-10" >-->
-{% if user.is_superuser %}
-<form action="{% url 'contactform' %}" method="post" enctype="multipart/form-data">
-            {% csrf_token %}
-            <a><bold>Contact details form </bold></a>
-            <table><tr><td></td><td>{{form.c_id.as_hidden}}</td></tr>
-            <tr><td></td><td>{{form.old_pic.as_hidden}}</td></tr>
-            <tr> <td> FirstName</td><td>{{ form.first_name }} </td></tr>
-            <tr><td>LastName</td><td>{{ form.last_name }}</td></tr>
-            <tr><td> Surname </td><td>{{ form.sur_name }}</td></tr>
+   <section0></section0>
+   <section1>
+      <!--<div class="row">
+         <div class="col-sm-10" >-->
+      {% if user.is_superuser %}
+      <form action="{% url 'contactform' %}" method="post" enctype="multipart/form-data">
+         {% csrf_token %}
+         <a>
+            <bold>Contact details form </bold>
+         </a>
+         <table>
+            <tr>
+               <td></td>
+               <td>{{form.c_id.as_hidden}}</td>
+            </tr>
+            <tr>
+               <td></td>
+               <td>{{form.old_pic.as_hidden}}</td>
+            </tr>
+            <tr>
+               <td> FirstName</td>
+               <td>{{ form.first_name }} </td>
+            </tr>
+            <tr>
+               <td>LastName</td>
+               <td>{{ form.last_name }}</td>
+            </tr>
+            <tr>
+               <td> Surname </td>
+               <td>{{ form.sur_name }}</td>
+            </tr>
             <!--<tr><td> Login name </td><td>{{ form.log_name }}</td></tr> -->
-            <tr><td> Email </td><td>{{ form.email }}</td></tr>
-            <tr><td>Employee ID </td><td>{{ form.emp_id }}</td></tr>
-            <tr><td> Phone </td><td>{{ form.phone }}</td></tr>
-            <tr><td>Address</td><td> </td></tr> 
-            <tr><td>House No</td><td>{{ form.H_No }}</td></tr>
-            <tr><td>Line No</td><td>{{ form.Line1 }}</td></tr>
-            <tr><td>Street</td><td>{{ form.street }}</td></tr>
-            <tr><td>Colony</td><td>{{ form.colony }}</td></tr>
-            <tr><td>City</td><td>{{ form.city }}</td></tr>
-            <tr><td>Pin</td><td>{{ form.pin }}</td></tr>
-            <tr><td>Login name </td><td>
-            <select name="log_name">
-                {% for us in user_list %}
+            <tr>
+               <td> Email </td>
+               <td>{{ form.email }}</td>
+            </tr>
+            <tr>
+               <td>Employee ID </td>
+               <td>{{ form.emp_id }}</td>
+            </tr>
+            <tr>
+               <td> Phone </td>
+               <td>{{ form.phone }}</td>
+            </tr>
+            <tr>
+               <td>Address</td>
+               <td> </td>
+            </tr>
+            <tr>
+               <td>House No</td>
+               <td>{{ form.H_No }}</td>
+            </tr>
+            <tr>
+               <td>Line No</td>
+               <td>{{ form.Line1 }}</td>
+            </tr>
+            <tr>
+               <td>Street</td>
+               <td>{{ form.street }}</td>
+            </tr>
+            <tr>
+               <td>Colony</td>
+               <td>{{ form.colony }}</td>
+            </tr>
+            <tr>
+               <td>City</td>
+               <td>{{ form.city }}</td>
+            </tr>
+            <tr>
+               <td>Pin</td>
+               <td>{{ form.pin }}</td>
+            </tr>
+            <tr>
+               <td>Login name </td>
+               <td>
+                  <select name="log_name">
+                     {% for us in user_list %}
                      {% if user == us.username %}
-                         <option value="{{us.username}}" selected="selected">{{us.username}}</option>
+                     <option value="{{us.username}}" selected="selected">{{us.username}}</option>
                      {% else %}
-                         <option value="{{us.username}}">{{us.username}}</option>
+                     <option value="{{us.username}}">{{us.username}}</option>
                      {% endif %}
-                {% endfor %}
-            </select></td><tr>
-            <tr><td>Supervisor ID</td><td>
-            <select name="supervisor">
-                {% for sup in supervisors %}
+                     {% endfor %}
+                  </select>
+               </td>
+            <tr>
+            <tr>
+               <td>Supervisor ID</td>
+               <td>
+                  <select name="supervisor">
+                     {% for sup in supervisors %}
                      {% if sup.sup_id == supervisor_id %}
-                         <option value="{{sup.sup_id}}" selected="selected">{{sup.sup_id}}</option>
+                     <option value="{{sup.sup_id}}" selected="selected">{{sup.sup_id}}</option>
                      {% else %}
-                         <option value="{{sup.sup_id}}">{{sup.sup_id}}</option>
+                     <option value="{{sup.sup_id}}">{{sup.sup_id}}</option>
                      {% endif %}
-                {% endfor %}
-            </select></td></tr>
-            <tr><td>JobTitle</td><td>
-            <select name="title">
-                 {% for tit in jobtitle %}
+                     {% endfor %}
+                  </select>
+               </td>
+            </tr>
+            <tr>
+               <td>JobTitle</td>
+               <td>
+                  <select name="title">
+                     {% for tit in jobtitle %}
                      {% if tit.title == jobtitle_name %}
-                         <option value="{{tit.title}}" selected="selected">{{tit.title}}</option>
+                     <option value="{{tit.title}}" selected="selected">{{tit.title}}</option>
                      {% else %}
-                         <option value="{{tit.title}}">{{tit.title}}</option>
+                     <option value="{{tit.title}}">{{tit.title}}</option>
                      {% endif %}
-                 {% endfor %}
-            </select></td></tr>
-            <tr><td>Department</td><td>
-            <select name="department">
-                 {% for dep in department %}
+                     {% endfor %}
+                  </select>
+               </td>
+            </tr>
+            <tr>
+               <td>Department</td>
+               <td>
+                  <select name="department">
+                     {% for dep in department %}
                      {% if dep.dep_name == department_name %}
-                        <option value="{{dep.id}}" selected="selected">{{dep.dep_name}} [{{dep.from_year}} - {{dep.to_year}}]</option>
+                     <option value="{{dep.id}}" selected="selected">{{dep.dep_name}} [{{dep.from_year}} - {{dep.to_year}}]</option>
                      {% else %}
-                        <option value="{{dep.id}}" >{{dep.dep_name}}  [{{dep.from_year}} - {{dep.to_year}}]</option>
+                     <option value="{{dep.id}}" >{{dep.dep_name}}  [{{dep.from_year}} - {{dep.to_year}}]</option>
                      {% endif %}
-                 {% endfor %}
-            </select></td></tr>
-            <tr><td>Academic Year</td><td>
-            <select name="academic_year">
-                 {% for ay in ay_list %}
-                       <option value="{{ay.id}}" >{{ay.academic_year}}</option>
-                 {% endfor %}
-            </select></td></tr>
-            <tr><td>{{ form.picture.label_tag }}</td><td>{{ form.picture }}</td></tr>
-            </table>
-            <p>{{ form.non_field_errors }}</p>
-            <p>
-                {{ form.picture.errors }}
-            </p>
-            <p>
-            </p>
-            <p><input type="submit" value="Save" /></p>
-        </form>
-{% endif %}
-<!--</div>
-</div>-->
-</section1>
+                     {% endfor %}
+                  </select>
+               </td>
+            </tr>
+            <tr>
+               <td>Academic Year</td>
+               <td>
+                  <select name="academic_year">
+                     {% for ay in ay_list %}
+                     <option value="{{ay.id}}" >{{ay.academic_year}}</option>
+                     {% endfor %}
+                  </select>
+               </td>
+            </tr>
+            <tr>
+               <td>{{ form.picture.label_tag }}</td>
+               <td>{{ form.picture }}</td>
+            </tr>
+         </table>
+         <p>{{ form.non_field_errors }}</p>
+         <p>
+            {{ form.picture.errors }}
+         </p>
+         <p>
+         </p>
+         <p><input type="submit" value="Save" /></p>
+      </form>
+      {% endif %}
+      <!--</div>
+         </div>-->
+   </section1>
 </section>
 {% include 'footer.html' %}
-
-<!--
-<footer>
-Copyright © webcontacts
-</footer>
-
-</body>
-</html>-->

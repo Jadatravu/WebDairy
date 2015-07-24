@@ -1,37 +1,30 @@
 <!DOCTYPE html>
 {% include 'header.html' %}
 <section>
-<div class="row">
-<div class="col-sm-10" >
-{% if user.is_superuser %}
-        {% if msg == "" %}
-       {% else %}
+   <div class="row">
+      <div class="col-sm-10" >
+         {% if user.is_superuser %}
+         {% if msg == "" %}
+         {% else %}
          <h4> {{ msg }} </h4>
-       {% endif %}
-        <!-- Upload form. Note enctype attribute! -->
-        <form action="{% url 'addtest' %}" method="post" enctype="multipart/form-data">
+         {% endif %}
+         <!-- Upload form. Note enctype attribute! -->
+         <form action="{% url 'addtest' %}" method="post" enctype="multipart/form-data">
             {% csrf_token %}
-                 <div class="row">
-                 <label for="name" class="col-sm-4">Test Name</label>
-                 <input type="text" class="col-sm-8" name="test_name" id="test_name" placeholder="Enter Test Name here"></div>
+            <div class="row">
+               <label for="name" class="col-sm-4">Test Name</label>
+               <input type="text" class="col-sm-8" name="test_name" id="test_name" placeholder="Enter Test Name here">
+            </div>
             Department
             <select name="department">
-                 {% for dep in department %}
-                     <option value="{{dep.id}}" >{{dep.dep_name}} </option>
-                 {% endfor %}
+               {% for dep in department %}
+               <option value="{{dep.id}}" >{{dep.dep_name}} </option>
+               {% endfor %}
             </select>
-            
             <p><input type="submit" value="Save" /></p>
-        </form>
-{% endif %}
-</div>
-</div>
+         </form>
+         {% endif %}
+      </div>
+   </div>
 </section>
 {% include 'footer.html' %}
-<!--
-<footer>
-Copyright © webcontacts
-</footer>
-
-</body>
-</html>-->

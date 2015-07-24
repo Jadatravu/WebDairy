@@ -1,34 +1,33 @@
 <!DOCTYPE html>
 {% include 'header.html' %}
 <section>
-<section1>
-{% if user.is_superuser %}
-<div class="table-responsive">
-       
-       {% if msg == "" %}
-       {% else %}
+   <section1>
+      {% if user.is_superuser %}
+      <div class="table-responsive">
+         {% if msg == "" %}
+         {% else %}
          <h4> {{ msg }} </h4>
-       {% endif %}
-       <p> subject list </p>
-       <form action="{% url 'subjecttodep' %}"  method=POST enctype="multipart/form-data">
-          {% csrf_token %}
-          {% for sub in subject %}
-<p><label for="check">{{ sub.sub_name }} [{{ sub.teacher_id }}] [{{ sub.publisher }}] [{{ sub.text_book }}]</label> <input type="checkbox" name="check_{{sub.id}}" id="check_{{sub.id}}" /></p>
-          {% endfor %}
-          <p> Department list </p>
-          <select name="department">
-                 {% for dep in department %}
-                     {% if dep.dep_name == department_name %}
-                        <option value="{{dep.id}}" selected="selected">{{dep.dep_name}} </option>
-                     {% else %}
-                        <option value="{{dep.id}}" >{{dep.dep_name}} </option>
-                     {% endif %}
-                 {% endfor %}
-          </select>
-<p><input type=submit value="Submit"></p>
-</form>
-</div>
-{% endif %}
-</section1>
+         {% endif %}
+         <p> subject list </p>
+         <form action="{% url 'subjecttodep' %}"  method=POST enctype="multipart/form-data">
+            {% csrf_token %}
+            {% for sub in subject %}
+            <p><label for="check">{{ sub.sub_name }} [{{ sub.teacher_id }}] [{{ sub.publisher }}] [{{ sub.text_book }}]</label> <input type="checkbox" name="check_{{sub.id}}" id="check_{{sub.id}}" /></p>
+            {% endfor %}
+            <p> Department list </p>
+            <select name="department">
+               {% for dep in department %}
+               {% if dep.dep_name == department_name %}
+               <option value="{{dep.id}}" selected="selected">{{dep.dep_name}} </option>
+               {% else %}
+               <option value="{{dep.id}}" >{{dep.dep_name}} </option>
+               {% endif %}
+               {% endfor %}
+            </select>
+            <p><input type=submit value="Submit"></p>
+         </form>
+      </div>
+      {% endif %}
+   </section1>
 </section>
 {% include 'footer.html' %}

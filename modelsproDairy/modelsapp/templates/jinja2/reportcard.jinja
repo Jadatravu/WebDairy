@@ -4,30 +4,41 @@
 <form action="{{ url('reportcard') }}"  method="post" enctype="multipart/form-data">
 <input type="hidden" name="csrfmiddlewaretoken" value="{{ csrf_token }}">
 <p> Student </p>
-   <select name="contact_id">
-         {%for con in contact_list %}                
-              <option value="{{con.id}}" >{{con.sur_name}},{{con.first_name}} </option>
-         {% endfor %}
-   </select>
+<select name="contact_id">
+   {%for con in contact_list %}                
+   <option value="{{con.id}}" >{{con.sur_name}},{{con.first_name}} </option>
+   {% endfor %}
+</select>
 <input type=submit value="Submit">
 <form>
-
 {% if cont %}
 <h4> {{cont.sur_name}},{{cont.first_name}} </h4>
-     {% if test_list %}
-          {% if department %}
-               {% for te_name in test_list %}
-                   <h4> {{te_name}} </h4>
-                   <table class="table table-striped table-bordered"><thead><th>Subject</th><th>Marks</th><th>Grade</th><th>Comment</th><thead><tbody>
-                   {% for sub in department.subject_set.all() %}
-                         {% for test in cont.test_set.filter(test_name = te_name, subject = sub) %}
-                         <tr><td>{{sub.sub_name}}</td><td>{{test.marks}}</td><td>{{test.grade}}</td><td>{{test.comment}}</td></tr>
-                         {% endfor %}
-                   
-                   {% endfor %}
-                   </tbody></table>
-               {% endfor %}
-          {% endif %}
-     {% endif %}
+{% if test_list %}
+{% if department %}
+{% for te_name in test_list %}
+<h4> {{te_name}} </h4>
+<table class="table table-striped table-bordered">
+   <thead>
+      <th>Subject</th>
+      <th>Marks</th>
+      <th>Grade</th>
+      <th>Comment</th>
+   <thead>
+   <tbody>
+      {% for sub in department.subject_set.all() %}
+      {% for test in cont.test_set.filter(test_name = te_name, subject = sub) %}
+      <tr>
+         <td>{{sub.sub_name}}</td>
+         <td>{{test.marks}}</td>
+         <td>{{test.grade}}</td>
+         <td>{{test.comment}}</td>
+      </tr>
+      {% endfor %}
+      {% endfor %}
+   </tbody>
+</table>
+{% endfor %}
+{% endif %}
+{% endif %}
 {% endif %}
 {% include 'footer.jinja' %}
