@@ -2,15 +2,14 @@
 {% include 'header.html' %}
 <section>
 <div class="row">
-   <div class="col-sm-10" >
+   <div class="col-sm-12" >
       <a>Search Contact</a>
       <p>
-         <a> To Search Contact in the web contacts
-         <a>
+         <a> To Search Contact in the web contacts </a>
       </p>
       {% if user.is_superuser %}
       <div class="table-responsive">          
-      <table class="table table-striped table-bordered" style="width=600">
+      <table class="table table-striped table-bordered" style="width=100%">
       <thead>
       <tr>
       <th>#</th>
@@ -23,7 +22,7 @@
       </thead>
       <tbody> 
       {% if leave_balance_list %}
-      <ul>
+      <!--<ul>-->
       {% for document in leave_balance_list %}
       <tr>
       <td><a href="/Contacts/viewcontact/{{document.contact.id}}">{{ document.id }}</a></td>
@@ -34,7 +33,7 @@
       <td>{{document.earned_leave_balance}}</td>
       </tr>
       {% endfor %}
-      </ul>
+      <!--</ul>-->
       {% else %}
       <p>No search results found with the key.</p>
       {% endif %}

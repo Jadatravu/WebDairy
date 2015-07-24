@@ -2,7 +2,7 @@
 {% include 'header.html' %}
 <section>
    <div class="row">
-      <div class="col-sm-10" >
+      <div class="col-sm-12" >
          {% if user.is_superuser %}
          {% if supervisor %}
          <ul>
@@ -15,11 +15,18 @@
          {% endif %}
          <p>All Employees.</p>
          {% if contacts %}
-         <ul>
+         <!--<ul>-->
+            <table class="table table-striped table-bordered" style="width=100%">
+            <thead>
+            <tr><th> Contact Id </th><th> First Name </th><th> Last Name </th><th> Surname </th></tr>
+            </thead>
+            <tbody>
             {% for document in contacts %}
-            <li> <a>{{ document.id }}</a> <a>{{ document.first_name }}</a> <a>{{ document.last_name }}</a> <a>{{ document.sur_name }}</a> </li>
+            <tr> <td><a href="/Contacts/viewcontact/{{document.id}}">{{ document.id }}</a></td> <td>{{ document.first_name }}</td> <td>{{ document.last_name }}</td> <td>{{ document.sur_name }}</td> </tr>
             {% endfor %}
-         </ul>
+            </tbody>
+            </table>
+         <!--</ul>-->
          {% else %}
          <p>No title.</p>
          {% endif %}

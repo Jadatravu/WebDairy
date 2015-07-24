@@ -9,23 +9,23 @@
       <form action="{% url 'addholidayform' %}" method="post" enctype="multipart/form-data">
          {% csrf_token %}      
          <!--<table border = 1 width= "200" height='10' >-->
-         <table class="table table-striped table-bordered" style="width=600">
+         <table class="table table-striped table-bordered" style="width=100%">
             <thead>
                <tr>
-                  <td>Date</td>
-                  <th>Holiday</th>
+                  <th style="width=25%">Date</th>
+                  <th style="width=75%">Holiday</th>
                </tr>
             </thead>
             <tbody>
                <tr BGCOLOR='E2E0E0'>
                   <td><input type="text" name="datevalue" id="datepicker" /></td>
-                  <td><input name="h_name" type="text"></td>
+                  <td><!--<input name="h_name" type="text">--><textarea class="form-control row-fluid" rows="1" name ="h_name" required></textarea></td>
                </tr>
             </tbody>
          </table>
          <input type=submit value = "Save">
       </form>
-      <table class="table table-striped table-bordered" style="width=600">
+      <table class="table table-striped table-bordered" style="width=100%">
          <thead>
             <tr>
                <th>Date</th>

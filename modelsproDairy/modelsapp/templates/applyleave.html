@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 {% include 'header.html' %}
-<section>
+<!--<section>-->
    <!--<div class="row">
       <div class="col-sm-12" style="background-color:lavenderblush;">
       
          <div class="table-responsive">  -->
-   <section0>
+   <section2>
       <h4>Leave Status</h4>
       {% if msg %}
       <h4>
       {{msg}}
       <h4>
       {% endif %}
-      <table class="table table-striped table-bordered" style=" margin-bottom: 0px;width=600 margin-bottom: 0px;height: 100px;width: 250px; margin-bottom: 0px">
+      <table class="table table-striped table-bordered" style="margin-bottom: 0px;margin-bottom: 0px; margin-bottom: 0px">
          <thead>
             <tr>
                <th>Surname</th>
@@ -32,18 +32,18 @@
                {% endfor %}
          </tbody>
       </table>
-   </section0>
-   <section1>
+   </section2>
+   <section2>
    <h4>Leave Apply Form</h4>
    <form action="{% url 'applyleaveform' %}" method="post" enctype="multipart/form-data">
       {% csrf_token %} 
-      <table class="table table-striped table-bordered" style=" margin-bottom: 0px;width=600 margin-bottom: 0px;height: 100px;width: 500px; margin-bottom: 0px">
+      <table class="table table-striped table-bordered" style=" margin-bottom: 0px;margin-bottom: 0px; margin-bottom: 0px">
          <thead>
             <tr>
-               <th>Contact</th>
-               <th>Leave Type</th>
-               <th>From date</th>
-               <th>To date</th>
+               <th style="width:25%">Contact</th>
+               <th style="width:25%">Leave Type</th>
+               <th style="width:25%">From date</th>
+               <th style="width:25%">To date</th>
             </tr>
          </thead>
          <tbody>
@@ -64,13 +64,14 @@
             <td><input type="text" name="datevalue1" id="datepicker1" /></td>
          </tbody>
       </table>
-      <div class="col-md-6">
+      <!--<div class="col-md-6">-->
          Comments:
-         <textarea class="form-control" rows="3" col="20"  name ="comment" placeholder="Please Approve" required></textarea>
+         <textarea class="form-control row-fluid" rows="2" name ="comment" placeholder="Please Approve" required></textarea>
          <input type=submit value = "Save">
-      </div>
+      <!--</div>-->
    </form>
-   <section1>
-</section>
+   <section2>
+<!--</section>-->
+
 {% include 'footer.html' %}
 </html>
