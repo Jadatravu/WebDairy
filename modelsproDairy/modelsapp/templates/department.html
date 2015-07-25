@@ -11,7 +11,7 @@
             <div class="modal-header">
                <button type="button" class="close" data-dismiss="modal">&times;</button>
                <h4 class="modal-title">
-                  <p>{{dep.dep_name}} [{{dep.from_year}} - {{dep.to_year}}]</p>
+                  <p>{{dep.dep_name}} </p>
                </h4>
             </div>
             <div class="modal-body">
@@ -21,7 +21,7 @@
                {% endfor %}
                <h4 class="modal-title">Subjects.</h4>
                {% for sub in dep.subject_set.all %}
-               <p>{{sub.sub_name}} [ {{sub.from_year}} - {{sub.to_year}} ]</p>
+               <p>{{sub.sub_name}} </p>
                {% endfor %}
             </div>
             <div class="modal-footer">
