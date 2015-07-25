@@ -1,4 +1,8 @@
 {% include 'header.jinja' %}
+<!--<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" />
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script type="text/javascript" src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>-->
+
 <h4>{{ msg }}</h4>
 <h2> Report Card </h2>
 <form action="{{ url('reportcard') }}"  method="post" enctype="multipart/form-data">
@@ -15,14 +19,35 @@
 <h4> {{cont.sur_name}},{{cont.first_name}} </h4>
 {% if test_list %}
 {% if department %}
+<!--<div class="panel panel-default" style="width: 100%; padding: 10px; margin: 10px">
+        <div id="Tabs" role="tabpanel">-->
+<div class="tabbable">
+<ul class="nav nav-tabs">
 {% for te_name in test_list %}
-<h4> {{te_name}} </h4>
+<!--<h4> {{te_name}} </h4>-->
+ {% if te_name == test_list[-1] %}
+ <li class="active"><a href="#{{te_name}}" data-toggle="tab">{{te_name}}</a></li>
+ {% else %}
+   <li><a href="#{{te_name}}" data-toggle="tab">{{te_name}}</a></li>
+ {% endif %}
+
+{% endfor %}
+</ul>
+<div class="tab-content" >
+{% for te_name in test_list %}
+<!--<h4> {{te_name}} </h4>-->
+<!--<div role="tabpanel" class="tab-pane active" id="{{te_name}}">-->
+{% if te_name == test_list[-1] %}
+<div class="tab-pane active" id="{{te_name}}">
+{% else %}
+<div class="tab-pane" id="{{te_name}}">
+{% endif %}
 <table class="table table-striped table-bordered">
-   <thead>
+   <thead><tr>
       <th>Subject</th>
       <th>Marks</th>
       <th>Grade</th>
-      <th>Comment</th>
+      <th>Comment</th></tr>
    <thead>
    <tbody>
       {% for sub in department.subject_set.all() %}
@@ -37,7 +62,12 @@
       {% endfor %}
    </tbody>
 </table>
+</div>
 {% endfor %}
+</div>
+<!--</div>
+</div>-->
+</div>
 {% endif %}
 {% endif %}
 {% endif %}
