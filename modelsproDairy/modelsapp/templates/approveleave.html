@@ -33,6 +33,11 @@
                   <td>{{document.to_date.year}}/{{document.to_date.month}}/{{document.to_date.day}}</td>
                   <td>{{document.req_date.year}}/{{document.req_date.month}}/{{document.req_date.day}}</td>
                   <td>{{document.count}}</td>
+                  {% if document.type == 0 %}
+                      <td> Sick </td>
+                  {% elif  document.type == 1 %}
+                      <td> Earned </td>
+                  {% endif %}
                   <td>{{document.type}}</td>
                   <td>{{document.req_comment}}</td>
                   <td>{{document.state}}</td>

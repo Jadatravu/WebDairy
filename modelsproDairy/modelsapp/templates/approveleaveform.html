@@ -23,9 +23,9 @@
             {% if leave %}
             <form action="{% url 'approveleave_form' %}" method="post" enctype="multipart/form-data">
                {% csrf_token %}
+               <input type="hidden" name="leave_id" value="{{leave.id}}">
                <ul>
                <tr>
-                  <input type="hidden" name="leave_id" value="{{leave.id}}">
                   <td>{{leave.requester.first_name}}</td>
                   <td>{{leave.requester.last_name}}</td>
                   <td>{{leave.requester.sur_name}}</td>
@@ -33,15 +33,19 @@
                   <td>{{leave.to_date.year}}/{{leave.to_date.month}}/{{leave.to_date.day}}</td>
                   <td>{{leave.req_date.year}}/{{leave.req_date.month}}/{{leave.req_date.day}}</td>
                   <td>{{leave.count}}</td>
-                  <td>{{leave.type}}</td>
+                  {% if leave.type == 0 %} 
+                      <td>Sick</td> 
+                  {% elif leave.type == 1 %} 
+                      <td>Earned</td> 
+                  {% endif %}
                   <td>{{leave.req_comment}}</td>
                   <td>{{leave.state}}</td>
                </tr>
          </tbody>
       </table>
-      <div class="col-md-6">
+      <div class="col-md-12">
       Approval Comments:
-      <textarea class="form-control" rows="3" col="20"  name ="comment" placeholder="Approved" required></textarea>
+      <textarea class="form-control" name ="comment" placeholder="Approved" required></textarea>
       <input type=submit value = "Approve">
       </div>
       </form>
