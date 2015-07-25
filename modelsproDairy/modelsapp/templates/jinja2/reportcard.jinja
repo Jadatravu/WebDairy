@@ -7,7 +7,6 @@
 <h2> Report Card </h2>
 <form action="{{ url('reportcard') }}"  method="post" enctype="multipart/form-data">
 <input type="hidden" name="csrfmiddlewaretoken" value="{{ csrf_token }}">
-<p> Student </p>
 <select name="contact_id">
    {%for con in contact_list %}                
    <option value="{{con.id}}" >{{con.sur_name}},{{con.first_name}} </option>
@@ -16,9 +15,11 @@
 <input type=submit value="Submit">
 <form>
 {% if cont %}
-<h4> {{cont.sur_name}},{{cont.first_name}} </h4>
+<h3> {{cont.sur_name}},{{cont.first_name}} </h3>
+
 {% if test_list %}
 {% if department %}
+<h4> {{department.dep_name }}</h4>
 <!--<div class="panel panel-default" style="width: 100%; padding: 10px; margin: 10px">
         <div id="Tabs" role="tabpanel">-->
 <div class="tabbable">

@@ -3,18 +3,22 @@
 <form action="{{ url('viewtest') }}"  method="post" enctype="multipart/form-data">
    <div class="form-group">
       <input type="hidden" name="csrfmiddlewaretoken" value="{{ csrf_token }}">
+      <div class="col-sm-6" >
       <p> Test list </p>
       <select name="test">
          {% for test in t_list %}
          <option value="{{test}}" >{{test}} </option>
          {% endfor %}
       </select>
+      </div>
+      <div class="col-sm-6" >
       <p> Department list </p>
       <select name="department">
          {% for dep in d_list %}
          <option value="{{dep.id}}" >{{dep.dep_name}} </option>
          {% endfor %}
       </select>
+      </div>
       <p><input type=submit value="Submit"></p>
    </div>
 </form>
