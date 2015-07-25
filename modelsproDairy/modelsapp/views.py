@@ -150,7 +150,8 @@ def applyleaveform(request):
              f_date = datetime.date(int(from_date_list[2]),int(from_date_list[0]),int(from_date_list[1]))
              t_date = datetime.date(int(to_date_list[2]),int(to_date_list[0]),int(to_date_list[1]))
              d=f_date
-             no_applying_leaves = 0
+             no_applying_leaves = 1 
+             # no applying leaves will initialized to 1, as the dates are inclusive in calculating the no of leaves
              #calculate no_of_days_leave considering holidays,earlier applied leaves
              time_delta = datetime.timedelta(1)
              while ((t_date -d) > datetime.timedelta(0)):
@@ -188,7 +189,7 @@ def applyleaveform(request):
              logger.debug(le_balance[0].sick_leave_balance)
              logger.debug(le_balance[0].earned_leave_balance)
              logger.debug("type => %d"%int(tpe))
-             if (int(tpe) == 0):
+             if (int(tpe) == 0): # sick leave
                 if ((no_applying_leaves > 0) and ( le_balance[0].sick_leave_balance - no_applying_leaves > -1)):
                      logger.debug("sick no_applying leaves => %d"%no_applying_leaves)
                      logger.debug("app_id => %d"%cont.supervisor.sup_id)
@@ -207,9 +208,10 @@ def applyleaveform(request):
                      le_bal.save()
                      logger.debug("sick_leave_ balance %d"%le_balance[0].sick_leave_balance)
                      logger.debug("sick_leave_ balance %d"%le_bal.sick_leave_balance)
-                if (( le_balance[0].sick_leave_balance - no_applying_leaves < 0)):
+                else:
+                    #if (( le_balance[0].sick_leave_balance - no_applying_leaves < 0)):
                     message = "Insufficient Leave Balance"
-             elif (int(tpe) == 1):
+             elif (int(tpe) == 1): # earned Leave
                 if ((no_applying_leaves > 0) and ( le_balance[0].earned_leave_balance - no_applying_leaves > -1)):
                      logger.debug("earned no_applying leaves => %d"%no_applying_leaves)
                      apply_leave = Leave(requester=cont, app_id=cont.supervisor_id,from_date=f_date,to_date=t_date,count=no_applying_leaves,state=0,type=tpe,req_comment=comment,app_comment="-")
@@ -221,7 +223,8 @@ def applyleaveform(request):
                      le_bal.earned_leave_balance = earned_leave_bal
                      le_bal.save()
                      logger.debug("earned_leave balance %d"%le_bal.earned_leave_balance)
-                if (( le_balance[0].earned_leave_balance - no_applying_leaves < 0)):
+                else:
+                    #if (( le_balance[0].earned_leave_balance - no_applying_leaves < 0)):
                     message = "Insufficient Leave Balance"
                  
              #send error message if the leave balance is not sufficient
@@ -1297,6 +1300,7 @@ def contactform(request):
         logger.debug ("contact form1")
         form = ContactForm(request.POST, request.FILES)
         logger.debug (form.is_valid())
+        academic_year_flag = False
         if form.is_valid():
             logger.debug ("contact form2")
             picture1 = request.FILES['picture']
@@ -1313,7 +1317,9 @@ def contactform(request):
             supervisor1 = request.POST['supervisor']
             jobtitle1 = request.POST['title']
             department1 = request.POST['department']
-            ay_id = request.POST['academic_year']
+            if request.POST.has_key('academic_year'):
+               academic_year_flag = True
+               ay_id = request.POST['academic_year']
             H_No1 = request.POST['H_No']
             Line_1 = request.POST['Line1']
             street1 = request.POST['street']
@@ -1327,7 +1333,8 @@ def contactform(request):
             job1 = JobTitle.objects.filter(title=jobtitle1)[0]
             #dep1 = Department.objects.filter(dep_name=department1)[0]
             dep1 = Department.objects.get(id=department1)
-            ay1 = AcademicYear.objects.get(id=ay_id)
+            if ( academic_year_flag ):
+               ay1 = AcademicYear.objects.get(id=ay_id)
             logger.debug (c_id)
             logger.debug ("old_pic1 " + str(old_pic1))
             if ((int(c_id) == 0) and (old_pic1 == '0')):
@@ -1336,7 +1343,8 @@ def contactform(request):
                newdoc = Contact(first_name=first_name1,last_name=last_name1,sur_name=sur_name1,login_name=log_name1,email=email1,emp_id=emp_id1,supervisor=sup1,job_title=job1,phone=phone1,picture=picture1,address=add1)
                newdoc.save()
                newdoc.department.add(dep1)
-               ay1.contact_set.add(newdoc)
+               if ( academic_year_flag ):
+                   ay1.contact_set.add(newdoc)
                ay_list = AcademicYear.objects.filter(current = True)
                #TODO:DONE get testlist for the department
                #
