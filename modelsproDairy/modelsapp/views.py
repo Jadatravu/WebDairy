@@ -312,30 +312,31 @@ def skillcontactaddform(request):
         c.update(csrf(request))
         return render_to_response("login.html",c)
     logger.debug("this is skill title contact add form")
+    message = str("")
     if request.method == 'POST':
         exper_years1 = request.POST['years']
         skill_title1 = request.POST['title']
         exper_level1 = request.POST['exper']
         con_id = request.POST['con_id']
-        sk=Skill(skill_name=skill_title1,exp_years=exper_years1,exp_level=exper_years1)
-        sk.save()
         contact=Contact.objects.get(id=con_id)
-        """
-        contacts_list=Contact.objects.filter(login_name__contains=request.user)
-        if( len(contacts_list) > 0):
-            sk.contact.add(contacts_list[0])
-        """
-        sk.contact.add(contact)
-        return HttpResponseRedirect(reverse('modelsapp.views.skillcontactaddform'))
+        skill_list = contact.skill_set.filter(skill_name = skill_title1)
+        if ( len(skill_list) == 0):
+           sk=Skill(skill_name=skill_title1,exp_years=exper_years1,exp_level=exper_level1)
+           sk.save()
+           sk.contact.add(contact)
+        else:
+           message = str("Skill Already in the Contact Skills List")
+        #return HttpResponseRedirect(reverse('modelsapp.views.skillcontactaddform'))
     else:
-        logger.debug (" log 1 =>request user %s is authenticated"%request.user.username)
-        contacts_list=Contact.objects.filter(login_name__contains=request.user.username)
-        logger.debug (" log 1 =>contacts_list len %d is authenticated"%len(contacts_list))
-        skill_contact_list={}
-        for ct in contacts_list:
-           skill_contact_list[ct]=ct.skill_set.all()
+        pass
+    logger.debug (" log 1 =>request user %s is authenticated"%request.user.username)
+    contacts_list=Contact.objects.filter(login_name__contains=request.user.username)
+    logger.debug (" log 1 =>contacts_list len %d is authenticated"%len(contacts_list))
+    skill_contact_list={}
+    for ct in contacts_list:
+        skill_contact_list[ct]=ct.skill_set.all()
            
-        if( len(contacts_list) > 0):
+    if( len(contacts_list) > 0):
              skill_list=contacts_list[0].skill_set.all()
              logger.debug (" log 1 =>skill_list len %d is authenticated"%len(skill_list))
              tit_list = SkillTitle.objects.all() 
@@ -343,7 +344,7 @@ def skillcontactaddform(request):
              exp_level_list=[1,2,3,4,5]
              return render_to_response(
                       'skilladdcontact.html',
-                       {'skill': skill_list,'ylist': year_list,'elist':exp_level_list,'title_list':tit_list,'user':request.user, 'contact_list':contacts_list,'skill_contact_list':skill_contact_list},
+                       {'msg':message, 'skill': skill_list,'ylist': year_list,'elist':exp_level_list,'title_list':tit_list,'user':request.user, 'contact_list':contacts_list,'skill_contact_list':skill_contact_list},
                        #{'form': form},
                        context_instance=RequestContext(request)
                      )#
