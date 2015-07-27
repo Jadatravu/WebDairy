@@ -1155,7 +1155,8 @@ def addtest(request):
     else:
        if len(ay_list) > 1:
             message = str("Multiple current years found")
-            dep_list = Department.objects.all()
+            #dep_list = Department.objects.all()
+            dep_list = []
        else:
            dep_list = ay_list[0].department_set.all()
     return render_to_response(
