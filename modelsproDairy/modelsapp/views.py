@@ -751,13 +751,21 @@ def departmentform(request):
             ay_id=request.POST['academic_year']
             ay = AcademicYear.objects.get(id = ay_id)
             #newdoc = Department(dep_name = dep_name_var,class_teacher_id=class_teacher_id_var,from_year=from_year_var,to_year=to_year_var)
+            de_list = ay.department_set.filter(dep_name = dep_name_var)
+            if len( de_list ) < 1:
+                newdoc = Department(dep_name = dep_name_var,class_teacher_id=class_teacher_id_var)
+                newdoc.save()
+            else:
+               message = str("Duplicate Department, Hence not saved")
+            """
             newdoc = Department(dep_name = dep_name_var,class_teacher_id=class_teacher_id_var)
             try:
                newdoc.full_clean()
             except ValidationError as e:
                message = str("Duplicate Department, Hence not saved")
+            """
             if ( message == ""):
-               newdoc.save()
+               #newdoc.save()
                ay.department_set.add(newdoc)
                message = str("Department Saved")
                form = DepartmentForm() # A empty, unbound form
@@ -776,7 +784,9 @@ def departmentform(request):
         form = DepartmentForm() # A empty, unbound form
 
     # Load documents for the list page
-    documents = Department.objects.all()
+    a_list = AcademicYear.objects.filter(current = True)
+    documents = a_list[0].department_set.all()
+    #documents = Department.objects.all()
     ay_list = AcademicYear.objects.all()
 
     # Render list page with the documents and the form

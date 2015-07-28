@@ -32,9 +32,11 @@ class Department(models.Model):
     from_year = models.IntegerField(default=int(datetime.datetime.today().year))
     to_year = models.IntegerField(default=int(datetime.datetime.today().year)+1)
     """
+    """ # implemented department name duplication in view
     class Meta:
         #unique_together = (("dep_name","from_year","to_year"),)
         unique_together = (("dep_name"),)
+    """
 
 class Subject(models.Model):
     sub_name=models.CharField(max_length=50)
