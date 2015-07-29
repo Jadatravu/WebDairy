@@ -1202,25 +1202,34 @@ def addsubject(request):
             ay_id_var = request.POST['academic_year']
             dep=Department.objects.get(id=dep_id_var)
             ay=AcademicYear.objects.get( id = ay_id_var)
-            #sub = Subject(sub_name=sub_name_var,teacher_id=teacher_id_var,text_book=text_book_var,publisher=publisher_var,from_year=from_year_var,to_year=to_year_var,department_name=dep.dep_name)
-            sub = Subject(sub_name=sub_name_var,teacher_id=teacher_id_var,text_book=text_book_var,publisher=publisher_var,department_name=dep.dep_name)
+            su_list = ay.subject_set.filter(sub_name = sub_name_var, teacher_id = teacher_id_var, text_book = text_book_var, department_name=dep.dep_name)
+            if len(su_list ) < 1:
+                 #sub = Subject(sub_name=sub_name_var,teacher_id=teacher_id_var,text_book=text_book_var,publisher=publisher_var,from_year=from_year_var,to_year=to_year_var,department_name=dep.dep_name)
+                 sub = Subject(sub_name=sub_name_var,teacher_id=teacher_id_var,text_book=text_book_var,publisher=publisher_var,department_name=dep.dep_name)
+                 sub.save()
+            else:
+                 message = str("Duplicate Subject, Hence not Added")
+            """
             try:
               sub.full_clean()
             except ValidationError as e:
               message = str("Duplicate Subject, Hence not Added")
+            """
             if ( message == "" ):
                dep=Department.objects.get(id=dep_id_var)
                logger.debug ("department name %s"%dep.dep_name)
-               sub.save()
+               #sub.save()
                sub.department.add(dep)
                ay.subject_set.add(sub)
-               sub.save()
+               #sub.save()
                message=str("Subject Added")
             form = SubjectForm() # A empty, unbound form
     else:
         form = SubjectForm() # A empty, unbound form
     department = Department.objects.all()
-    department_list = Department.objects.all()
+    #department_list = Department.objects.all()
+    a_list = AcademicYear.objects.filter(current = True)
+    department_list = a_list[0].department_set.all()
     subject_list = Subject.objects.all()
     jt=JobTitle.objects.filter(title='Teacher')
     t_list = jt[0].contact_set.all()

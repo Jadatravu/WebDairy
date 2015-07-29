@@ -50,9 +50,11 @@ class Subject(models.Model):
     ac_year = models.ManyToManyField(AcademicYear)
     department = models.ManyToManyField(Department)
     department_name=models.CharField(max_length=50, default="No deparment")
+    """
     class Meta:
         #unique_together = (("sub_name","text_book","publisher","from_year","to_year", "department_name"),)
         unique_together = (("sub_name","text_book","publisher", "department_name"),)
+    """
 
 
 """

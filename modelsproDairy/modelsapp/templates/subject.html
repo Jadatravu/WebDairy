@@ -22,6 +22,14 @@
                            <input type="text" class="col-sm-8" name="sub_name_{{sub.id}}" id="username" placeholder="{{sub.sub_name}}">
                         </div>
                         <div class="row">
+                           <label for="name" class="col-sm-4">Text Book</label>
+                           <input type="text" class="col-sm-8" name="text_book_{{sub.id}}" id="username" placeholder="{{sub.text_book}}">
+                        </div>
+                        <div class="row">
+                           <label for="name" class="col-sm-4">Publisher</label>
+                           <input type="text" class="col-sm-8" name="publisher_{{sub.id}}" id="username" placeholder="{{sub.publisher}}">
+                        </div>
+                        <div class="row">
                            <label for="name" class="col-sm-4">Subject Teacher</label>
                            <select name="teacher_{{sub.id}}" for="name" class="col-sm-8">
                               {% for teacher in teachers_list %}  
