@@ -1265,33 +1265,40 @@ def editsubject(request):
        subjects_list = Subject.objects.all()
        for subj in subjects_list:
             key_str= str("sub_name_") + str(subj.id)
-            key_from_year= str("from_year_") + str(subj.id)
-            key_to_year= str("to_year_") + str(subj.id)
+            #key_from_year= str("from_year_") + str(subj.id)
+            #key_to_year= str("to_year_") + str(subj.id)
             key_dep_id= str("dep_") + str(subj.id)
             key_teacher_id= str("teacher_") + str(subj.id)
-            key_ay_id= str("academic_year__") + str(subj.id)
-            if (request.POST.has_key(key_str) and request.POST.has_key(key_from_year) and request.POST.has_key(key_to_year) and request.POST.has_key(key_teacher_id) and request.POST.has_key(key_ay_id)):
+            key_text_book_id= str("text_book_") + str(subj.id)
+            key_publisher_id= str("publisher_") + str(subj.id)
+            #key_ay_id= str("academic_year_") + str(subj.id)
+            if (request.POST.has_key(key_str) and request.POST.has_key(key_text_book_id) and request.POST.has_key(key_publisher_id) and request.POST.has_key(key_teacher_id) ):
                 s_name = request.POST[key_str]
-                f_year = request.POST[key_from_year]
-                t_year = request.POST[key_to_year]
-                dep_id = request.POST[key_dep_id]
-                ay_id = request.POST[key_ay_id]
+                #f_year = request.POST[key_from_year]
+                #t_year = request.POST[key_to_year]
+                #dep_id = request.POST[key_dep_id]
+                #ay_id = request.POST[key_ay_id]
+                teacher_id = request.POST[key_teacher_id]
+                text_book_var = request.POST[key_text_book_id]
+                publisher_var = request.POST[key_publisher_id]
                 teacher_id = request.POST[key_teacher_id]
                 sub_obj = Subject.objects.get( id = subj.id) 
                 #dep = sub_obj.department.get(from_year = sub_obj.from_year, to_year = sub_obj.to_year)
-                sub_obj.from_year = f_year
-                sub_obj.to_year = t_year
+                #sub_obj.from_year = f_year
+                #sub_obj.to_year = t_year
                 sub_obj.sub_name = s_name
                 sub_obj.teacher_id = teacher_id
+                sub_obj.publisher = publisher_var
+                sub_obj.text_book = text_book_var
                 sub_obj.save()
-                dep.subject_set.remove( sub_obj )
+                #dep.subject_set.remove( sub_obj )
                 logger.debug ("old Dep id %d"%dep.id)
-                dep.save()
-                dep_id_list = dep_id.split('_')
-                logger.debug ("new Dep id %d"%int(dep_id_list[-1]))
-                dep_new = Department.objects.get( id = dep_id_list[-1] )
-                dep_new.subject_set.add( sub_obj )
-                dep_new.save()
+                #dep.save()
+                #dep_id_list = dep_id.split('_')
+                #logger.debug ("new Dep id %d"%int(dep_id_list[-1]))
+                #dep_new = Department.objects.get( id = dep_id_list[-1] )
+                #dep_new.subject_set.add( sub_obj )
+                #dep_new.save()
                 message = str("Subject Updated")
     form = SubjectForm() # A empty, unbound form
     department_list = Department.objects.all()
