@@ -114,10 +114,10 @@
          <tbody>
             {% for sub in subject %}
             <tr>
-               <td><button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#edit_{{sub.id}}_{{sub.teacher_id}}">{{ sub.id }}</button></td>
-               <td><button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#academic_year_{{sub.id}}">Academic Year</button></td>
+               <td><button type="button" class="btn btn-info btn-primary" data-toggle="modal" data-target="#edit_{{sub.id}}_{{sub.teacher_id}}">{{ sub.id }}</button></td>
+               <td><button type="button" class="btn btn-info btn-primary" data-toggle="modal" data-target="#academic_year_{{sub.id}}">Academic Year</button></td>
                <td><a href="/Contacts/viewcontact/{{sub.teacher_id}}">{{ sub.teacher_id }}</a></td>
-               <td><button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#{{sub.id}}_{{sub.teacher_id}}">{{ sub.sub_name }}</button></td>
+               <td><button type="button" class="btn btn-info btn-primary" data-toggle="modal" data-target="#{{sub.id}}_{{sub.teacher_id}}">{{ sub.sub_name }}</button></td>
             </tr>
             {% endfor %}
          </tbody>
