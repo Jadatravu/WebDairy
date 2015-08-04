@@ -1,5 +1,20 @@
 <!DOCTYPE html>
 {% include 'header.html' %}
+<script>
+$(function() {
+  $("#id_town").autocomplete({
+    source: "/Contacts/api/subjects/",
+    minLength: 3,
+  });
+});
+$(function() {
+  $("#subjects").autocomplete({
+    source: "/Contacts/api/subjects/",
+    minLength: 2,
+  });
+});
+</script>
+
 <section>
    <!--<section1>-->
       {% if user.is_superuser %}
@@ -8,6 +23,11 @@
          {% else %}
          <h4> {{ msg }} </h4>
          {% endif %}
+<div class="ui-widget">
+  <label for="subjects">Subjects: </label>
+  <input id="id_town">
+</div>
+
          <h3> subject list </h3>
          <form action="{% url 'subjecttodep' %}"  method=POST enctype="multipart/form-data">
             {% csrf_token %}
