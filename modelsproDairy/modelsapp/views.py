@@ -55,12 +55,85 @@ from django.contrib.auth.models import User
 
 from django.core.exceptions import ValidationError
 
+import json
+from django.http import HttpResponse
+
 
 import logging
 logger = logging.getLogger(__name__)
 
 
 # Create your views here.
+def namesearchlist(request):
+    if request.user.is_authenticated() and request.user.is_superuser:
+        logger.debug ("log 0 =>request user %s is authenticated"%request.user.username)
+    else:
+        logger.debug ("request user %s is authenticated"%request.user.username)
+        c={}
+        c.update(csrf(request))
+        return render_to_response("login.html",c)
+    results=[]
+    if request.method == 'POST':
+        logger.debug("this is post method ")
+    if request.method == 'GET':
+        logger.debug("this is GET method ")
+        logger.debug("len %d"% len(request.GET.keys()))
+        for key in request.GET.keys():
+            logger.debug(key)
+        logger.debug(str(request.GET["term"]))
+        a_list = AcademicYear.objects.filter(current = True)
+        con_list = a_list[0].contact_set.filter(first_name__contains=str(request.GET["term"]))
+        for con in con_list:
+           con_dict={}
+           con_dict_str = str(con.first_name).replace(" ","_")
+           results.append(con_dict_str)
+        con_list = a_list[0].contact_set.filter(sur_name__contains=str(request.GET["term"]))
+        for con in con_list:
+           con_dict={}
+           con_dict_str = str(con.sur_name).replace(" ","_")
+           results.append(con_dict_str)       
+        con_list = a_list[0].contact_set.filter(last_name__contains=str(request.GET["term"]))
+        for con in con_list:
+           con_dict={}
+           con_dict_str = str(con.last_name).replace(" ","_")
+           results.append(con_dict_str) 
+        for nl1 in results:
+           logger.debug(str(nl1))
+        results_set = set( results )   
+        for nl in list(results_set):
+           logger.debug(str(nl))  
+    data = json.dumps(list(results_set))
+    #data = json.dumps([sub.sub_name for sub in sub_list])
+    mimetype = 'application/json'
+    return HttpResponse(data, mimetype)
+
+def getsubjectlist(request):
+    if request.user.is_authenticated() and request.user.is_superuser:
+        logger.debug ("log 0 =>request user %s is authenticated"%request.user.username)
+    else:
+        logger.debug ("request user %s is authenticated"%request.user.username)
+        c={}
+        c.update(csrf(request))
+        return render_to_response("login.html",c)
+    results=[]
+    if request.method == 'POST':
+        logger.debug("this is post method ")
+    if request.method == 'GET':
+        logger.debug("this is GET method ")
+        logger.debug("len %d"% len(request.GET.keys()))
+        for key in request.GET.keys():
+            logger.debug(key)
+        a_list = AcademicYear.objects.filter(current = True)
+        sub_list = a_list[0].subject_set.filter(sub_name__contains=request.GET["term"])
+        for sub in sub_list:
+           sub_dict={}
+           sub_dict_str = str(sub.sub_name).replace(" ","_")
+           results.append(sub_dict_str)
+    data = json.dumps(results)
+    #data = json.dumps([sub.sub_name for sub in sub_list])
+    mimetype = 'application/json'
+    return HttpResponse(data, mimetype)
+
 def approveleave(request):
     if request.user.is_authenticated() and request.user.is_superuser:
         logger.debug ("log 0 =>request user %s is authenticated"%request.user.username)
