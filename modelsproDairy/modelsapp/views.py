@@ -97,11 +97,13 @@ def namesearchlist(request):
            con_dict={}
            con_dict_str = str(con.last_name).replace(" ","_")
            results.append(con_dict_str) 
+        """
         for nl1 in results:
            logger.debug(str(nl1))
         results_set = set( results )   
         for nl in list(results_set):
            logger.debug(str(nl))  
+        """
     data = json.dumps(list(results_set))
     #data = json.dumps([sub.sub_name for sub in sub_list])
     mimetype = 'application/json'
