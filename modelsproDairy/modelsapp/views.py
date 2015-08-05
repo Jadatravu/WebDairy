@@ -100,7 +100,9 @@ def namesearchlist(request):
         """
         for nl1 in results:
            logger.debug(str(nl1))
+        """
         results_set = set( results )   
+        """
         for nl in list(results_set):
            logger.debug(str(nl))  
         """

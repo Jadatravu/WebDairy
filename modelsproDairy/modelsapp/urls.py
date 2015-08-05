@@ -1,6 +1,8 @@
 from django.conf.urls import patterns, url
 
 urlpatterns = patterns('modelsapp.views',
+    url(r'^Contacts/api/subjects/$','getsubjectlist',name='getsubjectlist'),
+    url(r'^Contacts/api/namesearchlist/$','namesearchlist',name='namesearchlist'),
     url(r'^Contacts/class/addsubject/$','addsubject',name='addsubject'),
     url(r'^Contacts/class/editsubject/$','editsubject',name='editsubject'),
     url(r'^Contacts/class/searchsubject/$','searchsubject',name='searchsubject'),
