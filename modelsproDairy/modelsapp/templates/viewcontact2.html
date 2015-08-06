@@ -5,7 +5,7 @@
       <div class="col-sm-10" >
          <section0>
             {% if document.picture %}
-            <img src="/media/{{document.picture}}" alt="Smiley face" width="250" height="300" style="vertical-align:bottom">
+            <img src="/media/{{document.picture}}" class="img-responsive img-rounded" alt="Smiley face" width="250" height="300" border= "5" style="vertical-align:bottom">
             {% endif %}
             <h3>{{document.first_name}} {{document.last_name}}, {{document.sur_name}}</h3>
             <h4>{{document.job_title.title}}</h4>
