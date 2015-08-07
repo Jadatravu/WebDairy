@@ -58,12 +58,28 @@ from django.core.exceptions import ValidationError
 import json
 from django.http import HttpResponse
 
+#rest imports start
+from django.shortcuts import render
+
+# Create your views here.
+from django.contrib.auth.models import User, Group
+from rest_framework import viewsets
+from modelsapp.serializers import RestAppSerializer
+#rest imports end
+
+
 
 import logging
 logger = logging.getLogger(__name__)
 
 
 # Create your views here.
+
+class UserViewSet(viewsets.ModelViewSet):
+    #self.kwargs['year']
+    queryset = Contact.objects.all()
+    serializer_class = RestAppSerializer
+
 def namesearchlist(request):
     if request.user.is_authenticated() and request.user.is_superuser:
         logger.debug ("log 0 =>request user %s is authenticated"%request.user.username)
