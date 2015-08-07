@@ -60,7 +60,7 @@ TEMPLATES = [
         'BACKEND': 'django.template.backends.jinja2.Jinja2',
         'DIRS': [
             os.path.join(BASE_DIR, 'templates/jinja2'),
-            '/home/user/developer/django_1.7_py3.4/modelsproDairy/modelsapp/templates/jinja2',
+            '/home/user/github/05Aug15/WebDairy/modelsproDairy/modelsapp/templates/jinja2',
         ],
         'APP_DIRS': True,
         'OPTIONS': {
@@ -100,6 +100,7 @@ INSTALLED_APPS = (
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'modelsapp',
+    'rest_framework',
 )
 """
 MIDDLEWARE_CLASSES = (
@@ -179,7 +180,7 @@ LOGGING = {
         'file': {
             'level': 'DEBUG',
             'class': 'logging.FileHandler',
-            'filename': '/home/user/developer/django_1.7_py3.4/modelsproDairy/logapp.log',
+            'filename': '/home/user/github/05Aug15/WebDairy/modelsproDairy/logapp.log',
         },
     },
     'loggers': {
@@ -203,7 +204,7 @@ LOGGING = {
         'file':{
             'level':'DEBUG',
             'class':'logging.FileHandler',
-            'filename':'/home/user/developer/django_1.7_py3.4/modelsproDairy/logapp.log',
+            'filename': '/home/user/github/05Aug15/WebDairy/modelsproDairy/logapp.log',
             'formatter':'simple'
         },
     },
@@ -214,3 +215,11 @@ LOGGING = {
         },
     }
 }
+REST_FRAMEWORK = {
+    # Use Django's standard `django.contrib.auth` permissions,
+    # or allow read-only access for unauthenticated users.
+    'DEFAULT_PERMISSION_CLASSES': [
+        'rest_framework.permissions.DjangoModelPermissionsOrAnonReadOnly'
+    ]
+}
+

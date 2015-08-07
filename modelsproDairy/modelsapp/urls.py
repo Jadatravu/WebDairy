@@ -1,6 +1,15 @@
 from django.conf.urls import patterns, url
 
+from django.conf.urls import url, include
+from rest_framework import routers
+from modelsapp import views
+
+router = routers.DefaultRouter()
+router.register(r'users', views.UserViewSet)
+
 urlpatterns = patterns('modelsapp.views',
+    url(r'^', include(router.urls)),
+    url(r'^api-auth/', include('rest_framework.urls', namespace='rest_framework')),
     url(r'^Contacts/api/subjects/$','getsubjectlist',name='getsubjectlist'),
     url(r'^Contacts/api/namesearchlist/$','namesearchlist',name='namesearchlist'),
     url(r'^Contacts/class/addsubject/$','addsubject',name='addsubject'),
