@@ -65,6 +65,7 @@ from django.shortcuts import render
 from django.contrib.auth.models import User, Group
 from rest_framework import viewsets
 from modelsapp.serializers import RestAppSerializer
+from rest_framework import permissions
 #rest imports end
 
 
@@ -76,9 +77,16 @@ logger = logging.getLogger(__name__)
 # Create your views here.
 
 class UserViewSet(viewsets.ModelViewSet):
-    #self.kwargs['year']
     queryset = Contact.objects.all()
     serializer_class = RestAppSerializer
+
+class UserSearchSet(viewsets.ModelViewSet):
+    def get_queryset(self):
+        cons = Contact.objects.filter(first_name__contains = self.request.GET['key'])
+        return cons
+    serializer_class = RestAppSerializer
+    #permission_classes = (permissions.IsAuthenticatedOrReadOnly,)
+    permission_classes = (permissions.IsAuthenticated,)
 
 def namesearchlist(request):
     if request.user.is_authenticated() and request.user.is_superuser:

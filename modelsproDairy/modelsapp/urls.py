@@ -6,6 +6,7 @@ from modelsapp import views
 
 router = routers.DefaultRouter()
 router.register(r'users', views.UserViewSet)
+router.register(r'usersearch', views.UserSearchSet, base_name="users")
 
 urlpatterns = patterns('modelsapp.views',
     url(r'^', include(router.urls)),
