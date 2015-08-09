@@ -81,9 +81,19 @@ class UserViewSet(viewsets.ModelViewSet):
     serializer_class = RestAppSerializer
 
 class UserSearchSet(viewsets.ModelViewSet):
+    cons = []
+
+    def g_data(self):
+        self.cons = Contact.objects.filter(first_name__contains = self.request.GET['key'])
+        cons1 = Contact.objects.filter(sur_name__contains = self.request.GET['key'])
+        cons2 = Contact.objects.filter(last_name__contains = self.request.GET['key'])
+        list(self.cons).append(cons1)
+        list(self.cons).append(cons2)
+
     def get_queryset(self):
-        cons = Contact.objects.filter(first_name__contains = self.request.GET['key'])
-        return cons
+        self.g_data()
+        return self.cons
+
     serializer_class = RestAppSerializer
     #permission_classes = (permissions.IsAuthenticatedOrReadOnly,)
     permission_classes = (permissions.IsAuthenticated,)
