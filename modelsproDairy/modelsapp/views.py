@@ -984,9 +984,13 @@ def addacademicyear(request):
         context_instance=RequestContext(request)
     )#
 def login(request):
-    c={}
+    ay_list = AcademicYear.objects.filter(current = True)
+    users_list = User.objects.filter(is_superuser=True)
+    c={ 'user':users_list[0], 'ay':ay_list[0]}
     c.update(csrf(request))
-    return render_to_response("login.html",c)
+    #return render_to_response("login.html",c)
+    return render_to_response("login.jinja",c)
+
 def logout(request):
     auth.logout(request)
     return HttpResponseRedirect("/Contacts/login/")

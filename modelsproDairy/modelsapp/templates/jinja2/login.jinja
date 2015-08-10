@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+{% include 'header.jinja' %}
+<section>
+
+   <div style="margin-left:20%;margin-right:20%">
+      <form action="/Contacts/adminindex/" method="post">
+         <input type="hidden" name="csrfmiddlewaretoken" value="{{ csrf_token }}">
+         
+         <div class="form-group">
+            <label for="email" class="col-sm-2">Username:</label>
+            <input type="text" class="col-sm-2" name="username" id="username" placeholder="Username"></br>
+         </div>
+         <div class="form-group">
+            <label for="pwd" class="col-sm-2" >Password:</label>
+            <input type="password" class=" col-sm-2" name= "password" id="password" placeholder="Password"></br>
+         </div>
+         <button type="submit" class="btn btn-default" style="width:50px;height:35px;margin-top:0px;">Login</button>
+      </form>
+   </div>
+</section>
+<section>
+
+   <div class="table-responsive" style="margin-left:20%;margin-right:20%">
+         <table class="table table-striped table-bordered" >
+            <thead>
+               <tr>
+               </tr>
+            </thead>
+            <tbody>
+               <tr><td>Academic Year</td><td>{{ay.academic_year}}</td><tr>
+               <tr><td>Departments</td><td>{{ ay.department_set.all()| count }}</td><tr>
+               <tr><td>Subjects</td><td>{{ay.subject_set.all() | count}}</td><tr>
+               <tr><td>Students</td><td>{{ ay.contact_set.filter(job_title__title = "Student") | count}}</td><tr>
+               <tr><td>Teaching Staff</td><td>{{ay.contact_set.filter(job_title__title = "Teacher") | count}}</td><tr>
+               <tr><td>Non-Teaching Staff</td><td>{{ay.contact_set.filter(job_title__title = "NTStaff") | count}}</td><tr>
+               <tr><td>Skills</td><td>0</td><tr>
+               <tr><td>Tests</td><td>{{ay.test_set.all() | count}}</td><tr>
+               <tr><td>Holidays</td><td>0</td><tr>
+               <tr><td>Leaves</td><td>0</td><tr>
+            </tbody>
+         </table>
+   </div>          
+
+</section>
+{% include 'footer.jinja' %}
