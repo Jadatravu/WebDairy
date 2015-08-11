@@ -37,6 +37,13 @@ class Department(models.Model):
         #unique_together = (("dep_name","from_year","to_year"),)
         unique_together = (("dep_name"),)
     """
+    def get_tests_number(self):
+        test_obj_list = []
+        test_name_list = []
+        for con in self.contact_set.all():
+            for test in con.test_set.all():
+                test_name_list.append(test.test_name)
+        return len(set(test_name_list))
 
 class Subject(models.Model):
     sub_name=models.CharField(max_length=50)

@@ -1008,11 +1008,17 @@ def adminindex(request):
             auth_login(request, user)
         else:
             logger.debug ( " rname " + request.user.username)
+    ay_list = AcademicYear.objects.filter(current = True)
+    c =  {'user':request.user,'ay':ay_list[0]}
+    c.update(csrf(request))
+    return render_to_response("adminindex.jinja",c)
+    """
     return render_to_response(
-            'adminindex.html',
-            {'user':request.user},
+            "adminindex.jinja"
+            'adminindex.jinja', c,
             context_instance=RequestContext(request)
     )
+    """
     """
     if user.is_superuser:
         return render_to_response(

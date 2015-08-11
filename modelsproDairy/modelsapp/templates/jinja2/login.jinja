@@ -1,10 +1,13 @@
 <!DOCTYPE html>
 {% include 'header.jinja' %}
 <section>
-
+<!--<center><div class="table-responsive" >
+<table><tr><td>Username:</td><td><input type="text" name="username" id="username" placeholder="Username"></td><td>Password:</td><td><input type="password" name= "password" id="password" placeholder="Password"></td><td><button type="submit" class="btn btn-default" style="width:50px;height:35px;margin-top:0px;">Login</button></td><tr></table>
+</div></center>-->
    <div style="margin-left:20%;margin-right:20%">
       <form action="/Contacts/adminindex/" method="post">
          <input type="hidden" name="csrfmiddlewaretoken" value="{{ csrf_token }}">
+         
          
          <div class="form-group">
             <label for="email" class="col-sm-2">Username:</label>
@@ -14,7 +17,9 @@
             <label for="pwd" class="col-sm-2" >Password:</label>
             <input type="password" class=" col-sm-2" name= "password" id="password" placeholder="Password"></br>
          </div>
-         <button type="submit" class="btn btn-default" style="width:50px;height:35px;margin-top:0px;">Login</button>
+         <!--<button type="submit" class="btn btn-default" style="width:50px;height:35px;margin-top:0px;">Login</button>-->
+         <button type="submit" style="height:30px" >Login</button>
+         
       </form>
    </div>
 </section>
