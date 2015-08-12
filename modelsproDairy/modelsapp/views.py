@@ -622,6 +622,49 @@ def editcontactform(request,con_id):
         context_instance=RequestContext(request)
     )#
 
+def viewdeptest(request,dep_id):
+    #if (request.user.is_authenticated() == False):
+    if request.user.is_authenticated():
+        logger.debug ("request user %s is authenticated"%request.user.username)
+    else:
+        logger.debug ("request user %s is authenticated"%request.user.username)
+        c={}
+        c.update(csrf(request))
+        return render_to_response("login.html",c)
+    dep = Department.objects.get(id=dep_id)
+    test_name_list = []
+    for cont in  dep.contact_set.all():
+        for tes in cont.test_set.all():
+            test_name_list.append(tes.test_name)
+    test_name_set = set(test_name_list)
+    test_name_unique_list = list(test_name_set)
+    document = Department.objects.get(id=dep_id)
+    c =  {'department':document,'user':request.user,'test_list':test_name_unique_list}
+    c.update(csrf(request))
+    return render_to_response("viewdeptest.jinja",c)
+
+def viewdepcontact(request,dep_id):
+    #if (request.user.is_authenticated() == False):
+    if request.user.is_authenticated():
+        logger.debug ("request user %s is authenticated"%request.user.username)
+    else:
+        logger.debug ("request user %s is authenticated"%request.user.username)
+        c={}
+        c.update(csrf(request))
+        return render_to_response("login.html",c)
+
+    document = Department.objects.get(id=dep_id)
+    c =  {'department':document,'user':request.user}
+    c.update(csrf(request))
+    return render_to_response("viewdepcontact.jinja",c)
+    """
+    return render_to_response(
+         'viewdepcontact.jinja',
+         {'department': document},
+         context_instance=RequestContext(request)
+    )#
+    """
+
 def viewcontact(request,con_id):
     #if (request.user.is_authenticated() == False):
     if request.user.is_authenticated():
