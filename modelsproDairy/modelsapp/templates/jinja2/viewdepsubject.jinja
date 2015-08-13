@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+{% include 'header.jinja' %}
+<h2> Department "{{department.dep_name}}" Subjects </h2>
+<section>
+   <div class="row">
+      <div class="col-sm-12" >
+         {% if user.is_superuser %}
+      <div class="table-responsive" >
+         <table class="table table-striped table-bordered" >
+            <thead>
+               <tr><th style="width:10%">Teacher ID</th><th style="width:30%">Subject Name</th><th style="width:30%">Text Book</th><th style="width:30%"> Publisher </th></tr>
+            </thead>
+               {% if department %}
+                  {% for sub in department.subject_set.all() %}
+                     <tr><td><a href="/Contacts/viewcontact/{{sub.teacher_id}}">{{ sub.teacher_id }}</a></td><td> {{sub.sub_name}}</td><td>{{sub.text_book}}</td><td>{{sub.publisher}}</td></tr>
+                  {% endfor %}
+               {% endif %}
+            <tbody>
+            </tbody>
+          </table>
+      </div>
+         {% endif %}
+      </div>
+   </div>
+</section>
+{% include 'footer.jinja' %}

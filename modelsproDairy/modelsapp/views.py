@@ -643,6 +643,20 @@ def viewdeptest(request,dep_id):
     c.update(csrf(request))
     return render_to_response("viewdeptest.jinja",c)
 
+def viewdepsubject(request,dep_id):
+    if request.user.is_authenticated():
+        logger.debug ("request user %s is authenticated"%request.user.username)
+    else:
+        logger.debug ("request user %s is authenticated"%request.user.username)
+        c={}
+        c.update(csrf(request))
+        return render_to_response("login.html",c)
+
+    document = Department.objects.get(id=dep_id)
+    c =  {'department':document,'user':request.user}
+    c.update(csrf(request))
+    return render_to_response("viewdepsubject.jinja",c)
+
 def viewdepcontact(request,dep_id):
     #if (request.user.is_authenticated() == False):
     if request.user.is_authenticated():
