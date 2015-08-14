@@ -37,7 +37,7 @@
             </thead>
                {% if ay %}
                   {% for dep in ay.department_set.all() %}
-                     <tr><td>{{ dep.dep_name }}</td><td><a href="/Contacts/viewdepcontact/{{dep.id}}"> {{dep.contact_set.all()|count}}</a></td><td>{{dep.subject_set.all()|count}}</td><td><a href="/Contacts/viewdeptest/{{dep.id}}"> {{dep.get_tests_number()}}</a></td></tr>
+                     <tr><td>{{ dep.dep_name }}</td><td><a href="/Contacts/viewdepcontact/{{dep.id}}"> {{dep.contact_set.all()|count}}</a></td><td><a href="/Contacts/viewdepsubject/{{dep.id}}">{{dep.subject_set.all()|count}}</a></td><td><a href="/Contacts/viewdeptest/{{dep.id}}"> {{dep.get_tests_number()}}</a></td></tr>
                   {% endfor %}
                {% endif %}
             <tbody>
