@@ -110,7 +110,7 @@
                   <li class="dropdown">
                      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Ops<span class="caret"></span></a>
                      <ul class="dropdown-menu">
-                        <li><a href="/Contacts/admin/skilltitleaddform">Skill Add</a></li>
+
                         <li><a href="/Contacts/admin/releaseleaves">Release Leaves</a></li>
                         <li><a href="/Contacts/admin/addholidayform">Add Holiday</a></li>
                         <li><a href="/Contacts/admin/departmentform">Add Department</a></li>
@@ -130,6 +130,7 @@
                      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Skills<span class="caret"></span></a>
                      <ul class="dropdown-menu">
                         {% if user.is_superuser %}
+                        <li><a href="/Contacts/admin/skilltitleaddform">Skill Add</a></li>
                         <li><a href="/Contacts/admin/skillsearchform">Skill Search</a></li>
                         {% endif %}
                         <li><a href="/Contacts/skillcontactaddform">Skill Contact Add</a></li>
