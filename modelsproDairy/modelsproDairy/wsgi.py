@@ -15,13 +15,11 @@ try:
     #site.addsitedir('/home/user/developer/foo/lib/python3.4/site-packages')
     site.addsitedir('/home/user/developer/bar/lib/python3.4/site-packages')
 
-    sys.path.append('/home/user/developer/django_1.7_py3.4/modelsproDairy')
-    sys.path.append('/home/user/developer/django_1.7_py3.4/modelsproDairy/modelsproDairy')
+    sys.path.append('/home/user/github/05Aug15/WebDairy/modelsproDairy')
+    #sys.path.append('/home/user/github/24Jul15/WebDairy/modelsproDairy/modelsproDairy')
     os.environ.setdefault("DJANGO_SETTINGS_MODULE", "modelsproDairy.settings")
 
     # Activate your virtual env
-    #activate_env=os.path.expanduser("/home/user/developer/foo/bin/activate_this.py")
-    #os.environ['DJANGO_SETTINGS_MODULE'] = 'modelsproDairy.settings'
     activate_env=os.path.expanduser("/home/user/developer/bar/bin/activate_this.py")
     #execfile(activate_env, dict(__file__=activate_env))
     exec(compile(open(activate_env).read(),activate_env,'exec'), dict(__file__=activate_env))
